@@ -1,5 +1,5 @@
 export default function Experience() {
-  // array com escolas
+  // array com estudos
   const education = [
     {
       nome: "Espamol",
@@ -61,21 +61,25 @@ export default function Experience() {
       end: "Momento",
     },
   ];
-
+  // por cada objecto dos arrays, quero que me de output ao return(...)
   for (let i = 0; i < jobs.length; i++) {
-    const element = jobs[i];
-
+    let element = jobs[i];
     return (
-      <div className="grid grid-cols-2 gap-4 border-2 shadow-sm sm:container mx-auto rounded-md p-2 ">
-        <div className="text-right py-2">
-          <p>{element.nome}</p>
-          <p className="align-bottom">
-            {element.start} {"->"} {element.end}
-          </p>
+      <div className="my-4 p-4 mx-auto place-items-center">
+        <div className="bg-sky-600 rounded-full w-6 h-6">
+          <a className="invisible text-center">*</a>
         </div>
-        <div className="text-left py-2">
-          <p className="">{element.tipo}</p>
-          <p>{element.desc}</p>
+        <div className="grid grid-cols-2 divide-x-4">
+          <div className="text-right px-4 space-y-4">
+            <p>{element.nome}</p>
+            <p className="align-bottom">
+              {element.start} {"->"} {element.end}
+            </p>
+          </div>
+          <div className="text-left px-4 space-y-4">
+            <p className="">{element.tipo}</p>
+            <p>{element.desc}</p>
+          </div>
         </div>
       </div>
     );
