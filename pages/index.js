@@ -1,8 +1,10 @@
 import Head from "next/head";
 // import Image from "next/image";
 import Experience from "../components/tables";
+import About from "../components/about";
 
 const titleName = "Portfolio Filipe Martins";
+
 export default function Home() {
   return (
     <div>
@@ -17,7 +19,17 @@ export default function Home() {
       </Head>
 
       <main>
-        <Experience />
+        <div className="grid grid-cols-2 mx-auto" id="layout">
+          {/* avatar e nome */}
+
+          <section>
+            <About />
+          </section>
+          <section>
+            <Experience />
+          </section>
+        </div>
+
         {/* content here */}
       </main>
 

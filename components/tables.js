@@ -65,20 +65,22 @@ export default function Experience() {
   for (let i = 0; i < jobs.length; i++) {
     let element = jobs[i];
     return (
-      <div className="my-4 p-4 mx-auto place-items-center">
-        <div className="bg-sky-600 rounded-full w-6 h-6">
+      <div className="block">
+        <div className="my-4 p-4 mx-auto">
+          {/* <div className="bg-sky-600 rounded-full w-6 h-6 mx-auto">
           <a className="invisible text-center">*</a>
-        </div>
-        <div className="grid grid-cols-2 divide-x-4">
-          <div className="text-right px-4 space-y-4">
-            <p>{element.nome}</p>
-            <p className="align-bottom">
-              {element.start} {"->"} {element.end}
-            </p>
-          </div>
-          <div className="text-left px-4 space-y-4">
-            <p className="">{element.tipo}</p>
-            <p>{element.desc}</p>
+        </div> */}
+          <div className="grid grid-cols-2 divide-x-4">
+            <div className="text-right px-4 space-y-4">
+              <p>{element.nome}</p>
+              <p className="align-bottom">
+                {element.start} {"->"} {element.end}
+              </p>
+            </div>
+            <div className="text-left px-4 space-y-4">
+              <p className="">{element.tipo}</p>
+              <p>{element.desc}</p>
+            </div>
           </div>
         </div>
       </div>
