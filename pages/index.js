@@ -19,10 +19,10 @@ export default function Home() {
       </Head>
 
       <main>
-        <div className="grid grid-cols-2 mx-auto" id="layout">
-          {/* avatar e nome */}
+        <div className="space-y-6">
+          {/* avatar */}
 
-          <section>
+          <section className="mt-4" id="layout">
             <About />
           </section>
           <section>
