@@ -27,19 +27,35 @@ const skills = [
 
 export default function About() {
   return (
-    <div className="flex justify-center">
-      <div className="grid grid-flow-col items-center space-x-4 rounded-full pr-4 shadow-md">
-        <Image
-          src={myPicture}
-          alt="A picture of me"
-          width={145}
-          height={145}
-          // layout={"responsive"}
-          className="bg-sky-500 border-0 rounded-full"
-        />
-        <div id={"container: " + name} className="space-y-2">
-          <strong>{name}</strong>
+    <div className="flex flex-col lg:flex-row lg:justify-around items-center justify-center bg-sky-500 py-20 shadow-md text-white leading-loose">
+      <div id={"portrait"} className="rounded text-center justify-center">
+        <section>
+          <strong className="">{name}</strong>
           <p>{role}</p>
+          <p>{dob}</p>
+        </section>
+        {/* imagem */}
+        <section>
+          <Image
+            src={myPicture}
+            alt="A picture of me"
+            width={250}
+            height={250}
+            // layout={"responsive"}
+            className="bg-sky-300 rounded-full"
+          />
+          {/* <icon>
+          <h1>
+          <p> */}
+        </section>
+      </div>
+
+      <div className="items-center rounded text-justify lg:text-end">
+        <div id={"contacts"} className="grid grid-flow-row">
+          <a>{phone}</a>
+          <a>{email}</a>
+          <a>{github}</a>
+
           {/* <icon>
           <h1>
           <p> */}
