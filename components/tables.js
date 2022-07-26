@@ -62,7 +62,7 @@ export default function Experience() {
       id: 6,
       nome: "Web Developer",
       tipo: "Freelancer",
-      desc: "Javascript, Python, HTML, CSS... Frameworks: TailwindCSS, NextJs(React)",
+      desc: "Javascript, Python, HTML, TailwindCSS, NextJs(React)",
       start: "12/2021",
       end: "Momento",
     },
@@ -81,24 +81,28 @@ export default function Experience() {
 
   return (
     <div className="block">
-      <div className="my-4 p-4 mx-auto">
-        {/* <div className="bg-sky-600 rounded-full w-6 h-6 mx-auto">
-          <a className="invisible text-center">*</a>
-        </div> */}
+      <div className="mx-auto">
         <div className="flex flex-col">
+          <p className="py-24 text-center text-3xl font-bold text-slate-800">
+            {"Resume"}
+          </p>
+          {/* fazer accordion por cada nome (nome[...info]) */}
           {jobs.map((job) => {
             return (
-              <div key={job.id} className="text-center px-4 space-y-4">
-                <p>
-                  {job.nome}
-                  {"(" + job.tipo + ")"}
-                </p>
-
-                <p className="align-bottom">
-                  {job.start} {"->"} {job.end}
-                </p>
-                <p className="">{job.tipo}</p>
-                <p>{job.desc}</p>
+              <div
+                key={job.id}
+                className="py-8 text-center  text-slate-800 even:bg-blue-500 even:text-white "
+              >
+                <section key={job.id} className=" max-w-fit mx-auto py-16">
+                  <p className="grid grid-rows-2 leading-tight">
+                    <span className="font-semibold text-xl"> {job.nome}</span>
+                    <span className="font-light"> {" (" + job.tipo + ")"}</span>
+                    <p className="pt-4">{job.start + " até " + job.end}</p>
+                  </p>
+                </section>
+                <section className="px-20 pt-8 leading-loose" key={job.id}>
+                  <p className=" font-serif font-semibold italic">{job.desc}</p>
+                </section>
               </div>
             );
           })}
