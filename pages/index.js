@@ -19,10 +19,10 @@ export default function Home() {
       </Head>
 
       <main className="font-sans">
-        <div className="space-y-6">
+        <div>
           {/* avatar */}
 
-          <section className="" id="layout">
+          <section className="">
             <About />
           </section>
           <section>
