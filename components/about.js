@@ -3,6 +3,7 @@ import myPicture from "/public/avatar.png";
 import { HiMail } from "react-icons/hi";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { GoMarkGithub } from "react-icons/go";
+import { motion } from "framer-motion";
 
 export default function About() {
   const name = "Nuno Filipe Martins";
@@ -30,19 +31,19 @@ export default function About() {
   ];
 
   return (
-    <div className="bg-blue-500 py-8 text-white">
+    <div className="bg-sky-500 py-8 text-white">
       <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-loose">
         <div id={"portrait"} className="rounded text-center justify-center">
           {/* name */}
           <section>
-            <p className="text-3xl mb-6 font-bold text-center">{name}</p>
+            <p className="text-3xl mb-6 font-bold text-center ">{name}</p>
             <Image
               src={myPicture}
               alt="A picture of me"
               width={250}
               height={250}
               // layout={"responsive"}
-              className="bg-white opacity-90 shadow-inner shadow-blue-900 rounded-full"
+              className="bg-white opacity-90 shadow-inner shadow-sky-200 rounded-full"
             />
             {/* fazer botao para expand contacts */}
             {/* <icon>
@@ -57,21 +58,27 @@ export default function About() {
             className="grid grid-flow-row lg:grid-flow-col gap-6 text-center px-10 pt-10"
           >
             <div className="flex flex-col items-center gap-4">
-              <section className="text-2xl lg:text-3xl rounded-full border-2 p-2">
-                <BsFillTelephoneFill />
+              <section className="items-center text-2xl lg:text-3xl rounded-full border-2 px-2 pt-2 hover:bg-white hover:text-sky-500">
+                <button>
+                  <BsFillTelephoneFill />
+                </button>
               </section>
               <p className="text-md lg:text-lg font-mono flex-wrap"> {phone}</p>
               {/* {phone} */}
             </div>
             <div className="flex flex-col items-center gap-4">
-              <section className="text-2xl lg:text-3xl rounded-full border-2 p-2">
-                <HiMail />
+              <section className="items-center text-2xl lg:text-3xl rounded-full border-2 px-2 pt-2 hover:bg-white hover:text-sky-500">
+                <button>
+                  <HiMail className="" />
+                </button>
               </section>
               <p className="text-md lg:text-lg font-mono flex-wrap"> {email}</p>
             </div>
             <div className="flex flex-col items-center gap-4">
-              <section className="text-2xl lg:text-3xl rounded-full border-2 p-2">
-                <GoMarkGithub />
+              <section className="items-center text-2xl lg:text-3xl rounded-full border-2 px-2 pt-2 hover:bg-white hover:text-sky-500">
+                <button>
+                  <GoMarkGithub />
+                </button>
               </section>
               <p className="text-md lg:text-lg font-mono flex-wrap">
                 {" "}
