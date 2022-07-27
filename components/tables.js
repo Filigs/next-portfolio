@@ -91,7 +91,7 @@ export default function Experience() {
             return (
               <div
                 key={job.id}
-                className="py-8 text-center  text-slate-800 even:bg-blue-500 even:text-white "
+                className="py-8 text-center  text-slate-800 even:bg-sky-500 even:text-white "
               >
                 <section className=" max-w-fit mx-auto py-16">
                   <p className="grid grid-rows-2 leading-tight"></p>
