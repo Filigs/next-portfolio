@@ -86,21 +86,20 @@ export default function Experience() {
           <p className="py-24 text-center text-3xl font-bold text-slate-800">
             {"Resume"}
           </p>
-          {/* fazer accordion por cada nome (nome[...info]) */}
+
           {jobs.map((job) => {
             return (
               <div
                 key={job.id}
                 className="py-8 text-center  text-slate-800 even:bg-blue-500 even:text-white "
               >
-                <section key={job.id} className=" max-w-fit mx-auto py-16">
-                  <p className="grid grid-rows-2 leading-tight">
-                    <span className="font-semibold text-xl"> {job.nome}</span>
-                    <span className="font-light"> {" (" + job.tipo + ")"}</span>
-                    <p className="pt-4">{job.start + " até " + job.end}</p>
-                  </p>
+                <section className=" max-w-fit mx-auto py-16">
+                  <p className="grid grid-rows-2 leading-tight"></p>
+                  <span className="font-semibold text-xl"> {job.nome}</span>
+                  <span className="font-light"> {" (" + job.tipo + ")"}</span>
+                  <p className="pt-4">{job.start + " até " + job.end}</p>
                 </section>
-                <section className="px-20 pt-8 leading-loose" key={job.id}>
+                <section className="px-20 pt-8 leading-loose">
                   <p className=" font-serif font-semibold italic">{job.desc}</p>
                 </section>
               </div>
