@@ -83,20 +83,23 @@ export default function Experience() {
     <div className="block">
       <div className="mx-auto">
         <div className="flex flex-col">
-          <p className="py-24 text-center text-3xl font-bold text-slate-800">
-            {"Resume"}
+          <p className="py-24 text-center text-3xl font-black text-slate-800">
+            {"CV"}
           </p>
 
           {jobs.map((job) => {
             return (
               <div
                 key={job.id}
-                className="py-8 text-center  text-slate-800 even:bg-sky-500 even:text-white "
+                className="py-24 text-center  text-slate-800 even:bg-sky-500 even:text-white "
               >
-                <section className=" max-w-fit mx-auto py-16">
-                  <p className="grid grid-rows-2 leading-tight"></p>
-                  <span className="font-semibold text-xl"> {job.nome}</span>
-                  <span className="font-light"> {" (" + job.tipo + ")"}</span>
+                <section className="max-w-fit mx-auto">
+                  <div className="grid grid-rows-2 leading-tight">
+                    {" "}
+                    <p className="font-semibold text-xl"> {job.nome}</p>
+                    <p className="font-light"> {" (" + job.tipo + ")"}</p>
+                  </div>
+
                   <p className="pt-4">{job.start + " até " + job.end}</p>
                 </section>
                 <section className="px-20 pt-8 leading-loose">

@@ -43,7 +43,7 @@ export default function About() {
               width={250}
               height={250}
               // layout={"responsive"}
-              className="bg-white opacity-90 shadow-inner shadow-sky-200 rounded-full"
+              className="bg-white rounded-full"
             />
             {/* fazer botao para expand contacts */}
             {/* <icon>
@@ -58,7 +58,7 @@ export default function About() {
             className="grid grid-flow-row lg:grid-flow-col gap-6 text-center px-10 pt-10"
           >
             <div className="flex flex-col items-center gap-4">
-              <section className="items-center text-2xl lg:text-3xl rounded-full border-2 px-2 pt-2 hover:bg-white hover:text-sky-500">
+              <section className="items-center text-2xl lg:text-3xl rounded-full border-4 px-2 pt-2  text-yellow-200 border-yellow-200 hover:text-white hover:border-white">
                 <button>
                   <BsFillTelephoneFill />
                 </button>
@@ -67,15 +67,15 @@ export default function About() {
               {/* {phone} */}
             </div>
             <div className="flex flex-col items-center gap-4">
-              <section className="items-center text-2xl lg:text-3xl rounded-full border-2 px-2 pt-2 hover:bg-white hover:text-sky-500">
+              <section className="items-center text-2xl lg:text-3xl rounded-full border-4 px-2 pt-2  text-yellow-200 border-yellow-200 hover:text-white hover:border-white">
                 <button>
-                  <HiMail className="" />
+                  <HiMail />
                 </button>
               </section>
               <p className="text-md lg:text-lg font-mono flex-wrap"> {email}</p>
             </div>
             <div className="flex flex-col items-center gap-4">
-              <section className="items-center text-2xl lg:text-3xl rounded-full border-2 px-2 pt-2 hover:bg-white hover:text-sky-500">
+              <section className="items-center text-2xl lg:text-3xl rounded-full border-4 px-2 pt-2  text-yellow-200 border-yellow-200 hover:text-white hover:border-white">
                 <button>
                   <GoMarkGithub />
                 </button>
