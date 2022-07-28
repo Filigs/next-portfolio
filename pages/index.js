@@ -20,8 +20,6 @@ export default function Home() {
 
       <main className="font-sans">
         <div>
-          {/* avatar */}
-
           <section className="">
             <About />
           </section>
