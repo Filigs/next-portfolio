@@ -4,7 +4,7 @@ import { GoMarkGithub } from "react-icons/go";
 
 export default function Contacts() {
   const contactIconStyles =
-    "items-center text-2xl lg:text-3xl rounded-full border-4 px-2 pt-2 hover:text-yellow-200 hover:border-yellow-200 text-sky-500 border-sky-500";
+    "items-center text-2xl lg:text-3xl rounded-full border-4 px-2 pt-2 text-sky-500 border-sky-500";
   const contactCardStyles =
     "flex flex-col items-center gap-4 p-8 rounded-lg border-0 border-sky-400 shadow-lg shadow-sky-900 bg-white";
   const contactTextStyles = "text-md lg:text-lg font-mono flex-wrap font-bold ";
