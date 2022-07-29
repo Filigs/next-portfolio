@@ -2,7 +2,7 @@ import Image from "next/image";
 import myPicture from "/public/avatar.png";
 import { motion } from "framer-motion";
 
-export default function About() {
+export default function Hero() {
   const filipe = {
     name: "Nuno Filipe Martins",
     role: "Web Developer",
@@ -29,16 +29,16 @@ export default function About() {
   };
 
   return (
-    <div className="py-20 text-sky-900">
-      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal">
+    <div className="">
+      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal py-14 lg:py-20 bg-zinc-800">
         <div id={"portrait"} className="rounded text-center justify-center">
           {/* name */}
           <section>
-            <div className="mb-10">
-              <p className="text-2xl lg:text-3xl font-bold text-center text-sky-500">
+            <div className="mb-14 lg:mb-20">
+              <p className="text-3xl lg:text-4xl font-bold text-center text-blue-600">
                 {filipe.name}
               </p>
-              <p className="text-xl lg:text-2xl font-light text-center text-sky-700 font-mono">
+              <p className="text-2xl lg:text-3xl font-black text-center text-sky-500 font-mono">
                 {"<" + filipe.role + " />"}
               </p>
             </div>
@@ -46,10 +46,10 @@ export default function About() {
             <Image
               src={myPicture}
               alt="A picture of me"
-              width={250}
-              height={250}
+              width={300}
+              height={300}
               // layout={"responsive"}
-              className="bg-sky-500 rounded-full"
+              className="bg-zinc-900 rounded-full ring-2 ring-zinc-700 scale-95"
             />
           </section>
         </div>

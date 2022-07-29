@@ -1,3 +1,4 @@
+import { GoCalendar } from "react-icons/go";
 export default function Experience() {
   // array com estudos
   const education = [
@@ -23,48 +24,48 @@ export default function Experience() {
       nome: "T Informática",
       tipo: "Estágio",
       desc: "Técnico de Informática, Atendimento ao Cliente",
-      start: "01/2011",
-      end: "07/2011",
+      start: "Janeiro 2011",
+      end: "Julho 2011",
     },
     {
       id: 2,
       nome: "Lar dos Usados",
       tipo: "Trabalho por conta própria",
       desc: "Técnico de Informática, Negociação de Produtos, Serviço ao domicilio",
-      start: "06/2016",
-      end: "07/2017",
+      start: "Junho 2016",
+      end: "Julho 2017",
     },
     {
       id: 3,
       nome: "Intermarché",
       tipo: "Colaborador polivalente",
       desc: "Atendimento ao cliente, Folhas de caixa, Reposição, Cafetaria",
-      start: "08/2017",
-      end: "04/2018",
+      start: "Agosto 2017",
+      end: "Abril 2018",
     },
     {
       id: 4,
       nome: "Cepsa",
       tipo: "Colaborador polivalente",
       desc: "Manutenção, caixa e atendimento ao cliente",
-      start: "04/2018",
-      end: "07/2018",
+      start: "Abril 2018",
+      end: "Julho 2018",
     },
     {
       id: 5,
       nome: "Unicâmbio S.A",
-      tipo: "Responsável de Loja / Tesouraria",
+      tipo: "Responsável de Loja & Tesouraria",
       desc: "Atendimento ao Cliente, Vendas, Negociação de câmbios",
-      start: "09/2018",
-      end: "12/2021",
+      start: "Setembro 2018",
+      end: "Dezembro 2021",
     },
     {
       id: 6,
       nome: "Web Developer",
       tipo: "Freelancer",
       desc: "Javascript, Python, HTML, TailwindCSS, NextJs(React)",
-      start: "12/2021",
-      end: "Momento",
+      start: "Dezembro 2021",
+      end: "Presente",
     },
   ];
   // array com trabalhos
@@ -80,30 +81,48 @@ export default function Experience() {
   // }
 
   return (
-    <div className="block">
+    <div className="block bg-inherit rounded-t-xl">
       <div className="mx-auto">
-        <div className="flex flex-col">
-          <p className="py-24 text-center text-3xl font-black text-slate-800">
-            {"CV"}
-          </p>
-
+        <div className="flex flex-col gap-4">
+          <section className="font-serif p-14 lg:p-20 text-center text-3xl xl:text-5xl font-black text-sky-500 bg-zinc-800 span">
+            {"<Curriculo />"}
+          </section>
           {jobs.map((job) => {
             return (
               <div
                 key={job.id}
-                className="py-24 text-center  text-slate-800 even:bg-sky-500 even:text-white "
+                py-14
+                // lg:py-20
+                className="text-center bg-zinc-800 rounded-xl items-center my-2 py-8 xl:mx-36 ring-2 ring-zinc-700"
               >
                 <section className="max-w-fit mx-auto">
-                  <div className="grid grid-rows-2 leading-tight">
+                  <div className="grid grid-flow-row leading-relaxed">
                     {" "}
-                    <p className="font-semibold text-xl"> {job.nome}</p>
-                    <p className="font-light"> {" (" + job.tipo + ")"}</p>
+                    <p className="font-bold text-xl lg:text-2xl xl:text-3xl text-yellow-500">
+                      {" "}
+                      {job.nome}
+                    </p>
+                    <p className="font-normal text-lg text-amber-500">
+                      {" "}
+                      {" (" + job.tipo + ")"}
+                    </p>
                   </div>
-
-                  <p className="pt-4">{job.start + " até " + job.end}</p>
+                  <div className="grid grid-flow-col grid-rows-2 p-8 gap-x-4 items-center font-sans font-normal text-lg lg:text-xl">
+                    <div className="row-span-2 text-4xl lg:text-5xl text-end text-blue-600">
+                      <GoCalendar />
+                    </div>
+                    <div className="col-span-2 baseline text-start text-emerald-500">
+                      {job.start}
+                    </div>
+                    <div className="row-span-1 col-span-2 text-start text-rose-500">
+                      {job.end}
+                    </div>
+                  </div>
                 </section>
-                <section className="px-20 pt-8 leading-loose">
-                  <p className=" font-serif font-semibold italic">{job.desc}</p>
+                <section className="px-14 lg:px-20 pt-8 leading-loose">
+                  <p className=" font-serif font-light italic text-lg lg:text-xl border-0 rounded-xl p-8 bg-zinc-900 text-yellow-400 ring-2 ring-zinc-700">
+                    {job.desc}
+                  </p>
                 </section>
               </div>
             );
