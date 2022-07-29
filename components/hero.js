@@ -38,8 +38,8 @@ export default function Hero() {
               <p className="text-3xl lg:text-4xl font-bold text-center text-blue-600">
                 {filipe.name}
               </p>
-              <p className="text-2xl lg:text-3xl font-black text-center text-sky-500 font-mono">
-                {"<" + filipe.role + " />"}
+              <p className="text-2xl lg:text-3xl font-black text-center text-sky-500">
+                {"{ " + filipe.role + " }"}
               </p>
             </div>
             {/* hero */}

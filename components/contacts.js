@@ -8,7 +8,7 @@ export default function Contacts() {
   const contactCardStyles =
     "flex flex-col items-center gap-4 p-8 rounded-xl bg-inherit";
   const contactTextStyles =
-    "text-lg lg:text-xl text-sky-500 font-mono flex-wrap font-bold";
+    "text-lg lg:text-xl text-sky-500 flex-wrap font-bold";
   const contacts = {
     phone: "918203169",
     email: "filipemartins.business@gmail.com",

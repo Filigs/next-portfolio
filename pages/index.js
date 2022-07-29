@@ -16,10 +16,11 @@ export default function Home() {
           content="Curriculo pertencente a Filipe Martins"
         />
 
+        {/* */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main className="font-sans">
+      <main>
         <div>
           {/* fazer uma lista com about minimalista, fazer flex col em lg:viewport */}
           <section>
