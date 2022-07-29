@@ -84,8 +84,8 @@ export default function Experience() {
     <div className="block bg-inherit rounded-t-xl">
       <div className="mx-auto">
         <div className="flex flex-col gap-4">
-          <section className="font-serif p-14 lg:p-20 text-center text-3xl xl:text-5xl font-black text-sky-500 bg-zinc-800 span">
-            {"<Curriculo />"}
+          <section className="p-14 lg:p-20 text-center text-3xl xl:text-5xl font-black text-sky-500 bg-zinc-800 span">
+            {"{ Curriculo }"}
           </section>
           {jobs.map((job) => {
             return (
@@ -107,7 +107,7 @@ export default function Experience() {
                       {" (" + job.tipo + ")"}
                     </p>
                   </div>
-                  <div className="grid grid-flow-col grid-rows-2 p-8 gap-x-4 items-center font-sans font-normal text-lg lg:text-xl">
+                  <div className="grid grid-flow-col grid-rows-2 p-8 gap-x-4 items-center font-normal text-lg lg:text-xl">
                     <div className="row-span-2 text-4xl lg:text-5xl text-end text-blue-600">
                       <GoCalendar />
                     </div>
@@ -120,7 +120,7 @@ export default function Experience() {
                   </div>
                 </section>
                 <section className="px-14 lg:px-20 pt-8 leading-loose">
-                  <p className=" font-serif font-light italic text-lg lg:text-xl border-0 rounded-xl p-8 bg-zinc-900 text-yellow-400 ring-2 ring-zinc-700">
+                  <p className=" font-light text-lg lg:text-xl border-0 rounded-xl p-8 bg-zinc-900 text-yellow-400 ring-2 ring-zinc-700">
                     {job.desc}
                   </p>
                 </section>
