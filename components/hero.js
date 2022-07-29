@@ -29,8 +29,8 @@ export default function Hero() {
   };
 
   return (
-    <div className="">
-      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal py-14 lg:py-20 bg-zinc-800">
+    <div className="border-0">
+      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal py-14 lg:py-20 bg-zinc-900 rounded-xl">
         <div id={"portrait"} className="rounded text-center justify-center">
           {/* name */}
           <section>
@@ -49,7 +49,7 @@ export default function Hero() {
               width={300}
               height={300}
               // layout={"responsive"}
-              className="bg-zinc-900 rounded-full ring-2 ring-zinc-700 scale-95"
+              className=" bg-gradient-to-t from-zinc-900 via-zinc-900 to-zinc-800 rounded-3xl ring-2 ring-zinc-700 scale-95 shadow-inner shadow-black"
             />
           </section>
         </div>
