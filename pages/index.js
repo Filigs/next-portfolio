@@ -6,6 +6,9 @@ import Contacts from "../components/contacts";
 
 const titleName = "Curriculo Filipe Martins";
 
+// links _blank
+// <a href="https://link.to/url" target="_blank" rel="noopener noreferrer"> ... <a/>
+
 export default function Home() {
   return (
     <div className="antialiased bg-zinc-900">
@@ -25,8 +28,6 @@ export default function Home() {
           {/* fazer uma lista com about minimalista, fazer flex col em lg:viewport */}
           <section>
             <Hero />
-          </section>
-          <section>
             <Contacts />
           </section>
           <section>

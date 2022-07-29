@@ -81,10 +81,10 @@ export default function Experience() {
   // }
 
   return (
-    <div className="block bg-inherit rounded-t-xl">
+    <div className="block bg-inherit rounded-t-xl my-4">
       <div className="mx-auto">
         <div className="flex flex-col gap-4">
-          <section className="p-14 lg:p-20 text-center text-3xl xl:text-5xl font-black text-sky-500 bg-zinc-800 span">
+          <section className="p-10 lg:p-14 text-center text-4xl xl:text-5xl font-black text-blue-600 bg-gradient-to-br from-zinc-900 via-zinc-900 to-zinc-800 span rounded-xl border-x-0 border-b-4 border-t-2 border-zinc-700">
             {"{ Curriculo }"}
           </section>
           {jobs.map((job) => {
@@ -93,7 +93,7 @@ export default function Experience() {
                 key={job.id}
                 py-14
                 // lg:py-20
-                className="text-center bg-zinc-800 rounded-xl items-center my-2 py-8 xl:mx-36 ring-2 ring-zinc-700"
+                className="text-center bg-zinc-800 rounded-xl items-center my-2 py-8 xl:mx-36 border-x-2 border-b-4 border-t-2 border-zinc-700 shadow-sm shadow-zinc-500"
               >
                 <section className="max-w-fit mx-auto">
                   <div className="grid grid-flow-row leading-relaxed">
@@ -102,7 +102,7 @@ export default function Experience() {
                       {" "}
                       {job.nome}
                     </p>
-                    <p className="font-normal text-lg text-amber-500">
+                    <p className="font-normal text-lg text-yellow-300">
                       {" "}
                       {" (" + job.tipo + ")"}
                     </p>
@@ -111,16 +111,16 @@ export default function Experience() {
                     <div className="row-span-2 text-4xl lg:text-5xl text-end text-blue-600">
                       <GoCalendar />
                     </div>
-                    <div className="col-span-2 baseline text-start text-emerald-500">
+                    <div className="col-span-2 baseline text-start text-sky-500">
                       {job.start}
                     </div>
-                    <div className="row-span-1 col-span-2 text-start text-rose-500">
+                    <div className="row-span-1 col-span-2 text-start text-blue-500">
                       {job.end}
                     </div>
                   </div>
                 </section>
                 <section className="px-14 lg:px-20 pt-8 leading-loose">
-                  <p className=" font-light text-lg lg:text-xl border-0 rounded-xl p-8 bg-zinc-900 text-yellow-400 ring-2 ring-zinc-700">
+                  <p className=" font-light text-lg lg:text-xl rounded-xl p-8 bg-zinc-700 text-yellow-300 border-x-2 border-b-4 border-t-2 border-zinc-500 shadow-sm shadow-zinc-700">
                     {job.desc}
                   </p>
                 </section>
