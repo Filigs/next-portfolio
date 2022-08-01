@@ -4,9 +4,10 @@ import { GoMarkGithub } from "react-icons/go";
 
 export default function Contacts() {
   const contactCardStyles =
-    "flex flex-col items-center gap-6 py-4 rounded-xl bg-inherit";
+    "flex flex-col items-center gap-2 py-4 rounded-xl bg-inherit";
   const contactTextStyles =
-    "text-xl lg:text-2xl text-sky-500 flex-wrap font-bold";
+    "text-xl lg:text-2xl flex-wrap font-bold hover:text-amber-500";
+  const buttonStyles = "text-amber-500";
   const contacts = {
     phone: "91 820 31 69",
     // email: "filipemartins.business@gmail.com",
@@ -19,32 +20,39 @@ export default function Contacts() {
     <div className="flex flex-col items-center justify-center leading-normal rounded-xl border-x-0 border-t-0 border-b-4 border-zinc-700 bg-inherit my-2">
       <div id={"contacts"} className="grid grid-flow-col text-center gap-6">
         <div className={contactCardStyles}>
-          <p className={contactTextStyles}> {"LinkedIn"}</p>
-          <section className="items-end text-3xl lg:text-4xl px-2 pt-2 rounded-xl border-x-2 border-b-4 border-t-2 border-blue-600 hover:shadow-md hover:shadow-blue-500 text-blue-600">
-            <button>
-              <a
-                href={contacts.linkedIn}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <BsLinkedin />
-              </a>
+          <section className="items-end text-3xl lg:text-4xl px-2 pt-2 rounded-full">
+            <button className={buttonStyles}>
+              <BsLinkedin />
             </button>
           </section>
+          <a
+            href={contacts.linkedIn}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={contactTextStyles}
+          >
+            {" "}
+            {"LinkedIn"}
+          </a>
         </div>
         <div className={contactCardStyles}>
-          <p className={contactTextStyles}> {"GitHub"}</p>
-          <section className="items-end text-3xl lg:text-4xl px-2 pt-2 rounded-xl border-x-2 border-b-4 border-t-2 border-blue-600 hover:shadow-md hover:shadow-blue-500 text-blue-600">
-            <button>
-              <a
-                href={contacts.github}
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <GoMarkGithub />
-              </a>
+          <section className="items-end text-3xl lg:text-4xl px-2 pt-2 rounded-full">
+            <button className={buttonStyles}>
+              <GoMarkGithub />
             </button>
           </section>
+          <p className={contactTextStyles}>
+            {" "}
+            <a
+              href={contacts.github}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={contactTextStyles}
+            >
+              {" "}
+              {"GitHub"}
+            </a>
+          </p>
         </div>
       </div>
     </div>
