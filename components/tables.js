@@ -1,4 +1,4 @@
-import { GoCalendar, GoChecklist } from "react-icons/go";
+import { GoCalendar } from "react-icons/go";
 export default function Experience() {
   // array com estudos
   const education = [
@@ -48,7 +48,7 @@ export default function Experience() {
       id: 4,
       nome: "Intermarché",
       tipo: "Colaborador polivalente",
-      desc: "Atendimento ao cliente, Folhas de caixa, Reposição, Cafetaria",
+      desc: "Customer Service, Folhas de caixa, Reposição, Cafetaria",
       start: "Agosto 2017",
       end: "Abril 2018",
     },
@@ -84,8 +84,6 @@ export default function Experience() {
               return (
                 <div
                   key={job.id}
-                  py-14
-                  // lg:py-20
                   className="text-center bg-zinc-900 items-center my-2 py-8 xl:mx-36 border-x-0 border-t-0 border-b-2 border-zinc-800"
                 >
                   <section className="max-w-fit mx-auto">
