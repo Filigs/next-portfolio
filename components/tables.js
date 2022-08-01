@@ -76,7 +76,7 @@ export default function Experience() {
       <div className="mx-auto">
         <div className="flex flex-col gap-4">
           <section className="p-10 lg:p-14 bg-zinc-900 span rounded-xl border-0">
-            <p className="text-center text-4xl xl:text-5xl font-black my-8 bg-gradient-to-t from-orange-600 via-orange-500 to-orange-400 shadow-lg shadow-orange-500 max-w-fit mx-auto text-white p-4 rounded-xl">
+            <p className="cursor-default text-center text-4xl xl:text-5xl font-black my-8 bg-gradient-to-br from-orange-600 via-orange-500 to-orange-400 shadow-md shadow-orange-800 max-w-fit mx-auto text-white p-4 rounded-xl">
               {" "}
               {"Previous Jobs"}
             </p>
@@ -89,7 +89,7 @@ export default function Experience() {
                   <section className="max-w-fit mx-auto">
                     <div className="grid grid-flow-row leading-relaxed">
                       {" "}
-                      <p className="font-bold text-xl lg:text-2xl xl:text-3xl 0">
+                      <p className="font-bold text-xl lg:text-2xl xl:text-3xl">
                         {" "}
                         {job.nome}
                       </p>
@@ -111,7 +111,7 @@ export default function Experience() {
                     </div>
                   </section>
                   <section className="px-14 lg:px-20 pt-8 leading-loose">
-                    <p className="gap-2 font-light text-lg lg:text-xl rounded-xl p-4 bg-zinc-700  border-x-2 border-b-4 border-t-2 border-orange-500 shadow-sm shadow-zinc-700">
+                    <p className="gap-2 font-light text-lg lg:text-xl rounded-xl p-4 bg-gradient-to-br from-zinc-800 via-zinc-800 to-zinc-700   border-x-2 border-b-4 border-t-2 border-orange-500 shadow-md shadow-orange-800">
                       {job.desc}
                     </p>
                   </section>
