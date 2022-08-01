@@ -37,7 +37,7 @@ export default function Hero() {
         <div id={"portrait"} className="rounded text-center justify-center">
           {/* name */}
 
-          <div className="space-y-8">
+          <div className="space-y-8 mb-8">
             <p className="text-3xl lg:text-4xl font-bold text-center text-white">
               {filipe.role}
             </p>
@@ -57,7 +57,7 @@ export default function Hero() {
           <div className="text-center justify-center bg-gradient-to-tr from-orange-400 via-orange-300 to-orange-400">
             {/* name */}
 
-            <div className="mb-8 lg:mb-10 space-y-8 text-zinc-900 p-10 lg:p-14">
+            <div className="my-8 lg:my-10 space-y-8 text-zinc-900 p-10 lg:p-14">
               <p className="text-3xl lg:text-4xl font-bold text-center">
                 {biography.title}
               </p>
