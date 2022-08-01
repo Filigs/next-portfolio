@@ -48,7 +48,7 @@ export default function Hero() {
               width={300}
               height={300}
               // layout={"responsive"}
-              className="bg-gradient-to-t from-amber-600 via-amber-500 to-amber-400 rounded-full ring-2 ring-zinc-700 scale-75"
+              className="bg-gradient-to-t from-orange-600 via-orange-500 to-orange-400 rounded-full ring-2 ring-zinc-700 scale-75"
             />
           </section>
         </div>
