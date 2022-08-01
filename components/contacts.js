@@ -7,7 +7,7 @@ export default function Contacts() {
     "flex flex-col items-center gap-2 py-4 rounded-xl bg-inherit";
   const contactTextStyles =
     "text-xl lg:text-2xl flex-wrap font-bold hover:text-orange-500";
-  const buttonStyles = "text-orange-500";
+  const iconStyles = "text-orange-500";
   const contacts = {
     phone: "91 820 31 69",
     // email: "filipemartins.business@gmail.com",
@@ -21,7 +21,7 @@ export default function Contacts() {
       <div id={"contacts"} className="grid grid-flow-col text-center gap-6">
         <div className={contactCardStyles}>
           <section className="items-end text-3xl lg:text-4xl px-2 pt-2 rounded-full">
-            <button className={buttonStyles}>
+            <button className={iconStyles}>
               <BsLinkedin />
             </button>
           </section>
@@ -37,7 +37,7 @@ export default function Contacts() {
         </div>
         <div className={contactCardStyles}>
           <section className="items-end text-3xl lg:text-4xl px-2 pt-2 rounded-full">
-            <button className={buttonStyles}>
+            <button className={iconStyles}>
               <GoMarkGithub />
             </button>
           </section>
