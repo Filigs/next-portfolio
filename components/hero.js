@@ -5,15 +5,14 @@ import { motion } from "framer-motion";
 export default function Hero() {
   const filipe = {
     name: "Nuno Filipe Martins",
-    role: "Web Developer",
+    role: "Full Stack Web Developer",
     birth: "29/05/1993",
     address: [
       ["Rua Mouzinho de Albuquerque"],
       ["Edificio Lagoa Residence", "Bloco A A6"],
       ["8400 - 384 Lagoa"],
     ],
-    about:
-      "Considero-me ambicioso, trabalhador, carisma, amigável e um excelente profissional.",
+    about: "I turn your ideas into visually appealing websites.",
     skills: [
       {
         type: "Informática / Tecnologias",
@@ -30,16 +29,16 @@ export default function Hero() {
 
   return (
     <div className="border-0">
-      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal py-14 lg:py-20 bg-zinc-900 rounded-xl">
+      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal pt-20 lg:pt-24 bg-zinc-900 rounded-full">
         <div id={"portrait"} className="rounded text-center justify-center">
           {/* name */}
           <section>
-            <div className="mb-14 lg:mb-20">
-              <p className="text-3xl lg:text-4xl font-bold text-center text-blue-600">
-                {filipe.name}
+            <div className="mb-8 lg:mb-10 space-y-4">
+              <p className="text-3xl lg:text-4xl font-bold text-center text-white">
+                {filipe.role}
               </p>
-              <p className="text-2xl lg:text-3xl font-black text-center text-sky-500">
-                {"{ " + filipe.role + " }"}
+              <p className="text-2xl lg:text-3xl font-normal text-center text-white">
+                {filipe.about}
               </p>
             </div>
             {/* hero */}
@@ -49,7 +48,7 @@ export default function Hero() {
               width={300}
               height={300}
               // layout={"responsive"}
-              className=" bg-gradient-to-t from-zinc-900 via-zinc-900 to-zinc-800 rounded-3xl ring-2 ring-zinc-700 scale-95 shadow-inner shadow-black"
+              className="bg-gradient-to-t from-amber-600 via-amber-500 to-amber-400 rounded-full ring-2 ring-zinc-700 scale-75"
             />
           </section>
         </div>

@@ -84,49 +84,52 @@ export default function Experience() {
     <div className="block bg-inherit rounded-t-xl my-4">
       <div className="mx-auto">
         <div className="flex flex-col gap-4">
-          <section className="p-10 lg:p-14 text-center text-4xl xl:text-5xl font-black text-blue-600 bg-gradient-to-br from-zinc-900 via-zinc-900 to-zinc-800 span rounded-xl border-x-0 border-b-4 border-t-2 border-zinc-700">
-            {"{ Curriculo }"}
+          <section className="p-10 lg:p-14 bg-zinc-900 span rounded-xl border-x-0 border-b-4 border-t-2 border-zinc-700">
+            <p className="text-center text-4xl xl:text-5xl font-black mb-8">
+              {" "}
+              {"{ Curriculo }"}
+            </p>
+            {jobs.map((job) => {
+              return (
+                <div
+                  key={job.id}
+                  py-14
+                  // lg:py-20
+                  className="text-center bg-zinc-800 rounded-xl items-center my-2 py-8 xl:mx-36 border-x-2 border-b-4 border-t-2 border-zinc-700 shadow-sm shadow-zinc-500"
+                >
+                  <section className="max-w-fit mx-auto">
+                    <div className="grid grid-flow-row leading-relaxed">
+                      {" "}
+                      <p className="font-bold text-xl lg:text-2xl xl:text-3xl 0">
+                        {" "}
+                        {job.nome}
+                      </p>
+                      <p className="font-normal text-lg ">
+                        {" "}
+                        {" (" + job.tipo + ")"}
+                      </p>
+                    </div>
+                    <div className="grid grid-flow-col grid-rows-2 p-8 gap-x-4 items-center font-normal text-lg lg:text-xl">
+                      <div className="row-span-2 text-4xl lg:text-5xl text-end text-amber-500">
+                        <GoCalendar />
+                      </div>
+                      <div className="col-span-2 baseline text-start ">
+                        {job.start}
+                      </div>
+                      <div className="row-span-1 col-span-2 text-start ">
+                        {job.end}
+                      </div>
+                    </div>
+                  </section>
+                  <section className="px-14 lg:px-20 pt-8 leading-loose">
+                    <p className=" font-light text-lg lg:text-xl rounded-xl p-8 bg-zinc-700  border-x-2 border-b-4 border-t-2 border-zinc-500 shadow-sm shadow-zinc-700">
+                      {job.desc}
+                    </p>
+                  </section>
+                </div>
+              );
+            })}
           </section>
-          {jobs.map((job) => {
-            return (
-              <div
-                key={job.id}
-                py-14
-                // lg:py-20
-                className="text-center bg-zinc-800 rounded-xl items-center my-2 py-8 xl:mx-36 border-x-2 border-b-4 border-t-2 border-zinc-700 shadow-sm shadow-zinc-500"
-              >
-                <section className="max-w-fit mx-auto">
-                  <div className="grid grid-flow-row leading-relaxed">
-                    {" "}
-                    <p className="font-bold text-xl lg:text-2xl xl:text-3xl text-yellow-500">
-                      {" "}
-                      {job.nome}
-                    </p>
-                    <p className="font-normal text-lg text-yellow-300">
-                      {" "}
-                      {" (" + job.tipo + ")"}
-                    </p>
-                  </div>
-                  <div className="grid grid-flow-col grid-rows-2 p-8 gap-x-4 items-center font-normal text-lg lg:text-xl">
-                    <div className="row-span-2 text-4xl lg:text-5xl text-end text-blue-600">
-                      <GoCalendar />
-                    </div>
-                    <div className="col-span-2 baseline text-start text-sky-500">
-                      {job.start}
-                    </div>
-                    <div className="row-span-1 col-span-2 text-start text-blue-500">
-                      {job.end}
-                    </div>
-                  </div>
-                </section>
-                <section className="px-14 lg:px-20 pt-8 leading-loose">
-                  <p className=" font-light text-lg lg:text-xl rounded-xl p-8 bg-zinc-700 text-yellow-300 border-x-2 border-b-4 border-t-2 border-zinc-500 shadow-sm shadow-zinc-700">
-                    {job.desc}
-                  </p>
-                </section>
-              </div>
-            );
-          })}
         </div>
       </div>
     </div>

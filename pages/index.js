@@ -3,6 +3,7 @@ import Head from "next/head";
 import Experience from "../components/tables";
 import Hero from "../components/hero";
 import Contacts from "../components/contacts";
+import Biography from "../components/bio";
 
 const titleName = "Curriculo Filipe Martins";
 
@@ -11,7 +12,7 @@ const titleName = "Curriculo Filipe Martins";
 
 export default function Home() {
   return (
-    <div className="antialiased bg-zinc-900">
+    <div className="antialiased bg-zinc-900 text-white">
       <Head>
         <title>{titleName}</title>
         <meta
@@ -30,6 +31,7 @@ export default function Home() {
             <Hero />
             <Contacts />
           </section>
+          <section>{/* <Biography /> */}</section>
           <section>
             <Experience />
           </section>
