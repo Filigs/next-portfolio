@@ -1,4 +1,4 @@
-import { GoCalendar } from "react-icons/go";
+import { GoCalendar, GoChecklist } from "react-icons/go";
 export default function Experience() {
   // array com estudos
   const education = [
@@ -21,22 +21,31 @@ export default function Experience() {
   const jobs = [
     {
       id: 1,
-      nome: "T Informática",
-      tipo: "Estágio",
-      desc: "Técnico de Informática, Atendimento ao Cliente",
-      start: "Janeiro 2011",
-      end: "Julho 2011",
+      nome: "Web Developer",
+      tipo: "Freelancer",
+      desc: "Javascript, Python, HTML, TailwindCSS, NextJs (React)",
+      start: "Dezembro 2021",
+      end: "Currently",
     },
     {
       id: 2,
-      nome: "Lar dos Usados",
-      tipo: "Trabalho por conta própria",
-      desc: "Técnico de Informática, Negociação de Produtos, Serviço ao domicilio",
-      start: "Junho 2016",
-      end: "Julho 2017",
+
+      nome: "Unicâmbio S.A",
+      tipo: "Responsável de Loja & Tesouraria",
+      desc: "Customer service, Sales, Currency exchange",
+      start: "Setembro 2018",
+      end: "Dezembro 2021",
     },
     {
       id: 3,
+      nome: "Cepsa",
+      tipo: "Colaborador polivalente",
+      desc: "Maintenance, Cashier, Customer service",
+      start: "Abril 2018",
+      end: "Julho 2018",
+    },
+    {
+      id: 4,
       nome: "Intermarché",
       tipo: "Colaborador polivalente",
       desc: "Atendimento ao cliente, Folhas de caixa, Reposição, Cafetaria",
@@ -44,50 +53,32 @@ export default function Experience() {
       end: "Abril 2018",
     },
     {
-      id: 4,
-      nome: "Cepsa",
-      tipo: "Colaborador polivalente",
-      desc: "Manutenção, caixa e atendimento ao cliente",
-      start: "Abril 2018",
-      end: "Julho 2018",
-    },
-    {
       id: 5,
-      nome: "Unicâmbio S.A",
-      tipo: "Responsável de Loja & Tesouraria",
-      desc: "Atendimento ao Cliente, Vendas, Negociação de câmbios",
-      start: "Setembro 2018",
-      end: "Dezembro 2021",
+      nome: "Lar dos Usados",
+      tipo: "Trabalho por conta própria",
+      desc: "Técnico de Informática, Negociação de Produtos, Serviço ao domicilio",
+      start: "Junho 2016",
+      end: "Julho 2017",
     },
     {
       id: 6,
-      nome: "Web Developer",
-      tipo: "Freelancer",
-      desc: "Javascript, Python, HTML, TailwindCSS, NextJs(React)",
-      start: "Dezembro 2021",
-      end: "Presente",
+      nome: "T Informática",
+      tipo: "Estágio",
+      desc: "Técnico de Informática, Atendimento ao Cliente",
+      start: "Janeiro 2011",
+      end: "Julho 2011",
     },
   ];
   // array com trabalhos
 
-  // por cada objecto dos arrays, quero que me de output ao return(...)
-  // for (let i = 0; i < jobs.length; i++) {
-  //   const job = jobs[i];
-  //   for (const name in job) {
-  //     if (Object.hasOwnProperty.call(job, name)) {
-  //       const element = job[name];
-  //     }
-  //   }
-  // }
-
   return (
-    <div className="block bg-inherit rounded-t-xl my-4">
+    <div className="block bg-inherit rounded-t-xl">
       <div className="mx-auto">
         <div className="flex flex-col gap-4">
-          <section className="p-10 lg:p-14 bg-zinc-900 span rounded-xl border-x-0 border-b-4 border-t-2 border-zinc-700">
-            <p className="text-center text-4xl xl:text-5xl font-black mb-8">
+          <section className="p-10 lg:p-14 bg-zinc-900 span rounded-xl border-0">
+            <p className="text-center text-4xl xl:text-5xl font-black my-8 bg-gradient-to-t from-orange-600 via-orange-500 to-orange-400 shadow-lg shadow-orange-500 max-w-fit mx-auto text-white p-4 rounded-xl">
               {" "}
-              {"{ Curriculo }"}
+              {"Previous Jobs"}
             </p>
             {jobs.map((job) => {
               return (
@@ -95,7 +86,7 @@ export default function Experience() {
                   key={job.id}
                   py-14
                   // lg:py-20
-                  className="text-center bg-zinc-800 rounded-xl items-center my-2 py-8 xl:mx-36 border-x-2 border-b-4 border-t-2 border-zinc-700 shadow-sm shadow-zinc-500"
+                  className="text-center bg-zinc-900 items-center my-2 py-8 xl:mx-36 border-x-0 border-t-0 border-b-2 border-zinc-800"
                 >
                   <section className="max-w-fit mx-auto">
                     <div className="grid grid-flow-row leading-relaxed">
@@ -110,7 +101,7 @@ export default function Experience() {
                       </p>
                     </div>
                     <div className="grid grid-flow-col grid-rows-2 p-8 gap-x-4 items-center font-normal text-lg lg:text-xl">
-                      <div className="row-span-2 text-4xl lg:text-5xl text-end text-amber-500">
+                      <div className="row-span-2 text-4xl lg:text-5xl text-end text-sky-300">
                         <GoCalendar />
                       </div>
                       <div className="col-span-2 baseline text-start ">
@@ -122,7 +113,7 @@ export default function Experience() {
                     </div>
                   </section>
                   <section className="px-14 lg:px-20 pt-8 leading-loose">
-                    <p className=" font-light text-lg lg:text-xl rounded-xl p-8 bg-zinc-700  border-x-2 border-b-4 border-t-2 border-zinc-500 shadow-sm shadow-zinc-700">
+                    <p className="gap-2 font-light text-lg lg:text-xl rounded-xl p-4 bg-zinc-700  border-x-2 border-b-4 border-t-2 border-orange-500 shadow-sm shadow-zinc-700">
                       {job.desc}
                     </p>
                   </section>
