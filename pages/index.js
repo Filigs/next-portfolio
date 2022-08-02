@@ -10,8 +10,18 @@ const titleName = "Curriculo Filipe Martins";
 // <a href="https://link.to/url" target="_blank" rel="noopener noreferrer"> ... <a/>
 
 export default function Home() {
+  // if (
+  //   localStorage.theme === "dark" ||
+  //   (!("theme" in localStorage) &&
+  //     window.matchMedia("(prefers-color-scheme: dark)").matches)
+  // ) {
+  //   document.documentElement.classList.add("dark");
+  // } else {
+  //   document.documentElement.classList.remove("dark");
+  // }
+  // localStorage.theme = "dark";
   return (
-    <div className="antialiased bg-zinc-900 text-white">
+    <div className="antialiased bg-white dark:bg-zinc-900 text-black dark:text-white">
       <Head>
         <title>{titleName}</title>
         <meta

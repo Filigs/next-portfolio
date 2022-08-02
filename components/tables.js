@@ -24,7 +24,7 @@ export default function Experience() {
       nome: "Web Developer",
       tipo: "Freelancer",
       desc: "Javascript, Python, HTML, TailwindCSS, NextJs (React)",
-      start: "Dezembro 2021",
+      start: "December 2021",
       end: "Currently",
     },
     {
@@ -34,23 +34,23 @@ export default function Experience() {
       tipo: "Responsável de Loja & Tesouraria",
       desc: "Customer service, Sales, Currency exchange",
       start: "Setembro 2018",
-      end: "Dezembro 2021",
+      end: "December 2021",
     },
     {
       id: 3,
       nome: "Cepsa",
       tipo: "Colaborador polivalente",
       desc: "Maintenance, Cashier, Customer service",
-      start: "Abril 2018",
-      end: "Julho 2018",
+      start: "April 2018",
+      end: "July 2018",
     },
     {
       id: 4,
       nome: "Intermarché",
       tipo: "Colaborador polivalente",
       desc: "Customer Service, Folhas de caixa, Reposição, Cafetaria",
-      start: "Agosto 2017",
-      end: "Abril 2018",
+      start: "August 2017",
+      end: "April 2018",
     },
     {
       id: 5,
@@ -58,7 +58,7 @@ export default function Experience() {
       tipo: "Trabalho por conta própria",
       desc: "Computer Technician, Product Negotiaton, Home Service",
       start: "Junho 2016",
-      end: "Julho 2017",
+      end: "July 2017",
     },
     {
       id: 6,
@@ -66,7 +66,7 @@ export default function Experience() {
       tipo: "Estágio",
       desc: "Técnico de Informática, Atendimento ao Cliente",
       start: "Janeiro 2011",
-      end: "Julho 2011",
+      end: "July 2011",
     },
   ];
   // array com trabalhos
@@ -75,31 +75,34 @@ export default function Experience() {
     <div className="block bg-inherit rounded-t-xl">
       <div className="mx-auto">
         <div className="flex flex-col gap-4">
-          <section className="p-10 lg:p-14 bg-zinc-900 span rounded-xl border-0">
-            <p className="cursor-default text-center text-4xl xl:text-5xl font-black my-8 bg-gradient-to-br from-orange-600 via-orange-500 to-orange-400 shadow-md shadow-orange-800 max-w-fit mx-auto text-white p-4 rounded-xl">
+          <section className="p-10 lg:p-14 dark:bg-zinc-900 span rounded-xl border-0">
+            <p className="cursor-default text-center text-4xl lg:text-6xl font-black my-8 max-w-fit mx-auto dark:after:text-white p-4 rounded-xl ">
               {" "}
-              {"Previous Jobs"}
+              <span>{"Previous "}</span>
+              <span className="text-indigo-700 dark:text-orange-500">
+                {"Jobs"}
+              </span>
             </p>
             {jobs.map((job) => {
               return (
                 <div
                   key={job.id}
-                  className="text-center bg-zinc-900 items-center my-2 py-8 xl:mx-36 border-x-0 border-t-0 border-b-2 border-zinc-800"
+                  className="text-center dark:bg-zinc-900 items-center my-2 py-8 xl:mx-36 border-x-0 border-t-0 border-b-2 dark:border-zinc-800"
                 >
-                  <section className="max-w-fit mx-auto">
+                  <section className="max-w-fit mx-auto my-4">
                     <div className="grid grid-flow-row leading-relaxed">
                       {" "}
-                      <p className="font-bold text-xl lg:text-2xl xl:text-3xl">
+                      <p className="font-bold text-2xl lg:text-3xl xl:text-4xl">
                         {" "}
                         {job.nome}
                       </p>
-                      <p className="font-normal text-lg ">
+                      <p className="font-normal text-xl lg:text-2xl xl:text-3xl ">
                         {" "}
                         {" (" + job.tipo + ")"}
                       </p>
                     </div>
-                    <div className="grid grid-flow-col grid-rows-2 p-8 gap-x-4 items-center font-normal text-lg lg:text-xl">
-                      <div className="row-span-2 text-4xl lg:text-5xl text-end text-sky-300">
+                    <div className="grid grid-flow-col grid-rows-2 p-8 my-4 gap-x-4 items-center font-normal text-lg lg:text-xl">
+                      <div className="row-span-2 text-4xl lg:text-5xl text-end text-sky-600 dark:text-sky-300">
                         <GoCalendar />
                       </div>
                       <div className="col-span-2 baseline text-start ">
@@ -111,7 +114,7 @@ export default function Experience() {
                     </div>
                   </section>
                   <section className="px-14 lg:px-20 pt-8 leading-loose">
-                    <p className="gap-2 font-light text-lg lg:text-xl rounded-xl p-4 bg-gradient-to-br from-zinc-800 via-zinc-800 to-zinc-700   border-x-2 border-b-4 border-t-2 border-orange-500 shadow-md shadow-orange-800">
+                    <p className="gap-2 font-bold text-lg lg:text-xl rounded-xl p-4 text-white bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-orange-500 dark:via-orange-600 dark:to-orange-500 dark:text-zinc-900">
                       {job.desc}
                     </p>
                   </section>

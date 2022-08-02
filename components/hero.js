@@ -9,7 +9,8 @@ const biography = {
 export default function Hero() {
   const filipe = {
     name: "Nuno Filipe Martins",
-    role: "Full Stack Web Developer",
+    role: "Web Developer",
+    spec: "Full Stack",
     birth: "29/05/1993",
     address: [
       ["Rua Mouzinho de Albuquerque"],
@@ -33,39 +34,41 @@ export default function Hero() {
 
   return (
     <div className="border-0">
-      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal pt-20 lg:pt-24 bg-zinc-900 rounded-3xl">
+      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal pt-20 lg:pt-24 bg-inherit dark:bg-inherit rounded-3xl">
         <div id={"portrait"} className="rounded text-center justify-center">
           {/* name */}
 
-          <div className="space-y-8 mb-8">
-            <p className="text-3xl lg:text-4xl font-bold text-center text-white">
-              {filipe.role}
+          <div className="space-y-8 p-2 lg:p-6 ">
+            <p className="text-3xl lg:text-5xl font-bold text-center text-inherit">
+              <span className="text-indigo-700 dark:text-orange-500">
+                {filipe.spec + " "}
+              </span>
+              <span>{filipe.role}</span>
             </p>
-            <p className="text-2xl lg:text-3xl font-normal text-center text-white">
+            <p className="text-2xl lg:text-3xl font-normal text-center text-inherit">
               {filipe.about}
             </p>
           </div>
           {/* hero */}
-          <Image
-            src={myPicture}
-            alt="A picture of me"
-            width={300}
-            height={300}
-            // layout={"responsive"}
-            className="bg-gradient-to-tr from-orange-600 via-orange-500 to-orange-400 rounded-full ring-2 ring-zinc-700 scale-75"
-          />
-          <div className="text-center justify-center bg-gradient-to-tr from-orange-600 via-orange-500 to-orange-600 ">
-            {/* name */}
-
-            <div className="my-8 lg:my-10 space-y-8 text-zinc-900 p-10 lg:p-14">
+          <section className="my-20">
+            <Image
+              src={myPicture}
+              alt="A picture of me"
+              width={300}
+              height={300}
+              // layout={"responsive"}
+              className="bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-orange-500 dark:via-orange-600 dark:to-orange-500 rounded-full ring-2 ring-indigo-500 dark:ring-zinc-700 scale-95"
+            />
+          </section>
+          <div className="text-center justify-center">
+            <div className="my-8 lg:my-10 space-y-8 text-white bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-orange-500 dark:via-orange-600 dark:to-orange-500 dark:text-zinc-900 p-10 lg:p-14">
               <p className="text-3xl lg:text-4xl font-bold text-center">
                 {biography.title}
               </p>
               <p className="text-2xl lg:text-3xl font-normal leading-relaxed text-center">
                 {biography.body}
               </p>
-            </div>
-            {/* hero */}
+            </div>{" "}
           </div>
         </div>
       </div>
