@@ -56,7 +56,7 @@ export default function Experience() {
       id: 5,
       nome: "Lar dos Usados",
       tipo: "Trabalho por conta própria",
-      desc: "Técnico de Informática, Negociação de Produtos, Serviço ao domicilio",
+      desc: "Computer Technician, Product Negotiaton, Home Service",
       start: "Junho 2016",
       end: "Julho 2017",
     },
