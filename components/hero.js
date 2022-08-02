@@ -1,12 +1,12 @@
 import Image from "next/image";
 import myPicture from "/public/avatar.png";
 import { motion } from "framer-motion";
-const biography = {
-  title: "Hey there, I'm Filipe",
-  body: "Currently I'm a Junior Developer, I've been using computers for most of my life. I love being able to be a software arquitect, and working doing something you love is amazing!",
-};
 
 export default function Hero() {
+  const biography = {
+    title: "Hey there, I'm Filipe",
+    body: "Currently I'm a Junior Developer, I've been using computers for most of my life. I love being able to be a software arquitect, and working doing something you love is amazing!",
+  };
   const filipe = {
     name: "Nuno Filipe Martins",
     role: "Web Developer",
