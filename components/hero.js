@@ -54,7 +54,7 @@ export default function Hero() {
             // layout={"responsive"}
             className="bg-gradient-to-tr from-orange-600 via-orange-500 to-orange-400 rounded-full ring-2 ring-zinc-700 scale-75"
           />
-          <div className="text-center justify-center bg-gradient-to-tr from-orange-400 via-orange-300 to-orange-400">
+          <div className="text-center justify-center bg-gradient-to-tr from-orange-600 via-orange-500 to-orange-600">
             {/* name */}
 
             <div className="my-8 lg:my-10 space-y-8 text-zinc-900 p-10 lg:p-14">
