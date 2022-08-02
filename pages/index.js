@@ -3,25 +3,13 @@ import Head from "next/head";
 import Experience from "../components/tables";
 import Hero from "../components/hero";
 import Contacts from "../components/contacts";
+import NavBar from "../components/navbar";
 
 const titleName = "Curriculo Filipe Martins";
 
-// links _blank
-// <a href="https://link.to/url" target="_blank" rel="noopener noreferrer"> ... <a/>
-
 export default function Home() {
-  // if (
-  //   localStorage.theme === "dark" ||
-  //   (!("theme" in localStorage) &&
-  //     window.matchMedia("(prefers-color-scheme: dark)").matches)
-  // ) {
-  //   document.documentElement.classList.add("dark");
-  // } else {
-  //   document.documentElement.classList.remove("dark");
-  // }
-  // localStorage.theme = "dark";
   return (
-    <div className="antialiased bg-white dark:bg-zinc-900 text-black dark:text-white">
+    <div>
       <Head>
         <title>{titleName}</title>
         <meta
@@ -35,12 +23,12 @@ export default function Home() {
 
       <main>
         <div>
+          <NavBar />
           {/* fazer uma lista com about minimalista, fazer flex col em lg:viewport */}
           <section>
             <Hero />
             <Contacts />
           </section>
-
           <section>
             <Experience />
           </section>
