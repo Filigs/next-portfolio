@@ -6,8 +6,8 @@ export default function Contacts() {
   const contactCardStyles =
     "flex flex-col items-center gap-2 py-4 rounded-xl bg-inherit";
   const contactTextStyles =
-    "text-xl lg:text-2xl flex-wrap font-bold hover:text-orange-500";
-  const iconStyles = "text-orange-500";
+    "text-xl lg:text-2xl flex-wrap font-bold hover:text-indigo-600 dark:hover:text-orange-500";
+  const iconStyles = "text-indigo-600 dark:text-orange-500";
   const contacts = {
     phone: "91 820 31 69",
     // email: "filipemartins.business@gmail.com",
@@ -17,13 +17,13 @@ export default function Contacts() {
   // links _blank
   // <a href="https://link.to/url" target="_blank" rel="noopener noreferrer"> ... <a/>
   return (
-    <div className="flex flex-col items-center justify-center leading-normal rounded-xl border-0 bg-inherit my-2">
+    <div className="flex flex-col items-center justify-center leading-normal rounded-xl border-0 bg-inherit my-8">
       <div id={"contacts"} className="grid grid-flow-col text-center gap-6">
         <div className={contactCardStyles}>
           <section className="items-end text-3xl lg:text-4xl px-2 pt-2 rounded-full">
-            <button className={iconStyles}>
+            <span className={iconStyles}>
               <BsLinkedin />
-            </button>
+            </span>
           </section>
           <a
             href={contacts.linkedIn}
@@ -37,9 +37,9 @@ export default function Contacts() {
         </div>
         <div className={contactCardStyles}>
           <section className="items-end text-3xl lg:text-4xl px-2 pt-2 rounded-full">
-            <button className={iconStyles}>
+            <span className={iconStyles}>
               <GoMarkGithub />
-            </button>
+            </span>
           </section>
           <p className={contactTextStyles}>
             {" "}
