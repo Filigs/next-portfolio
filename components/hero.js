@@ -3,7 +3,7 @@ import myPicture from "/public/avatar.png";
 import { motion } from "framer-motion";
 const biography = {
   title: "Hey there, I'm Filipe",
-  body: "Currently I'm a Junior Developer, I've been using computers for most of my life. I love being able to be a software arquitect, and working doing something you do is amazing!",
+  body: "Currently I'm a Junior Developer, I've been using computers for most of my life. I love being able to be a software arquitect, and working doing something you love is amazing!",
 };
 
 export default function Hero() {
@@ -54,7 +54,7 @@ export default function Hero() {
             // layout={"responsive"}
             className="bg-gradient-to-tr from-orange-600 via-orange-500 to-orange-400 rounded-full ring-2 ring-zinc-700 scale-75"
           />
-          <div className="text-center justify-center bg-gradient-to-tr from-orange-400 via-orange-300 to-orange-400">
+          <div className="text-center justify-center bg-gradient-to-tr from-orange-600 via-orange-500 to-orange-600 ">
             {/* name */}
 
             <div className="my-8 lg:my-10 space-y-8 text-zinc-900 p-10 lg:p-14">
