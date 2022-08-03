@@ -1,32 +1,25 @@
-import { Html, Head, Main, NextScript } from "next/document";
-import Script from "next/script";
+import Document, { Html, Head, Main, NextScript } from "next/document";
+import React from "react";
 
-export default function Document() {
-  return (
-    <Html lang="en">
-      <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Exo&display=swap"
-          rel="stylesheet"
-        />
+class myDocument extends Document {
+  render() {
+    return (
+      <Html lang="en">
+        <Head>
+          <link rel="preconnect" href="https://fonts.googleapis.com" />
+          <link rel="preconnect" href="https://fonts.gstatic.com" />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Exo&display=swap"
+            rel="stylesheet"
+          />
+        </Head>
 
-        <Script id="show-banner" strategy="lazyOnload">
-          {`
-            if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark');
-        } else {
-        document.documentElement.classList.remove('dark')
-        }
-        `}
-        </Script>
-      </Head>
-
-      <body className="antialiased bg-white dark:bg-zinc-900 text-black dark:text-white">
-        <Main />
-        <NextScript />
-      </body>
-    </Html>
-  );
+        <body className="text-black bg-white dark:bg-zinc-900 dark:text-white antialiased">
+          <Main />
+          <NextScript />
+        </body>
+      </Html>
+    );
+  }
 }
+export default myDocument;

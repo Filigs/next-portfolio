@@ -1,6 +1,6 @@
 import("tailwindcss").Config;
 module.exports = {
-  darkMode: "media",
+  darkMode: "class",
   content: [
     "./pages/**.js",
     "./components/**.js",
