@@ -17,9 +17,9 @@ export default function Socials() {
   // links _blank
   // <a href="https://link.to/url" target="_blank" rel="noopener noreferrer"> ... <a/>
   return (
-    <ul id={"contacts"} className="flex rounded-lg border-0 md:flex-row gap-2">
+    <ul id={"contacts"} className="flex rounded-lg border-0 md:flex-row gap-4">
       {/* <li className="items-center text-lg lg:text-2xl"> */}
-      <span className="font-light text-xl mr-2">{"Socials "}</span>
+      <span className="sr-only">{"Social Links"}</span>
       {/* </li> */}
       <li className="items-center">
         <a
@@ -27,8 +27,10 @@ export default function Socials() {
           target="_blank"
           rel="noopener noreferrer"
           className={iconStyles}
+          alt="LinkedIn Profile"
         >
           <BsLinkedin />
+          <span className="sr-only">{"Linkedin Profile"}</span>
         </a>
       </li>
 
@@ -38,8 +40,10 @@ export default function Socials() {
           target="_blank"
           rel="noopener noreferrer"
           className={iconStyles}
+          alt="Github Profile"
         >
           <GoMarkGithub />
+          <span className="sr-only">{"Github Profile"}</span>
         </a>
       </li>
     </ul>

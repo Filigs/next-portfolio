@@ -23,13 +23,12 @@ const ThemeSwitch = () => {
         id="switch"
         onClick={() => setTheme(isDark() ? "light" : "dark")}
         aria-label="Theme toggle"
-        className=""
       >
         <span>
           {isDark() ? (
             <HiSun className="text-lg" />
           ) : (
-            <HiMoon className="text-2xl" />
+            <HiMoon className="text-lg" />
           )}
         </span>
       </button>
