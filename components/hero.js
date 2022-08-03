@@ -50,15 +50,32 @@ export default function Hero() {
             </p>
           </div>
           {/* hero */}
-          <section className="my-20">
-            <Image
-              src={myPicture}
-              alt="A picture of me"
-              width={300}
-              height={300}
-              // layout={"responsive"}
-              className="bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-orange-500 dark:via-orange-600 dark:to-orange-500 rounded-full ring-2 ring-indigo-500 dark:ring-zinc-700 scale-95"
-            />
+          <section className="my-20 lg:flex lg:flex-row-reverse lg:justify-evenly lg:items-center">
+            <div className="flex flex-col items-center pb-10">
+              <section className="mb-10 lg:mb-14">
+                <Image
+                  className="mb-3 w-24 h-24 rounded-full bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-orange-500 dark:via-orange-600 dark:to-orange-500 ring-2 ring-indigo-500 dark:ring-zinc-700 scale-95"
+                  src={myPicture}
+                  alt="A picture of me"
+                  width={300}
+                  height={300}
+                />
+              </section>
+              <p className="mt-1 text-xl font-semibold text-zinc-900 dark:text-white">
+                Filipe Martins
+              </p>
+              <span className="text-sm text-zinc-500 dark:text-zinc-400">
+                Badges
+              </span>
+              <div className="flex mt-4 space-x-3 md:mt-6">
+                <a
+                  href="#"
+                  className="inline-flex items-center py-2 px-4 text-xl lg:text-xl font-black text-center text-white bg-emerald-700 rounded-lg hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-emerald-300 dark:bg-emerald-600 dark:hover:bg-emerald-700 dark:focus:ring-emerald-800"
+                >
+                  {"Let's have a talk"}
+                </a>
+              </div>
+            </div>
           </section>
           <div className="text-center justify-center">
             <div className="my-8 lg:my-10 space-y-8 text-white bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-orange-400 dark:via-orange-500 dark:to-orange-400 dark:text-zinc-900 p-10 lg:p-14">
