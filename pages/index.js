@@ -2,7 +2,6 @@ import Head from "next/head";
 // import Image from "next/image";
 import Experience from "../components/tables";
 import Hero from "../components/hero";
-import Contacts from "../components/contacts";
 import NavBar from "../components/navbar";
 
 const titleName = "Curriculo Filipe Martins";
@@ -20,15 +19,14 @@ export default function Home() {
         {/* */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main>
         <div>
           <NavBar />
           {/* fazer uma lista com about minimalista, fazer flex col em lg:viewport */}
           <section>
             <Hero />
-            <Contacts />
           </section>
+
           <section>
             <Experience />
           </section>
