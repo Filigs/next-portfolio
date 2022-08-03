@@ -3,10 +3,11 @@ import { BsFillTelephoneFill } from "react-icons/bs";
 import { GoMarkGithub } from "react-icons/go";
 
 export default function Socials() {
-  const contactCardStyles = "flex flex-col items-center rounded-xl bg-inherit";
-  const contactTextStyles =
-    "text-xl lg:text-2xl flex-wrap font-bold hover:text-indigo-600 dark:hover:text-orange-500";
-  const iconStyles = "hover:text-indigo-600 dark:hover:text-orange-500";
+  // const contactCardStyles = "flex flex-col items-center rounded-xl bg-inherit";
+  // const contactTextStyles =
+  //   "text-xl lg:text-2xl flex-wrap font-bold hover:text-indigo-600 dark:hover:text-orange-500";
+  const iconStyles =
+    "hover:text-indigo-600 dark:hover:text-orange-500 text-lg lg:text-2xl rounded-xl";
   const contacts = {
     phone: "91 820 31 69",
     // email: "filipemartins.business@gmail.com",
@@ -16,11 +17,11 @@ export default function Socials() {
   // links _blank
   // <a href="https://link.to/url" target="_blank" rel="noopener noreferrer"> ... <a/>
   return (
-    <ul
-      id={"contacts"}
-      className="flex flex-col p-4 mt-4 bg-zinc-50 rounded-lg border border-zinc-100 md:flex-row md:space-x-4 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white dark:bg-zinc-800 md:dark:bg-zinc-900 dark:border-zinc-700"
-    >
-      <li className="items-center text-xl lg:text-2xl px-2 pt-2 rounded-xl">
+    <ul id={"contacts"} className="flex rounded-lg border-0 md:flex-row gap-2">
+      {/* <li className="items-center text-lg lg:text-2xl"> */}
+      <span className="font-light text-xl mr-2">{"Socials "}</span>
+      {/* </li> */}
+      <li className="items-center">
         <a
           href={contacts.linkedIn}
           target="_blank"
@@ -31,7 +32,7 @@ export default function Socials() {
         </a>
       </li>
 
-      <li className="items-center text-xl lg:text-2xl px-2 pt-2 rounded-xl">
+      <li className="items-center">
         <a
           href={contacts.github}
           target="_blank"
