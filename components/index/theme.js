@@ -14,18 +14,24 @@ const ThemeSwitch = () => {
     return theme === "dark";
   }
   return (
-    <div className="flex flex-row items-center px-8 gap-2">
-      <span className="text-xl">
+    <div>
+      {/* <span className="font-semibold lg:text-xl">
         {" "}
-        {isDark() ? "Day Mode: " : "Night Mode: "}
-      </span>
+        {isDark() ? "Day Mode " : "Night Mode "}
+      </span> */}
       <button
         id="switch"
         onClick={() => setTheme(isDark() ? "light" : "dark")}
-        ariaLabel="Theme toggle"
+        aria-label="Theme toggle"
         className=""
       >
-        <span>{isDark() ? <HiSun size={30} /> : <HiMoon size={30} />}</span>
+        <span>
+          {isDark() ? (
+            <HiSun className="text-lg" />
+          ) : (
+            <HiMoon className="text-2xl" />
+          )}
+        </span>
       </button>
     </div>
   );

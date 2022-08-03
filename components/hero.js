@@ -61,7 +61,7 @@ export default function Hero() {
             />
           </section>
           <div className="text-center justify-center">
-            <div className="my-8 lg:my-10 space-y-8 text-white bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-orange-500 dark:via-orange-600 dark:to-orange-500 dark:text-zinc-900 p-10 lg:p-14">
+            <div className="my-8 lg:my-10 space-y-8 text-white bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-orange-400 dark:via-orange-500 dark:to-orange-400 dark:text-zinc-900 p-10 lg:p-14">
               <p className="text-3xl lg:text-4xl font-bold text-center">
                 {biography.title}
               </p>

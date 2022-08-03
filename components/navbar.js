@@ -4,30 +4,18 @@ import ContactMe from "./navbar/cta";
 
 export default function NavBar() {
   return (
-    <nav className="bg-white border-zinc-200 px-4 sm:px-4 py-2.5 rounded dark:bg-zinc-900">
-      <div className="container flex flex-wrap justify-between items-center mx-auto">
-        <div className="flex items-center">
-          <span className="self-center text-xl font-semibold whitespace-nowrap dark:text-white">
+    <nav className="bg-indigo-500 dark:bg-orange-400">
+      <div className="flex flex-row flex-wrap justify-evenly items-center px-6 py-2">
+        <div className="text-white dark:text-black">
+          <span className="self-center text-xl font-semibold whitespace-nowrap">
             Filipe Martins
           </span>
         </div>
-        <div>
-          <section>
-            <ThemeSwitch />
-          </section>
+        <div className="text-white dark:text-black">
+          <ThemeSwitch />
         </div>
-        <div
-        // className="hidden justify-between items-center w-full md:flex md:w-auto"
-        // id="navbar-cta"
-        >
-          <section>
-            <Socials />
-          </section>
-          {/* <section> */}
-          {/* <ContactMe /> */}
-          {/* </section> */}
-          {/* <HiMoon id="theme-toggle-dark-icon" className="hidden w-5 h-5" /> */}
-          {/* <HiSun id="theme-toggle-light-icon" className="hidden w-5 h-5" /> */}
+        <div className="text-white dark:text-black">
+          <Socials />
         </div>
       </div>
     </nav>

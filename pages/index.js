@@ -20,8 +20,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
+        <NavBar />
         <div>
-          <NavBar />
           {/* fazer uma lista com about minimalista, fazer flex col em lg:viewport */}
           <section>
             <Hero />

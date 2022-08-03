@@ -92,11 +92,11 @@ export default function Experience() {
                   <section className="max-w-fit mx-auto my-4">
                     <div className="grid grid-flow-row leading-relaxed">
                       {" "}
-                      <p className="font-bold text-2xl lg:text-3xl xl:text-4xl">
+                      <p className="font-bold p-4 text-2xl lg:text-3xl xl:text-4xl text-indigo-600 dark:text-orange-500">
                         {" "}
                         {job.nome}
                       </p>
-                      <p className="font-normal text-xl lg:text-2xl xl:text-3xl ">
+                      <p className="font-normal text-xl lg:text-2xl xl:text-3xl">
                         {" "}
                         {" (" + job.tipo + ")"}
                       </p>
