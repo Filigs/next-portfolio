@@ -1,8 +1,6 @@
 import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 export default function Socials() {
-  const iconStyles =
-    "hover:text-indigo-600 dark:hover:text-orange-500 text-lg lg:text-2xl rounded-xl";
   const contacts = {
     // email: "filipemartins.business@gmail.com",
     github: "https://github.com/Filigs",
@@ -15,12 +13,12 @@ export default function Socials() {
       {/* <li className="items-center text-lg lg:text-2xl"> */}
       <span className="sr-only">{"Social Links"}</span>
       {/* </li> */}
-      <li className="items-center p-1 lg:p-2 text-inherit">
+      <li className="items-center p-1 lg:p-2 hover:-translate-y-1 hover:scale-110 text-inherit hover:text-indigo-600 hover:bg-indigo-600 dark:hover:text-sky-600 text-lg lg:text-2xl rounded-xl transition-all duration-300">
         <a
           href={contacts.linkedIn}
           target="_blank"
           rel="noopener noreferrer"
-          className={iconStyles}
+          // className="hover:text-indigo-600 dark:hover:text-blue-300 dark:hover:bg-blue-300 text-lg lg:text-2xl rounded-xl transition-colors duration-150"
           alt="LinkedIn Profile"
         >
           <BsLinkedin />
@@ -28,12 +26,12 @@ export default function Socials() {
         </a>
       </li>
 
-      <li className="items-center p-1 lg:p-2 text-inherit">
+      <li className="items-center p-1 lg:p-2 hover:-translate-y-1 hover:scale-110 text-inherit hover:text-indigo-600 hover:bg-indigo-600 dark:hover:text-sky-600 text-lg lg:text-2xl rounded-xl transition-all duration-300">
         <a
           href={contacts.github}
           target="_blank"
           rel="noopener noreferrer"
-          className={iconStyles}
+          // // className="hover:text-indigo-600 dark:hover:text-blue-300 dark:hover:bg-blue-300 text-lg lg:text-2xl rounded-xl transition-colors duration-150"
           alt="Github Profile"
         >
           <BsGithub />

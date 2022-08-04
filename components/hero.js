@@ -1,6 +1,6 @@
 import Image from "next/image";
 import myPicture from "/public/avatar.png";
-import { motion } from "framer-motion";
+import ContactForm from "../components/contact-form";
 
 export default function Hero() {
   const biography = {
@@ -51,12 +51,7 @@ export default function Hero() {
                   </p>
                 </section>
                 <section>
-                  <a
-                    href="#"
-                    className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 inline-flex items-center py-4 px-8 text-xl lg:text-xl font-black text-center text-white bg-emerald-600 rounded-xl hover:bg-emerald-500 focus:ring-4 focus:outline-none focus:ring-emerald-300 dark:bg-emerald-500 dark:hover:bg-emerald-600 dark:focus:ring-emerald-600"
-                  >
-                    {"Say Hello"}
-                  </a>
+                  <ContactForm />
                 </section>
               </div>
             </div>
