@@ -18,15 +18,9 @@ const ThemeSwitch = () => {
       id="switch"
       onClick={() => setTheme(isDark() ? "light" : "dark")}
       aria-label="Theme toggle"
-      className="transition-colors duration-1000 border-0 rounded-full p-2 bg-indigo-600 text-white dark:bg-orange-400 dark:text-white"
+      className="p-2"
     >
-      <span>
-        {isDark() ? (
-          <BsFillSunFill className="text-inherit" />
-        ) : (
-          <BsFillMoonFill className="text-inherit" />
-        )}
-      </span>
+      <span>{isDark() ? <BsFillSunFill /> : <BsFillMoonFill />}</span>
     </button>
   );
 };

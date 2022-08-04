@@ -22,7 +22,7 @@ export default function Hero() {
 
           <div className="space-y-8 p-2 lg:p-6 ">
             <p className="text-3xl lg:text-5xl font-bold text-center text-inherit">
-              <span className="text-indigo-700 dark:text-orange-500">
+              <span className="text-indigo-700 dark:text-sky-500">
                 {filipe.spec + " "}
               </span>
               <span>{filipe.role}</span>
@@ -32,11 +32,11 @@ export default function Hero() {
             </p>
           </div>
           {/* hero */}
-          <section className="my-20 lg:flex lg:flex-row-reverse lg:justify-evenly lg:items-center ">
+          <section className="my-20 lg:flex lg:flex-row-reverse lg:justify-evenly lg:items-center">
             <div className="flex flex-col items-center pb-10">
               <section className="mb-10 lg:mb-14 ">
                 <Image
-                  className="mb-3 w-24 h-24 rounded-full bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-orange-500 dark:via-orange-600 dark:to-orange-500 ring-2 ring-indigo-500 dark:ring-zinc-700 scale-95 "
+                  className="mb-3 w-24 h-24 rounded-full bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-sky-500 dark:via-sky-600 dark:to-sky-500 ring-2 ring-indigo-500 dark:ring-zinc-700 scale-95 "
                   src={myPicture}
                   alt="A picture of me"
                   width={300}
@@ -62,7 +62,7 @@ export default function Hero() {
             </div>
           </section>
           <div className="text-center justify-center">
-            <div className="my-8 lg:my-10 space-y-8 text-white bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-orange-400 dark:via-orange-500 dark:to-orange-400 dark:text-zinc-900 p-10 lg:p-14">
+            <div className="my-8 lg:my-10 space-y-8 text-white bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-sky-400 dark:via-sky-500 dark:to-sky-400 dark:text-zinc-900 p-10 lg:p-14">
               <p className="text-3xl lg:text-4xl font-bold text-center">
                 {biography.title}
               </p>
