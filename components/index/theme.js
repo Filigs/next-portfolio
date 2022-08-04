@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { useTheme } from "next-themes";
-import { HiMoon, HiSun } from "react-icons/hi";
+import { BsFillMoonFill, BsFillSunFill } from "react-icons/bs";
 const ThemeSwitch = () => {
   const [mounted, setMounted] = useState(false);
   const { theme, setTheme } = useTheme();
@@ -14,25 +14,20 @@ const ThemeSwitch = () => {
     return theme === "dark";
   }
   return (
-    <div>
-      {/* <span className="font-semibold lg:text-xl">
-        {" "}
-        {isDark() ? "Day Mode " : "Night Mode "}
-      </span> */}
-      <button
-        id="switch"
-        onClick={() => setTheme(isDark() ? "light" : "dark")}
-        aria-label="Theme toggle"
-      >
-        <span>
-          {isDark() ? (
-            <HiSun className="text-lg" />
-          ) : (
-            <HiMoon className="text-lg" />
-          )}
-        </span>
-      </button>
-    </div>
+    <button
+      id="switch"
+      onClick={() => setTheme(isDark() ? "light" : "dark")}
+      aria-label="Theme toggle"
+      className="transition-colors duration-1000 border-0 rounded-full p-2 bg-indigo-600 text-white dark:bg-orange-400 dark:text-white"
+    >
+      <span>
+        {isDark() ? (
+          <BsFillSunFill className="text-inherit" />
+        ) : (
+          <BsFillMoonFill className="text-inherit" />
+        )}
+      </span>
+    </button>
   );
 };
 

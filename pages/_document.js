@@ -14,7 +14,7 @@ class myDocument extends Document {
           />
         </Head>
 
-        <body className="text-zinc-900 bg-white dark:bg-zinc-900 dark:text-white antialiased">
+        <body className="text-zinc-900 bg-white dark:bg-zinc-900 dark:text-white transition-colors duration-1000 antialiased">
           <Main />
           <NextScript />
         </body>
