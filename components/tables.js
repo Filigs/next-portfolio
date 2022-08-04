@@ -75,11 +75,11 @@ export default function Experience() {
     <div className="block bg-inherit rounded-t-xl">
       <div className="mx-auto">
         <div className="flex flex-col gap-4">
-          <section className="p-10 lg:p-14 dark:bg-zinc-900 span rounded-xl border-0">
+          <section className="p-10 lg:p-14 bg-inherit dark:bg-inherit span rounded-xl border-0">
             <p className="cursor-default text-center text-4xl lg:text-6xl font-black my-8 max-w-fit mx-auto dark:after:text-white p-4 rounded-xl ">
               {" "}
               <span>{"Previous "}</span>
-              <span className="text-indigo-700 dark:text-orange-500">
+              <span className="text-indigo-700 dark:text-sky-500">
                 {"Jobs"}
               </span>
             </p>
@@ -92,7 +92,7 @@ export default function Experience() {
                   <section className="max-w-fit mx-auto my-4">
                     <div className="grid grid-flow-row leading-relaxed">
                       {" "}
-                      <p className="font-bold p-4 text-2xl lg:text-3xl xl:text-4xl text-indigo-600 dark:text-orange-500">
+                      <p className="font-bold p-4 text-2xl lg:text-3xl xl:text-4xl text-indigo-600 dark:text-sky-500">
                         {" "}
                         {job.nome}
                       </p>
@@ -101,20 +101,23 @@ export default function Experience() {
                         {" (" + job.tipo + ")"}
                       </p>
                     </div>
-                    <div className="grid grid-flow-col grid-rows-2 p-8 my-4 gap-x-4 items-center font-normal text-lg lg:text-xl">
-                      <div className="row-span-2 text-4xl lg:text-5xl text-end text-sky-600 dark:text-sky-300">
-                        <GoCalendar />
+                    <div className="grid grid-flow-col grid-rows-2 p-8 my-4 gap-x-4 items-center justify-center font-normal text-lg lg:text-xl">
+                      <div className="row-span-2 text-4xl lg:text-5xl text-sky-600 dark:text-sky-300">
+                        <span>
+                          {" "}
+                          <GoCalendar />
+                        </span>
                       </div>
                       <div className="col-span-2 baseline text-start ">
-                        {job.start}
+                        <span> {job.start}</span>
                       </div>
                       <div className="row-span-1 col-span-2 text-start ">
-                        {job.end}
+                        <span> {job.end}</span>
                       </div>
                     </div>
                   </section>
                   <section className="px-14 lg:px-20 pt-8 leading-loose">
-                    <p className="gap-2 font-bold text-lg lg:text-xl rounded-xl p-4 text-white bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-orange-500 dark:via-orange-600 dark:to-orange-500 dark:text-zinc-900">
+                    <p className="gap-2 font-bold text-lg lg:text-xl rounded-xl p-4 text-white bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-amber-600 dark:via-amber-500 dark:to-amber-600 dark:text-zinc-900">
                       {job.desc}
                     </p>
                   </section>

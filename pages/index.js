@@ -3,6 +3,7 @@ import Head from "next/head";
 import Experience from "../components/tables";
 import Hero from "../components/hero";
 import NavBar from "../components/navbar";
+// import ContactForm from "../components/contact-form";
 
 const titleName = "Filipe Martins, Web Developer &";
 
@@ -32,7 +33,9 @@ export default function Home() {
           </section>
         </div>
 
-        {/* content here */}
+        {/* <section>
+          <ContactForm />
+        </section> */}
       </main>
 
       <footer>{/* social links here */}</footer>
