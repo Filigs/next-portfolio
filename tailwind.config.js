@@ -6,6 +6,7 @@ module.exports = {
     "./pages/**.js",
     "./components/**.js",
     "./node_modules/flowbite-react/**/*.js",
+    "./node_modules/flowbite/**/*.js",
   ],
   theme: {
     extend: {},

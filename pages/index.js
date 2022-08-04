@@ -3,7 +3,6 @@ import Head from "next/head";
 import Experience from "../components/tables";
 import Hero from "../components/hero";
 import NavBar from "../components/navbar";
-// import ContactForm from "../components/contact-form";
 
 const titleName = "Filipe Martins, Web Developer &";
 
@@ -32,7 +31,6 @@ export default function Home() {
             <Experience />
           </section>
         </div>
-
         {/* <section>
           <ContactForm />
         </section> */}
