@@ -87,7 +87,7 @@ export default function Experience() {
               return (
                 <div
                   key={job.id}
-                  className="text-center dark:bg-zinc-900 items-center my-2 py-8 xl:mx-36 border-x-0 border-t-0 border-b-2 dark:border-zinc-800"
+                  className="text-center dark:bg-slate-900 items-center my-2 py-8 xl:mx-36 border-x-0 border-t-0 border-b-2 dark:border-slate-800"
                 >
                   <section className="max-w-fit mx-auto my-4">
                     <div className="grid grid-flow-row leading-relaxed">
@@ -117,7 +117,7 @@ export default function Experience() {
                     </div>
                   </section>
                   <section className="px-14 lg:px-20 pt-8 leading-loose">
-                    <p className="gap-2 font-bold text-lg lg:text-xl rounded-xl p-4 text-white bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-amber-600 dark:via-amber-500 dark:to-amber-600 dark:text-zinc-900">
+                    <p className="gap-2 font-bold text-lg lg:text-xl rounded-xl p-4 text-white bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-amber-600 dark:via-amber-500 dark:to-amber-600 dark:text-slate-900">
                       {job.desc}
                     </p>
                   </section>
