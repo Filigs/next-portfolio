@@ -11,25 +11,7 @@ export default function Hero() {
     name: "Nuno Filipe Martins",
     role: "Web Developer",
     spec: "Full Stack",
-    birth: "29/05/1993",
-    address: [
-      ["Rua Mouzinho de Albuquerque"],
-      ["Edificio Lagoa Residence", "Bloco A A6"],
-      ["8400 - 384 Lagoa"],
-    ],
     about: "I turn your ideas into visually appealing websites.",
-    skills: [
-      {
-        type: "Informática / Tecnologias",
-        description:
-          "Desde pequeno que uso computadores, já fiz muita reparação, já programei e já tenho muita experiencia no geral.",
-      },
-      {
-        type: "Lingua Inglesa",
-        description:
-          "Todos os trabalhos que tive, atendi muito cliente estrangeiro, e muitos anos de usar a internet",
-      },
-    ],
   };
 
   return (
@@ -50,30 +32,32 @@ export default function Hero() {
             </p>
           </div>
           {/* hero */}
-          <section className="my-20 lg:flex lg:flex-row-reverse lg:justify-evenly lg:items-center">
+          <section className="my-20 lg:flex lg:flex-row-reverse lg:justify-evenly lg:items-center ">
             <div className="flex flex-col items-center pb-10">
-              <section className="mb-10 lg:mb-14">
+              <section className="mb-10 lg:mb-14 ">
                 <Image
-                  className="mb-3 w-24 h-24 rounded-full bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-orange-500 dark:via-orange-600 dark:to-orange-500 ring-2 ring-indigo-500 dark:ring-zinc-700 scale-95"
+                  className="mb-3 w-24 h-24 rounded-full bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-orange-500 dark:via-orange-600 dark:to-orange-500 ring-2 ring-indigo-500 dark:ring-zinc-700 scale-95 "
                   src={myPicture}
                   alt="A picture of me"
                   width={300}
                   height={300}
                 />
               </section>
-              <p className="mt-1 text-xl font-semibold text-zinc-900 dark:text-white">
-                Filipe Martins
-              </p>
-              <span className="text-sm text-zinc-500 dark:text-zinc-400">
-                Badges
-              </span>
-              <div className="flex mt-4 space-x-3 md:mt-6">
-                <a
-                  href="#"
-                  className="inline-flex items-center py-2 px-4 text-xl lg:text-xl font-black text-center text-white bg-emerald-700 rounded-lg hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-emerald-300 dark:bg-emerald-600 dark:hover:bg-emerald-700 dark:focus:ring-emerald-800"
-                >
-                  {"Let's have a talk"}
-                </a>
+
+              <div className="flex flex-col mt-8 space-y-24 md:mt-6">
+                <section>
+                  <p className="mt-1 text-2xl lg:text-4xl font-semibold text-zinc-900 dark:text-white">
+                    Filipe Martins
+                  </p>
+                </section>
+                <section>
+                  <a
+                    href="#"
+                    className="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110  duration-300 inline-flex items-center py-4 px-8 text-xl lg:text-xl font-black text-center text-white bg-emerald-600 rounded-xl hover:bg-emerald-500 focus:ring-4 focus:outline-none focus:ring-emerald-300 dark:bg-emerald-500 dark:hover:bg-emerald-600 dark:focus:ring-emerald-600"
+                  >
+                    {"Say Hello"}
+                  </a>
+                </section>
               </div>
             </div>
           </section>

@@ -1,6 +1,4 @@
-import { BsLinkedin } from "react-icons/bs";
-import { BsFillTelephoneFill } from "react-icons/bs";
-import { GoMarkGithub } from "react-icons/go";
+import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 export default function Socials() {
   // const contactCardStyles = "flex flex-col items-center rounded-xl bg-inherit";
@@ -17,11 +15,11 @@ export default function Socials() {
   // links _blank
   // <a href="https://link.to/url" target="_blank" rel="noopener noreferrer"> ... <a/>
   return (
-    <ul id={"contacts"} className="flex rounded-lg border-0 md:flex-row gap-4">
+    <ul id={"contacts"} className="flex rounded-xl border-0 md:flex-row gap-2">
       {/* <li className="items-center text-lg lg:text-2xl"> */}
       <span className="sr-only">{"Social Links"}</span>
       {/* </li> */}
-      <li className="items-center">
+      <li className="items-center text-inherit">
         <a
           href={contacts.linkedIn}
           target="_blank"
@@ -34,7 +32,7 @@ export default function Socials() {
         </a>
       </li>
 
-      <li className="items-center">
+      <li className="items-center text-inherit">
         <a
           href={contacts.github}
           target="_blank"
@@ -42,7 +40,7 @@ export default function Socials() {
           className={iconStyles}
           alt="Github Profile"
         >
-          <GoMarkGithub />
+          <BsGithub />
           <span className="sr-only">{"Github Profile"}</span>
         </a>
       </li>

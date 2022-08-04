@@ -4,7 +4,7 @@ import Experience from "../components/tables";
 import Hero from "../components/hero";
 import NavBar from "../components/navbar";
 
-const titleName = "Curriculo Filipe Martins";
+const titleName = "Filipe Martins, Web Developer &";
 
 export default function Home() {
   return (
