@@ -1,6 +1,7 @@
 import Image from "next/image";
 import myPicture from "/public/avatar.png";
-import ContactForm from "../components/contact-form";
+
+import Modal from "../components/Modal";
 
 export default function Hero() {
   const biography = {
@@ -51,7 +52,7 @@ export default function Hero() {
                   </p>
                 </section>
                 <section>
-                  <ContactForm />
+                  <Modal />
                 </section>
               </div>
             </div>

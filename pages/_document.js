@@ -3,6 +3,10 @@ import React from "react";
 import Script from "next/script";
 
 class myDocument extends Document {
+  static async getInitialProps(ctx) {
+    const initialProps = await Document.getInitialProps(ctx);
+    return { ...initialProps };
+  }
   render() {
     return (
       <Html lang="en">
@@ -16,6 +20,7 @@ class myDocument extends Document {
           <Script src="..\node_modules\flowbite\dist\flowbite.js" />
         </Head>
         <body className="text-zinc-900 bg-white dark:bg-slate-900 dark:text-white transition-colors duration-300 antialiased">
+          <div id="modal-root"></div>
           <Main />
           <NextScript />
         </body>
