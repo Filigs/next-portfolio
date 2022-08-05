@@ -3,6 +3,7 @@ import Head from "next/head";
 import Experience from "../components/tables";
 import Hero from "../components/hero";
 import NavBar from "../components/navbar";
+import Portfolio from "../components/portfolio";
 
 const titleName = "Filipe Martins, Web Developer &";
 
@@ -30,10 +31,13 @@ export default function Home() {
           <section>
             <Experience />
           </section>
+          <section>
+            <Portfolio />
+          </section>
+          {/* <section>
+            footer
+          </section> */}
         </div>
-        {/* <section>
-          <ContactForm />
-        </section> */}
       </main>
 
       <footer>{/* social links here */}</footer>
