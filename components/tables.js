@@ -1,23 +1,5 @@
 import { GoCalendar } from "react-icons/go";
 export default function Experience() {
-  // array com estudos
-  const education = [
-    {
-      nome: "Espamol",
-      tipo: "Ensino Secundário",
-      desc: "Técnico de Informática e Gestão de Empresas",
-      start: "09/2009",
-      end: "07/2011",
-    },
-    {
-      nome: "Ismat",
-      tipo: "Universidade",
-      desc: "Enganharia Informática, 2 semestres",
-      start: "11/2013",
-      end: "09/2015",
-    },
-  ];
-
   const jobs = [
     {
       id: 1,
@@ -31,15 +13,15 @@ export default function Experience() {
       id: 2,
 
       nome: "Unicâmbio S.A",
-      tipo: "Responsável de Loja & Tesouraria",
+      tipo: "Store Manager and ",
       desc: "Customer service, Sales, Currency exchange",
-      start: "Setembro 2018",
+      start: "September 2018",
       end: "December 2021",
     },
     {
       id: 3,
       nome: "Cepsa",
-      tipo: "Colaborador polivalente",
+      tipo: "Multipurpose Collaborator",
       desc: "Maintenance, Cashier, Customer service",
       start: "April 2018",
       end: "July 2018",
@@ -47,25 +29,25 @@ export default function Experience() {
     {
       id: 4,
       nome: "Intermarché",
-      tipo: "Colaborador polivalente",
-      desc: "Customer Service, Folhas de caixa, Reposição, Cafetaria",
+      tipo: "Multipurpose Collaborator",
+      desc: "Customer Service, Cashier Spreadsheets, Replacement, Cafeteria",
       start: "August 2017",
       end: "April 2018",
     },
     {
       id: 5,
       nome: "Lar dos Usados",
-      tipo: "Trabalho por conta própria",
+      tipo: "Self-Employed",
       desc: "Computer Technician, Product Negotiaton, Home Service",
-      start: "Junho 2016",
+      start: "June 2016",
       end: "July 2017",
     },
     {
       id: 6,
       nome: "T Informática",
-      tipo: "Estágio",
-      desc: "Técnico de Informática, Atendimento ao Cliente",
-      start: "Janeiro 2011",
+      tipo: "Internship",
+      desc: "Computer Technician, Customer service",
+      start: "January 2011",
       end: "July 2011",
     },
   ];
