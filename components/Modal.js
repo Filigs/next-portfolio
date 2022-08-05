@@ -8,7 +8,11 @@ const Modal = () => {
   const [state, handleSubmit] = useForm("mvoypdar");
 
   if (state.succeeded) {
-    return <p>Thanks for your submission!</p>;
+    return (
+      <p className="text-xl">
+        Thanks for your submission, I will read it as soon as possible!
+      </p>
+    );
   }
   return (
     <>
@@ -74,25 +78,25 @@ const Modal = () => {
                         errors={state.errors}
                       />
                     </div>
+                    <div className="flex items-center justify-between p-6">
+                      <button
+                        className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-red-700 sm:w-fit hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
+                        type="button"
+                        onClick={() => setShowModal(false)}
+                      >
+                        Close
+                      </button>
+                      <button
+                        type="submit"
+                        disabled={state.submitting}
+                        className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-green-500 sm:w-fit hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-800"
+                      >
+                        Submit
+                      </button>
+                    </div>
                   </form>
                 </div>
                 {/* footer */}
-                <div className="flex items-center justify-between p-6">
-                  <button
-                    className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-red-700 sm:w-fit hover:bg-red-800 focus:ring-4 focus:outline-none focus:ring-red-300 dark:bg-red-600 dark:hover:bg-red-700 dark:focus:ring-red-800"
-                    type="button"
-                    onClick={() => setShowModal(false)}
-                  >
-                    Close
-                  </button>
-                  <button
-                    type="submit"
-                    disabled={state.submitting}
-                    className="py-3 px-5 text-sm font-medium text-center text-white rounded-lg bg-green-500 sm:w-fit hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-green-300 dark:bg-green-500 dark:hover:bg-green-600 dark:focus:ring-green-800"
-                  >
-                    Submit
-                  </button>
-                </div>
               </div>
             </div>
           </div>
