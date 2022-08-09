@@ -1,5 +1,5 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
-
+[Sandbox](https://codesandbox.io/s/green-rain-s6pz9m) to try code and see results live!  
 ## Getting Started
 
 First, install dependencies, then run the development server:
