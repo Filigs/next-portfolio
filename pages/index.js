@@ -4,8 +4,9 @@ import Experience from "../components/tables";
 import Hero from "../components/hero";
 import NavBar from "../components/navbar";
 import Portfolio from "../components/portfolio";
+import Footer from "../components/footer";
 
-const titleName = "Filipe Martins, Web Developer &";
+const titleName = "Filipe Martins - Web Developer";
 
 export default function Home() {
   return (
@@ -23,7 +24,6 @@ export default function Home() {
       <main>
         <NavBar />
         <div>
-          {/* fazer uma lista com about minimalista, fazer flex col em lg:viewport */}
           <section>
             <Hero />
           </section>
@@ -34,13 +34,10 @@ export default function Home() {
           <section>
             <Portfolio />
           </section>
-          {/* <section>
-            footer
-          </section> */}
         </div>
       </main>
 
-      <footer>{/* social links here */}</footer>
+      <Footer />
     </div>
   );
 }

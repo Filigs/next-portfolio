@@ -1,7 +1,7 @@
 import Image from "next/image";
 import myPicture from "/public/avatar.png";
 
-import Modal from "../components/Modal";
+import Modal from "./modals/contactModal";
 
 export default function Hero() {
   const biography = {
@@ -37,7 +37,7 @@ export default function Hero() {
             <div className="flex flex-col items-center pb-10">
               <section className="mb-10 lg:mb-14 ">
                 <Image
-                  className="mb-3 w-24 h-24 rounded-full bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-sky-500 dark:via-sky-600 dark:to-sky-500 ring-2 ring-slate-200 dark:ring-slate-700 scale-95 "
+                  className="mb-3 w-24 h-24 rounded-full bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-sky-500 dark:via-sky-600 dark:to-sky-500 ring-2 ring-slate-200 dark:ring-slate-700 scale-95 bg-clip-border"
                   src={myPicture}
                   alt="A picture of me"
                   width={300}
