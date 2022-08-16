@@ -1,7 +1,7 @@
 import Image from "next/image";
 import myPicture from "/public/avatar.png";
 
-import Modal from "./modals/contactModal";
+import Modal from "../modals/contactModal";
 
 export default function Hero() {
   const biography = {
@@ -17,7 +17,7 @@ export default function Hero() {
 
   return (
     <div className="border-0">
-      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal pt-20 lg:pt-24 bg-inherit dark:bg-inherit rounded-3xl">
+      <div className=" flex flex-col lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal pt-20 lg:pt-24 bg-inherit dark:bg-inherit rounded-3xl">
         <div id={"portrait"} className="rounded text-center justify-center">
           {/* name */}
 
@@ -33,8 +33,8 @@ export default function Hero() {
             </p>
           </div>
           {/* hero */}
-          <section className="my-20 lg:flex lg:flex-row-reverse lg:justify-evenly lg:items-center">
-            <div className="flex flex-col items-center pb-10">
+          <section className="my-20 lg:flex lg:flex-row-reverse lg:justify-evenly lg:items-center ">
+            <div className="flex flex-col items-center pb-10 ">
               <section className="mb-10 lg:mb-14 ">
                 <Image
                   className="mb-3 w-24 h-24 rounded-full bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-sky-500 dark:via-sky-600 dark:to-sky-500 ring-2 ring-slate-200 dark:ring-slate-700 scale-95 bg-clip-border"

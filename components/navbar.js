@@ -1,4 +1,4 @@
-import ThemeSwitch from "./index/theme";
+import ThemeSwitch from "./theme";
 import Socials from "./navbar/socials";
 
 export default function NavBar() {
@@ -15,10 +15,6 @@ export default function NavBar() {
           <section className="mx-2 transition-all duration-300 border-0 scale-75 rounded-full text-white bg-indigo-600 hover:bg-inherit dark:bg-sky-500 hover:text-indigo-600 dark:hover:text-inherit dark:hover:bg-transparent hover:-translate-y-1 hover:scale-110">
             {" "}
             <ThemeSwitch />
-          </section>
-          <section className="px-2">
-            {" "}
-            <Socials />
           </section>
         </div>
       </div>
