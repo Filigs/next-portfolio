@@ -41,17 +41,25 @@ export default function Portfolio() {
           {" "}
           {projects.map((project) => {
             return (
-              <article
-                key={projects.id}
+              <div
+                key={project.id}
                 className="p-6 bg-white rounded-lg border border-slate-200 shadow-md dark:bg-slate-800 dark:border-slate-700"
               >
                 <div className="flex justify-between items-center mb-5 text-slate-500">
-                  <span className="bg-primary-100 text-primary-800 text-sm font-medium inline-flex items-center rounded dark:bg-primary-200 dark:text-primary-800">
+                  <span
+                    key={project.type}
+                    className="bg-primary-100 text-primary-800 text-sm font-medium inline-flex items-center rounded dark:bg-primary-200 dark:text-primary-800"
+                  >
                     {project.type}
                   </span>
-                  <span className="text-sm">{project.start}</span>
+                  <span key={project.start} className="text-sm">
+                    {project.start}
+                  </span>
                 </div>
-                <h2 className="mb-4 text-2xl font-bold tracking-tight text-indigo-600 dark:text-sky-500">
+                <h2
+                  className="mb-4 text-2xl font-bold tracking-tight text-indigo-600 dark:text-sky-500"
+                  key={project.url}
+                >
                   <a
                     href={project.url}
                     target="_blank"
@@ -59,14 +67,20 @@ export default function Portfolio() {
                     alt="My portfolio website"
                     className="hover:underline inline-flex items-center"
                   >
-                    <span> {project.title}</span>
+                    <span key={project.title}> {project.title}</span>
                     <HiExternalLink className="ml-2 text-slate-900 dark:text-sky-300" />{" "}
                   </a>
                 </h2>
-                <p className="mb-5 font-light text-slate-900 dark:text-white ">
+                <p
+                  className="mb-5 font-light text-slate-900 dark:text-white "
+                  key={project.description}
+                >
                   {project.description}
                 </p>
-                <div className="flex justify-end items-center">
+                <div
+                  className="flex justify-end items-center"
+                  key={project.github}
+                >
                   <a
                     href={project.github}
                     target="_blank"
@@ -78,7 +92,7 @@ export default function Portfolio() {
                     <HiExternalLink className="ml-2 text-black dark:text-sky-300" />
                   </a>
                 </div>
-              </article>
+              </div>
             );
           })}
         </div>
