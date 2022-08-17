@@ -33,7 +33,7 @@ export default function Hero() {
             </p>
           </div>
           {/* hero */}
-          <section className="bg-smartphone bg-bottom bg-contain bg-no-repeat transition-transform duration-300 lg:-skew-y-6 lg:-skew-x-3 lg:rotate-12 xl:-skew-y-12 xl:-skew-x-6 xl:rotate-45 mx-auto p-24 m-24 lg:flex lg:flex-row-reverse lg:justify-center lg:items-center">
+          <section className="bg-[url('/smartphone.png')] bg-bottom bg-contain bg-no-repeat transition-transform duration-300 lg:-skew-y-6 lg:-skew-x-3 lg:rotate-12 xl:-skew-y-12 xl:-skew-x-6 xl:rotate-45 mx-auto p-24 m-24 lg:flex lg:flex-row-reverse lg:justify-center lg:items-center">
             <div className="flex flex-col items-center rounded-3xl">
               <section className="mb-10 lg:mb-14">
                 <Image
