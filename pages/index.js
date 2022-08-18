@@ -1,10 +1,7 @@
 import Head from "next/head";
-// import Image from "next/image";
 import Experience from "../components/tables";
 import Hero from "../components/index/hero";
-import NavBar from "../components/navbar";
 import Portfolio from "../components/index/portfolio";
-import Footer from "../components/footer";
 
 const titleName = "Filipe Martins - Web Developer";
 
@@ -22,7 +19,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <NavBar />
+        {/* <NavBar /> */}
         <div>
           <section>
             <Hero />
@@ -36,8 +33,6 @@ export default function Home() {
           </section>
         </div>
       </main>
-
-      <Footer />
     </div>
   );
 }

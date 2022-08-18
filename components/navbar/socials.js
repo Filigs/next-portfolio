@@ -13,7 +13,7 @@ export default function Socials() {
       {/* <li className="items-center text-lg lg:text-2xl"> */}
       <span className="sr-only">{"Social Links"}</span>
       {/* </li> */}
-      <li className="items-center p-1 lg:p-2 hover:-translate-y-1 hover:scale-110 text-inherit hover:text-indigo-600 hover:bg-indigo-600 dark:hover:text-sky-600 text-lg lg:text-2xl rounded-xl transition-all duration-300">
+      <li className="items-center p-1 lg:p-2 hover:-translate-y-1 hover:scale-110 text-inherit hover:text-indigo-600 hover:bg-indigo-600 dark:hover:text-sky-600 text-lg lg:text-2xl xl:text-4xl rounded-xl transition-all duration-300 ">
         <a
           href={contacts.linkedIn}
           target="_blank"
@@ -26,7 +26,7 @@ export default function Socials() {
         </a>
       </li>
 
-      <li className="items-center p-1 lg:p-2 hover:-translate-y-1 hover:scale-110 text-inherit hover:text-indigo-600 hover:bg-indigo-600 dark:hover:text-sky-600 text-lg lg:text-2xl rounded-xl transition-all duration-300">
+      <li className="items-center p-1 lg:p-2 hover:-translate-y-1 hover:scale-110 text-inherit hover:text-indigo-600 hover:bg-indigo-600 dark:hover:text-sky-600 text-lg lg:text-2xl xl:text-4xl rounded-xl transition-all duration-300">
         <a
           href={contacts.github}
           target="_blank"

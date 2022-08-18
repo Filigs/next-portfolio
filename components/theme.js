@@ -20,7 +20,9 @@ const ThemeSwitch = () => {
       aria-label="Theme toggle"
       className="p-2"
     >
-      <span>{isDark() ? <BsFillSunFill /> : <BsFillMoonFill />}</span>
+      <span className="text-sm lg:text-lg xl:text-xl">
+        {isDark() ? <BsFillSunFill /> : <BsFillMoonFill />}
+      </span>
     </button>
   );
 };
