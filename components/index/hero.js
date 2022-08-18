@@ -20,7 +20,6 @@ export default function Hero() {
       <div className=" flex flex-col min-w-full max-w-full lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal pt-20 lg:pt-24 bg-inherit dark:bg-inherit rounded-3xl">
         <div id={"portrait"} className="rounded text-center justify-center">
           {/* name */}
-
           <div className="space-y-8 p-2 lg:p-6 ">
             <p className="text-3xl lg:text-5xl font-bold text-center text-inherit">
               <span className="text-indigo-700 dark:text-sky-500">
@@ -33,7 +32,9 @@ export default function Hero() {
             </p>
           </div>
           {/* hero */}
-          <section className="bg-smartphone bg-bottom bg-contain bg-no-repeat transition-transform duration-300 lg:-skew-y-6 lg:-skew-x-3 lg:rotate-12 xl:-skew-y-12 xl:-skew-x-6 xl:rotate-45 mx-auto p-24 m-24 lg:flex lg:flex-row-reverse lg:justify-center lg:items-center">
+          {/* lg:-skew-y-6 lg:-skew-x-3 lg:rotate-12 xl:-skew-y-12 xl:-skew-x-6
+          xl:rotate-45 */}
+          <section className="bg-[url('/smartphone.png')] bg-bottom bg-contain bg-no-repeat transition-transform duration-300 mx-auto p-24 m-24 lg:flex lg:flex-row-reverse lg:justify-center lg:items-center">
             <div className="flex flex-col items-center rounded-3xl">
               <section className="mb-10 lg:mb-14">
                 <Image
