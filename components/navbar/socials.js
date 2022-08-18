@@ -4,7 +4,7 @@ export default function Socials() {
   const contacts = {
     // email: "filipemartins.business@gmail.com",
     github: "https://github.com/Filigs",
-    linkedIn: "https://tinyurl.com/2ac7stjl",
+    linkedIn: "https://www.linkedin.com/in/nuno-filipe-martins-666417168/",
   };
   // links _blank
   // <a href="https://link.to/url" target="_blank" rel="noopener noreferrer"> ... <a/>

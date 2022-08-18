@@ -11,11 +11,7 @@ module.exports = {
     "./public/**/*.html",
   ],
   theme: {
-    extend: {
-      backgroundImage: {
-        smartphone: "url('../public/smartphone.png')",
-      },
-    },
+    extend: {},
   },
   plugins: [require("flowbite/plugin")],
 };
