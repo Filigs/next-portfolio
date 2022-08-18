@@ -17,17 +17,17 @@ export default function Hero() {
 
   return (
     <div className="border-0">
-      <div className=" flex flex-col min-w-full max-w-full lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal pt-20 lg:pt-24 bg-inherit dark:bg-inherit rounded-3xl">
-        <div id={"portrait"} className="rounded text-center justify-center">
+      <div className=" flex flex-col min-w-full max-w-full lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal pt-20 lg:pt-24 bg-inherit dark:bg-inherit rounded-3xl ">
+        <div id={"portrait"} className="rounded text-center justify-center ">
           {/* name */}
           <div className="space-y-8 p-2 lg:p-6 ">
-            <p className="text-3xl lg:text-5xl font-bold text-center text-inherit">
+            <p className="text-3xl lg:text-5xl font-bold text-center text-inherit ">
               <span className="text-indigo-700 dark:text-sky-500">
                 {filipe.spec + " "}
               </span>
               <span>{filipe.role}</span>
             </p>
-            <p className="text-2xl lg:text-3xl font-normal text-center text-inherit">
+            <p className="text-2xl lg:text-3xl font-normal text-center text-inherit ">
               {filipe.about}
             </p>
           </div>
