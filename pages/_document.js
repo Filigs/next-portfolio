@@ -18,13 +18,14 @@ class myDocument extends Document {
             rel="stylesheet"
           />
           <Script src="..\node_modules\flowbite\dist\flowbite.js" />
-          {/* <!-- Google tag (gtag.js) --> */}
-          <Script
-            async
-            src="https://www.googletagmanager.com/gtag/js?id=G-K87HSVX1J2"
-          />
-          <Script id="google-analytics">
-            {`
+        </Head>
+        {/* <!-- Google tag (gtag.js) --> */}
+        <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-K87HSVX1J2"
+        />
+        <Script id="google-analytics">
+          {`
               window.dataLayer = window.dataLayer || [];
             function gtag(){
               dataLayer.push(arguments);
@@ -33,8 +34,7 @@ class myDocument extends Document {
 
                 gtag('config', 'G-K87HSVX1J2');
             `}
-          </Script>
-        </Head>
+        </Script>
 
         <body className="text-zinc-900 bg-white dark:bg-slate-900 dark:text-white transition-colors duration-300 antialiased">
           <div id="modal-root"></div>
