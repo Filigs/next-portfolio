@@ -25,7 +25,7 @@ const Modal = () => {
       </button>
       {showModal ? (
         <>
-          <div className="flex justify-center items-center overflow-x-auto overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none backdrop-blur-sm dark:backdrop-brightness-50">
+          <div className="flex justify-center items-center overflow-x-auto skew-y-0 skew-x-0 overflow-y-auto fixed inset-0 z-50 outline-none focus:outline-none backdrop-blur-sm dark:backdrop-brightness-50">
             <div className="relative w-auto my-6 mx-auto max-w-3xl">
               <div className=" rounded-xl border-0 shadow-lg relative flex flex-col w-max bg-white dark:bg-slate-800 outline-2 focus:outline-none ring-2 ring-slate-100 dark:ring-slate-700">
                 {/* header */}
