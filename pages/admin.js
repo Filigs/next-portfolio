@@ -1,4 +1,6 @@
 import NavBar from "../components/navbar";
+import Head from "next/head";
+import Script from "next/script";
 
 export default function AdminDashboard() {
   return (
