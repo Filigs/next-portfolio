@@ -20,12 +20,11 @@ class myDocument extends Document {
           <Script src="..\node_modules\flowbite\dist\flowbite.js" />
         </Head>
         {/* <!-- Google tag (gtag.js) --> */}
-        <Script
+        {/* <Script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-K87HSVX1J2"
-          strategy="afterInteractive"
         />
-        <Script id="google-analytics" strategy="afterInteractive">
+        <Script id="google-analytics">
           {`
               window.dataLayer = window.dataLayer || [];
             function gtag(){
@@ -35,7 +34,7 @@ class myDocument extends Document {
 
                 gtag('config', 'G-K87HSVX1J2');
             `}
-        </Script>
+        </Script> */}
 
         <body className="text-zinc-900 bg-white dark:bg-slate-900 dark:text-white transition-colors duration-300 antialiased">
           <div id="modal-root"></div>
