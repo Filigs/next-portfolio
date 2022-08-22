@@ -1,4 +1,7 @@
 import { HiExternalLink } from "react-icons/hi";
+import Image from "next/image";
+import acepipePic from "/public/acepipe.png";
+import portfolioPic from "/public/portfolio.png";
 
 export default function Portfolio() {
   const projects = [
@@ -11,6 +14,7 @@ export default function Portfolio() {
         "My first website using React, it showcases my skills and projects in an interesting way.",
       url: "https://tinyurl.com/227wlcg4",
       github: "https://github.com/Filigs/next-portfolio",
+      image: portfolioPic,
     },
     {
       id: 1,
@@ -21,8 +25,10 @@ export default function Portfolio() {
         "The very first website I made commercially as a Freelancer, made in vanilla JS, HTML5 and CSS3, gathered a lot of information from this project.",
       url: "https://sandbox.acepipe.pt/",
       github: "https://github.com/Filigs/Acepipe",
+      image: acepipePic,
     },
   ];
+
   return (
     <div className="bg-white dark:bg-slate-900">
       <div className="py-8 px-4 lg:py-16 lg:px-6 mx-auto max-w-screen-xl ">
@@ -37,13 +43,13 @@ export default function Portfolio() {
             }
           </p>
         </div>
-        <div className="grid gap-8 lg:grid-cols-2">
+        <div className={"grid gap-8 lg:grid-cols-" + projects.length}>
           {" "}
           {projects.map((project) => {
             return (
               <div
                 key={project.id}
-                className="p-6 bg-white rounded-lg border border-slate-200 shadow-md dark:bg-slate-800 dark:border-slate-700"
+                className="p-6 bg-white rounded-lg border border-slate-200 shadow-md dark:bg-slate-800 dark:border-slate-700 max-w-screen-lg"
               >
                 <div className="flex justify-between items-center mb-5 text-slate-500">
                   <span
@@ -55,6 +61,14 @@ export default function Portfolio() {
                   <span key={project.start} className="text-sm">
                     {project.start}
                   </span>
+                </div>
+                <div className="mx-auto items-center my-8 rounded-lg ">
+                  <Image
+                    alt={project.title + "'s image"}
+                    src={project.image}
+                    className="rounded-lg "
+                    layout="responsive"
+                  />
                 </div>
                 <h2
                   className="mb-4 text-2xl font-bold tracking-tight text-indigo-600 dark:text-sky-500"
