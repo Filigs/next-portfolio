@@ -1,8 +1,9 @@
 import Socials from "./navbar/socials";
+import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="relative lg:relative min-w-full max-w-full inset-x-0 bottom-0 p-4 lg:p-8 bg-slate-900 shadow md:flex md:items-center dark:bg-slate-900 border-t-2 border-x-0 border-b-0 border-slate-700 transition-transform duration-300">
+    <footer className="relative lg:relative min-w-full max-w-full inset-x-0 bottom-0 p-4 lg:p-8 bg-slate-800 shadow md:flex md:items-center dark:bg-slate-800 border-t-2 border-x-0 border-b-0 border-slate-700 transition-transform duration-300">
       <div className="flex flex-row flex-wrap w-full items-center mt-3 text-sm lg:text-md text-slate-200 font-normal font-sans sm:mt-0 transition-transform duration-300 tracking-wider gap-4 justify-center lg:justify-evenly px-4 py-2 ">
         <div className="flex flex-col gap-1 text-center lg:text-center items-center order-3 lg:order-2 transition-transform duration-300 justify-evenly">
           <p className="text-sm lg:text-lg xl:text-xl text-start lg:text-md text-slate-400 dark:text-slate-400 transition-transform duration-300 tracking-wide font-normal font-serif ">
@@ -50,12 +51,12 @@ export default function Footer() {
               </a>
             </div>
             <div className="">
-              <a
-                href="#"
-                className="hover:underline text-sm lg:text-lg xl:text-xl hover:text-white "
-              >
-                Contact
-              </a>
+              <Link href="/contact-form">
+                <a className="hover:underline text-sm lg:text-lg xl:text-xl hover:text-white">
+                  {" "}
+                  Contact
+                </a>
+              </Link>
             </div>
           </div>
         </div>
