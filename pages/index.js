@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Experience from "../components/tables";
+import Experience from "../components/experience";
 import Hero from "../components/index/hero";
 import Portfolio from "../components/index/portfolio";
 
