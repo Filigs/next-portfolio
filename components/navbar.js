@@ -1,7 +1,8 @@
 import ThemeSwitch from "./theme";
-import Socials from "./navbar/socials";
 import Image from "next/image";
 import avatar from "/public/avatar.png";
+import Link from "next/link";
+import { FiSend } from "react-icons/fi";
 
 export default function NavBar() {
   return (
@@ -17,15 +18,22 @@ export default function NavBar() {
           />
           <a
             href="https://beamish-mochi-c2f9ed.netlify.app/"
-            className="self-center text-xl font-semibold whitespace-nowrap"
+            className="self-center text-xl lg:text-2xl font-semibold whitespace-nowrap"
           >
             Filipe Martins
           </a>
         </div>
 
-        <div className="text-slate-900 dark:text-white flex flex-row text-xl divide-x-2 divide-slate-200 dark:divide-slate-700 items-center">
-          <section className="mx-2 transition-transform duration-300 border-0 scale-75 rounded-full text-white bg-indigo-600 hover:bg-inherit dark:bg-sky-500 hover:text-indigo-600 dark:hover:text-inherit dark:hover:bg-transparent hover:-translate-y-1 hover:scale-110">
-            {" "}
+        <div className="text-slate-900 dark:text-white inline-flex items-center border-0">
+          <section className="mx-2 p-2 text-md lg:text-lg xl:text-xl transition-transform duration-300 border-0 rounded-full text-white bg-emerald-600 hover:bg-transparent dark:bg-lime-500 hover:text-emerald-600 dark:hover:text-inherit dark:hover:bg-transparent hover:-translate-y-1 hover:scale-110">
+            <Link href="/contact-form">
+              <FiSend alt="Contact me" />
+            </Link>
+          </section>
+          <section
+            className="mx-2 text-md lg:text-lg xl:text-xl transition-transform duration-300 border-0 rounded-full text-white bg-indigo-600 hover:bg-transparent dark:bg-sky-500 hover:text-indigo-600 dark:hover:text-inherit dark:hover:bg-transparent hover:-translate-y-1 hover:scale-110"
+            alt="Switch color theme between dark and light mode"
+          >
             <ThemeSwitch />
           </section>
         </div>
