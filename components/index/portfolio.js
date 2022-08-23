@@ -43,13 +43,14 @@ export default function Portfolio() {
             }
           </p>
         </div>
-        <div className={"grid gap-8 lg:grid-cols-" + projects.length}>
+        {/* + "grid-cols-" + projects.length */}
+        <div className={"grid grid-flow-row lg:grid-flow-col gap-8 "}>
           {" "}
           {projects.map((project) => {
             return (
               <div
                 key={project.id}
-                className="p-6 bg-slate-50 rounded-lg border border-slate-200 shadow-md dark:bg-slate-800 dark:border-slate-700 max-w-screen-lg"
+                className="p-6 bg-slate-50 rounded-lg border border-slate-200 shadow-md dark:bg-slate-800 dark:border-slate-700 max-w-screen-xl"
               >
                 <div className="flex justify-between items-center mb-5 text-slate-500">
                   <span
