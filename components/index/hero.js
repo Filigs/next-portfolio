@@ -2,6 +2,7 @@ import Image from "next/image";
 import myPicture from "/public/avatar.png";
 import "animate.css";
 import Link from "next/link";
+import landingImage from "/public/frontend.png";
 
 export default function Hero() {
   const biography = {
@@ -32,9 +33,19 @@ export default function Hero() {
             </p>
           </div>
           {/* hero */}
+
+          <section className="scale-90">
+            <Image
+              src={landingImage}
+              alt="laptop vector"
+              // className="scale-50"
+              layout="responsive"
+            />
+          </section>
+
           {/* lg:-skew-y-6 lg:-skew-x-3 lg:rotate-12 xl:-skew-y-12 xl:-skew-x-6
           xl:rotate-45 */}
-          <section className="bg-[url('/smartphone.png')] bg-bottom bg-contain bg-no-repeat transition-transform duration-300 mx-auto p-24 m-24 lg:flex lg:flex-row-reverse lg:justify-center lg:items-center animate__animated animate__fadeInLeft xl:animate__fadeInLeftBig">
+          {/* <section className="bg-[url('/smartphone.png')] bg-bottom bg-contain bg-no-repeat transition-transform duration-300 mx-auto p-24 m-24 lg:flex lg:flex-row-reverse lg:justify-center lg:items-center animate__animated animate__fadeInLeft xl:animate__fadeInLeftBig">
             <div className="flex flex-col items-center rounded-3xl">
               <section className="mb-10 lg:mb-14">
                 <Image
@@ -48,11 +59,9 @@ export default function Hero() {
                   Filipe Martins
                 </p>
               </section>
-              {/* <div className="flex flex-col mt-8 space-y-24 lg:mt-6">
-                
-              </div> */}
+             
             </div>
-          </section>
+          </section> */}
           <div className="text-center justify-center xl:min-w-full">
             <div className="my-8 lg:my-10 space-y-8 text-white bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-sky-400 dark:via-sky-500 dark:to-sky-400 dark:text-slate-900 p-10 lg:p-14">
               <p className="text-3xl lg:text-4xl font-bold text-center">
