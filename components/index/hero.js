@@ -48,23 +48,9 @@ export default function Hero() {
                   Filipe Martins
                 </p>
               </section>
-              <div className="flex flex-col mt-8 space-y-24 lg:mt-6">
-                <section className="">
-                  <Link href="/contact-form">
-                    <a
-                      className="transition-all duration-150 inline-flex
-                    items-center py-4 px-8 text-xl lg:text-xl font-semibold
-                    text-center text-white bg-emerald-600 rounded-xl
-                    hover:bg-emerald-500 dark:bg-emerald-500
-                    dark:hover:bg-emerald-600 focus:ring-emerald-100
-                    focus:ring-4"
-                    >
-                      {" "}
-                      Say Hello
-                    </a>
-                  </Link>
-                </section>
-              </div>
+              {/* <div className="flex flex-col mt-8 space-y-24 lg:mt-6">
+                
+              </div> */}
             </div>
           </section>
           <div className="text-center justify-center xl:min-w-full">

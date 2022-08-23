@@ -69,7 +69,7 @@ export default function ContactForm() {
           <div className="sm:col-span-2">
             <label
               htmlFor="message"
-              className="block mb-2 text-sm lg:text-md xl:text-lg font-medium text-slate-900 dark:text-slate-400"
+              className="block mb-2 text-sm lg:text-md xl:text-lg font-medium text-slate-900 dark:text-slate-300"
             >
               Your message
             </label>
@@ -87,7 +87,7 @@ export default function ContactForm() {
           </div>
           <div className="flex flex-row items-center justify-between">
             <span
-              className="py-3 px-5 text-sm lg:text-md xl:text-lg font-medium text-center text-slate-900 dark:text-white hover:underline cursor-pointer rounded-lg sm:w-fit inline-flex items-center gap-2"
+              className="py-3 px-5 text-sm lg:text-md xl:text-lg font-medium text-center text-red-500 dark:text-rose-500 hover:underline cursor-pointer rounded-lg sm:w-fit inline-flex items-center  gap-2"
               onClick={() => router.back()}
             >
               <HiArrowNarrowLeft />
