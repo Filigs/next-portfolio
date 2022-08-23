@@ -11,7 +11,7 @@ export default function Portfolio() {
       start: "July, 2022",
       title: "Personal CV Website",
       description:
-        "My first website using React, it showcases my skills and projects in an interesting way. You can follow up all my progress by clicking the GitHub link",
+        "My first website using React, it showcases my skills and projects in an interesting way. You can follow up all my progress by clicking the GitHub link.",
       url: "https://tinyurl.com/227wlcg4",
       github: "https://github.com/Filigs/next-portfolio",
       image: portfolioPic,
