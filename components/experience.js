@@ -5,7 +5,7 @@ export default function Experience() {
       id: 1,
       nome: "Web Developer",
       tipo: "Freelancer",
-      desc: "Javascript, Python, HTML, TailwindCSS, React (NextJS)",
+      desc: "Javascript, Python, Django, HTML, TailwindCSS, React (NextJS)",
       start: "December 2021",
       end: "Currently",
     },
