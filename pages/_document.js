@@ -18,6 +18,37 @@ class myDocument extends Document {
             rel="stylesheet"
           />
           <Script src="..\node_modules\flowbite\dist\flowbite.js" />
+          {/* social media url preview */}
+          <meta property="og:url" content="https://rebrand.ly/filipemartins" />
+          <meta
+            property="og:title"
+            content="Web Developer - Nuno Filipe Martins"
+          />
+          <meta
+            property="og:description"
+            content="My portfolio as a Freelancer Web Developer"
+          />
+          <meta
+            property="og:image"
+            content="https://i.ibb.co/wWSzVyz/preview.png"
+          />
+          <meta
+            property="og:site_name"
+            content="Nuno Filipe Martins - Freelancer Web Developer"
+          />
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta
+            name="twitter:site"
+            content="https://rebrand.ly/filipemartins"
+          />
+          <meta
+            name="twitter:creator"
+            content="Nuno Filipe Martins - Freelancer Web Developer"
+          />
+          <meta
+            name="twitter:image"
+            content="https://i.ibb.co/wWSzVyz/preview.png"
+          />
         </Head>
         {/* <!-- Google tag (gtag.js) --> */}
         <Script
