@@ -13,7 +13,7 @@ export default function Experience() {
       id: 2,
 
       nome: "Unicâmbio S.A",
-      tipo: "Store Manager and ",
+      tipo: "Store Manager and Treasury",
       desc: "Customer service, Sales, Currency exchange",
       start: "September 2018",
       end: "December 2021",
