@@ -18,7 +18,7 @@ export default function Hero() {
 
   return (
     <div className="border-0">
-      <div className=" flex flex-col min-w-full max-w-full lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal pt-20 lg:pt-24 bg-inherit dark:bg-inherit rounded-3xl ">
+      <div className="flex flex-col min-w-full max-w-full lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal pt-8 lg:pt-24 bg-inherit dark:bg-inherit rounded-3xl ">
         <div id={"portrait"} className="rounded text-center justify-center ">
           {/* name */}
           <div className="space-y-8 p-2 lg:p-6 ">
@@ -34,34 +34,16 @@ export default function Hero() {
           </div>
           {/* hero */}
 
-          <section className="scale-90 lg:max-w-4xl lg:mx-auto items-center justify-center pt-20 lg:pt-24 -translate-y-12 lg:-translate-y-20">
+          <section className="scale-90 lg:max-w-4xl lg:mx-auto items-center justify-center pt-8 lg:pt-12 translate-y-4 md:translate-y-8 ">
             <Image
               src={landingImage}
-              alt="laptop vector"
-              // className="scale-50"
+              alt="Web development vector"
               layout="responsive"
             />
           </section>
 
-          {/* <section className="bg-[url('/smartphone.png')] bg-bottom bg-contain bg-no-repeat transition-transform duration-300 mx-auto p-24 m-24 lg:flex lg:flex-row-reverse lg:justify-center lg:items-center animate__animated animate__fadeInLeft xl:animate__fadeInLeftBig">
-            <div className="flex flex-col items-center rounded-3xl">
-              <section className="mb-10 lg:mb-14">
-                <Image
-                  className="mb-3 w-24 h-24 rounded-full bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-sky-500 dark:via-sky-600 dark:to-sky-500 ring-2 ring-slate-700 dark:ring-slate-700 scale-95 bg-clip-border"
-                  src={myPicture}
-                  alt="A picture of me"
-                  width={240}
-                  height={240}
-                />
-                <p className="my-5 text-2xl lg:text-4xl font-semibold text-white dark:text-white">
-                  Filipe Martins
-                </p>
-              </section>
-             
-            </div>
-          </section> */}
-          <div className="text-center justify-center xl:min-w-full">
-            <div className="my-8 lg:my-10 space-y-8 text-white bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-sky-400 dark:via-sky-500 dark:to-sky-400 dark:text-slate-900 p-10 lg:p-14">
+          <div className="border-0 text-center justify-center lg:min-w-full">
+            <div className="py-8 lg:py-10 space-y-8 text-white bg-indigo-600 dark:bg-sky-500 dark:text-slate-900 p-10 lg:p-14 border-t-8 border-indigo-700 dark:border-sky-600">
               <p className="text-3xl lg:text-4xl font-bold text-center">
                 {biography.title}
               </p>
