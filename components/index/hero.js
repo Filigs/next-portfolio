@@ -2,7 +2,7 @@ import Image from "next/image";
 import myPicture from "/public/avatar.png";
 import "animate.css";
 import Link from "next/link";
-import landingImage from "/public/frontend.png";
+import landingImage from "/public/engineering.png";
 
 export default function Hero() {
   const biography = {
@@ -34,7 +34,7 @@ export default function Hero() {
           </div>
           {/* hero */}
 
-          <section className="scale-90">
+          <section className="scale-90 lg:max-w-4xl lg:mx-auto items-center justify-center pt-20 lg:pt-24 -translate-y-12 lg:-translate-y-20">
             <Image
               src={landingImage}
               alt="laptop vector"
@@ -43,8 +43,6 @@ export default function Hero() {
             />
           </section>
 
-          {/* lg:-skew-y-6 lg:-skew-x-3 lg:rotate-12 xl:-skew-y-12 xl:-skew-x-6
-          xl:rotate-45 */}
           {/* <section className="bg-[url('/smartphone.png')] bg-bottom bg-contain bg-no-repeat transition-transform duration-300 mx-auto p-24 m-24 lg:flex lg:flex-row-reverse lg:justify-center lg:items-center animate__animated animate__fadeInLeft xl:animate__fadeInLeftBig">
             <div className="flex flex-col items-center rounded-3xl">
               <section className="mb-10 lg:mb-14">
