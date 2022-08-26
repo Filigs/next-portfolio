@@ -16,17 +16,16 @@ export default function NavBar() {
             height={40}
             className="rounded-full bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-sky-500 dark:via-sky-600 dark:to-sky-500 scale-95"
           />
-          <a
-            href="https://beamish-mochi-c2f9ed.netlify.app/"
-            className="self-center text-xl lg:text-2xl font-semibold whitespace-nowrap"
-          >
-            Filipe Martins
-          </a>
+          <Link href="/" passHref>
+            <a className="self-center text-xl lg:text-2xl font-semibold whitespace-nowrap">
+              Filipe Martins
+            </a>
+          </Link>
         </div>
 
         <div className="text-slate-900 dark:text-white inline-flex items-center border-0">
           <section className="mx-2 p-2 text-md lg:text-lg xl:text-xl transition-transform duration-300 border-0 rounded-full text-white bg-emerald-600 hover:bg-transparent dark:bg-lime-500 hover:text-emerald-600 dark:hover:text-inherit dark:hover:bg-transparent hover:-translate-y-1 hover:scale-110">
-            <Link href="/contact-form">
+            <Link href="/contact-form" passHref>
               <FiSend alt="Contact me" />
             </Link>
           </section>
