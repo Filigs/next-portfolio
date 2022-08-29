@@ -65,7 +65,7 @@ class myDocument extends Document {
             `}
         </Script>
 
-        <body className="text-zinc-900 bg-white dark:bg-slate-900 dark:text-white transition-colors duration-300 antialiased scroll-smooth">
+        <body className="text-dark bg-light dark:bg-dark dark:text-light transition-colors duration-300 antialiased scroll-smooth">
           <div id="modal-root"></div>
           <Main />
           <NextScript />

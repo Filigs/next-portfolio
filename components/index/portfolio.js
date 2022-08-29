@@ -30,10 +30,10 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="bg-white dark:bg-slate-900">
+    <div className="bg-light dark:bg-dark">
       <div className="py-8 px-4 lg:py-16 lg:px-6 mx-auto max-w-screen-xl ">
         <div className="mx-auto max-w-screen-sm text-center lg:mb-20 mb-10">
-          <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-slate-900 dark:text-white">
+          <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-dark dark:text-light">
             Welcome to my{" "}
             <span className="text-indigo-600 dark:text-sky-500">Portfolio</span>
           </h2>
@@ -83,11 +83,11 @@ export default function Portfolio() {
                     className="hover:underline inline-flex items-center"
                   >
                     <span key={project.title}> {project.title}</span>
-                    <HiExternalLink className="ml-2 text-slate-900 dark:text-sky-300" />{" "}
+                    <HiExternalLink className="ml-2 text-dark dark:text-sky-300" />{" "}
                   </a>
                 </h2>
                 <p
-                  className="mb-5 font-light text-slate-900 dark:text-white "
+                  className="mb-5 font-light text-dark dark:text-light "
                   key={project.description}
                 >
                   {project.description}

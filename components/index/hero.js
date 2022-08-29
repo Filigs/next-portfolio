@@ -40,7 +40,7 @@ export default function Hero() {
           </section>
 
           <div className="border-0 text-center justify-center lg:min-w-full">
-            <div className="py-8 lg:py-10 space-y-8 text-white bg-indigo-600 dark:bg-sky-500 dark:text-slate-900 p-10 lg:p-14 border-t-8 border-indigo-500 dark:border-sky-600">
+            <div className="py-8 lg:py-10 space-y-8 text-light bg-indigo-600 dark:bg-sky-500 dark:text-dark p-10 lg:p-14 border-t-8 border-indigo-500 dark:border-sky-600">
               <p className="text-3xl lg:text-4xl font-bold text-center">
                 {biography.title}
               </p>

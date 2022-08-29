@@ -29,7 +29,7 @@ export default function Footer() {
                 href="https://filipe-web-dev.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:underline hover:text-white text-sm lg:text-lg xl:text-xl"
+                className="hover:underline hover:text-light text-sm lg:text-lg xl:text-xl"
               >
                 Portfolio
               </a>
@@ -37,7 +37,7 @@ export default function Footer() {
             <div className="mr-1 lg:mb-1">
               <a
                 href="#"
-                className="hover:underline text-sm lg:text-lg xl:text-xl hover:text-white "
+                className="hover:underline text-sm lg:text-lg xl:text-xl hover:text-light "
               >
                 Privacy Policy
               </a>
@@ -45,14 +45,14 @@ export default function Footer() {
             <div className="mr-1 lg:mb-1">
               <a
                 href="#"
-                className="hover:underline text-sm lg:text-lg xl:text-xl hover:text-white "
+                className="hover:underline text-sm lg:text-lg xl:text-xl hover:text-light "
               >
                 Licensing
               </a>
             </div>
             <div className="">
               <Link href="/contact-form">
-                <a className="hover:underline text-sm lg:text-lg xl:text-xl hover:text-white">
+                <a className="hover:underline text-sm lg:text-lg xl:text-xl hover:text-light">
                   {" "}
                   Contact
                 </a>
