@@ -2,23 +2,17 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 
 export default function Socials() {
   const contacts = {
-    // email: "filipemartins.business@gmail.com",
     github: "https://github.com/Filigs",
     linkedIn: "https://www.linkedin.com/in/nuno-filipe-martins-666417168/",
   };
-  // links _blank
-  // <a href="https://link.to/url" target="_blank" rel="noopener noreferrer"> ... <a/>
   return (
     <ul id={"contacts"} className="flex rounded-xl border-0 md:flex-row">
-      {/* <li className="items-center text-lg lg:text-2xl"> */}
       <span className="sr-only">{"Social Links"}</span>
-      {/* </li> */}
-      <li className="items-center p-1 lg:p-2 hover:-translate-y-1 hover:scale-110 text-light dark:text-dark hover:text-indigo-600 hover:bg-indigo-600 dark:hover:text-sky-600 text-lg lg:text-2xl xl:text-4xl rounded-xl transition-all duration-300 ">
+      <li className="items-center p-1 lg:p-2 text-dark dark:text-light hover:text-indigo-600 dark:hover:text-sky-400 text-lg lg:text-2xl xl:text-4xl rounded-xl">
         <a
           href={contacts.linkedIn}
           target="_blank"
           rel="noopener noreferrer"
-          // className="hover:text-indigo-600 dark:hover:text-blue-300 dark:hover:bg-blue-300 text-lg lg:text-2xl rounded-xl transition-colors duration-150"
           alt="LinkedIn Profile"
         >
           <BsLinkedin />
@@ -26,12 +20,11 @@ export default function Socials() {
         </a>
       </li>
 
-      <li className="items-center p-1 lg:p-2 hover:-translate-y-1 hover:scale-110 text-light dark:text-dark hover:text-indigo-600 hover:bg-indigo-600 dark:hover:text-sky-600 text-lg lg:text-2xl xl:text-4xl rounded-xl transition-all duration-300">
+      <li className="items-center p-1 lg:p-2 text-dark dark:text-light hover:text-indigo-600 dark:hover:text-sky-400 text-lg lg:text-2xl xl:text-4xl rounded-xl">
         <a
           href={contacts.github}
           target="_blank"
           rel="noopener noreferrer"
-          // // className="hover:text-indigo-600 dark:hover:text-blue-300 dark:hover:bg-blue-300 text-lg lg:text-2xl rounded-xl transition-colors duration-150"
           alt="Github Profile"
         >
           <BsGithub />

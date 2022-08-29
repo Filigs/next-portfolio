@@ -1,6 +1,7 @@
 import Image from "next/image";
 import landingImage from "/public/engineering.png";
 import Biography from "./biography";
+import Link from "next/link";
 
 export default function Hero() {
   const filipe = {
@@ -12,9 +13,9 @@ export default function Hero() {
 
   return (
     <div className="border-0">
-      <div className="grid p-8 lg:grid lg:grid-cols-2 lg:gap-x-8 lg:p-16 items-center leading-normal bg-indigo-50 dark:bg-sky-800 lg:min-w-full transition-all duration-75 lg:duration-500">
+      <div className="grid p-8 lg:grid-cols-2 lg:gap-x-8 lg:p-16 items-center leading-normal bg-indigo-50 dark:bg-sky-800 lg:min-w-full transition-all duration-75 lg:duration-500">
         {/* hero */}
-        <div className="block rounded text-center lg:text-start space-y-24 xl:space-y-36 xl:-translate-y-4">
+        <div className="block rounded text-center lg:text-start space-y-20 xl:-translate-y-4">
           {/* text */}
           <section className="space-y-4">
             <p className="text-2xl lg:text-4xl font-bold tracking-wide">
@@ -27,9 +28,14 @@ export default function Hero() {
               {filipe.about}
             </p>
           </section>
-          <section className="">
-            <section>
-              <Biography />
+          <section>
+            <Biography />
+            <section className="text-end ">
+              <Link href="/contact-form" passHref>
+                <p className="cursor-pointer inline-flex items-center justify-center px-4 py-2.5 text-lg font-semibold tracking-wider text-center text-light bg-indigo-700 dark:bg-sky-500 rounded hover:bg-indigo-600 dark:hover:bg-sky-400 focus:ring-4 ring-indigo-300 dark:ring-sky-400">
+                  I have an idea!
+                </p>
+              </Link>
             </section>
           </section>
         </div>

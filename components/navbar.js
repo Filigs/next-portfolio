@@ -23,14 +23,14 @@ export default function NavBar() {
           </Link>
         </div>
 
-        <div className="text-dark dark:text-light inline-flex items-center border-0">
-          <section className="mx-1 p-1 text-xl transition-all duration-75 lg:duration-500 border-0 rounded-full">
+        <div className="text-dark dark:text-light inline-flex items-center border-0 transition-none">
+          <section className="mx-1 p-1 text-xl border-0 rounded-full cursor-pointer hover:text-indigo-600 dark:hover:text-sky-400">
             <Link href="/contact-form" passHref>
               <FiSend alt="Contact me" />
             </Link>
           </section>
           <section
-            className="mx-1 p-1 text-xl transition-all duration-75 lg:duration-500 border-0 rounded-full"
+            className="mx-1 p-1 text-xl border-0 rounded-full cursor-pointer hover:text-indigo-600 dark:hover:text-sky-400"
             alt="Switch color theme between dark and light mode"
           >
             <ThemeSwitch />
