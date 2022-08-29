@@ -11,7 +11,12 @@ module.exports = {
     "./public/**/*.html",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        light: "#ffffff", // White
+        dark: "#0f172a", // slate-900
+      },
+    },
+    plugins: [require("flowbite/plugin"), require("@tailwindcss/forms")],
   },
-  plugins: [require("flowbite/plugin"), require("@tailwindcss/forms")],
 };

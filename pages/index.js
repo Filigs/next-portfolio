@@ -11,7 +11,7 @@ export default function Home() {
         <title>{titleName}</title>
         <meta
           name="description"
-          content="Curriculo pertencente a Filipe Martins"
+          content="Nuno Filipe Martins, a web developer that uses React technologies to build responsive, lightweight and UX friendly apps or websites"
         />
 
         {/* */}
@@ -23,7 +23,6 @@ export default function Home() {
           <section>
             <Hero />
           </section>
-
           <section>
             <Experience />
           </section>

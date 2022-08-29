@@ -54,11 +54,11 @@ export default function Experience() {
   // array com trabalhos
 
   return (
-    <div className="block bg-inherit rounded-t-xl">
+    <div className="block bg-light dark:bg-dark rounded-t-xl">
       <div className="mx-auto">
         <div className="flex flex-col gap-4">
-          <section className="p-10 lg:p-14 bg-inherit dark:bg-inherit span rounded-xl border-0">
-            <p className="cursor-default text-center text-4xl lg:text-6xl font-black my-8 max-w-fit mx-auto dark:after:text-white p-4 rounded-xl ">
+          <section className="p-10 lg:p-14 bg-light dark:bg-dark span rounded-xl border-0">
+            <p className="cursor-default text-center text-4xl lg:text-6xl font-black my-8 max-w-fit mx-auto dark:after:text-light p-4 rounded-xl ">
               {" "}
               <span>{"Previous "}</span>
               <span className="text-indigo-700 dark:text-sky-500">
@@ -69,7 +69,7 @@ export default function Experience() {
               return (
                 <div
                   key={job.id}
-                  className="text-center dark:bg-slate-900 items-center my-2 py-8 xl:mx-36 border-x-0 border-t-0 border-b-2 border-slate-200 dark:border-slate-700"
+                  className="text-center dark:bg-dark items-center my-2 py-8 xl:mx-36 border-x-0 border-t-0 border-b-2 border-slate-200 dark:border-slate-700"
                 >
                   <section className="max-w-fit mx-auto my-4">
                     <div className="grid grid-flow-row leading-relaxed">

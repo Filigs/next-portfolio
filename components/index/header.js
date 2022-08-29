@@ -6,7 +6,7 @@ const info = {
 export default function Biography() {
   return (
     <div className="border-0">
-      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal pt-20 lg:pt-24 bg-white">
+      <div className="flex flex-col lg:flex-row lg:justify-center lg:items-center items-center justify-center leading-normal pt-20 lg:pt-24 bg-light">
         <div className="rounded text-center justify-center">
           {/* name */}
 

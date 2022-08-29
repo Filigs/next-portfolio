@@ -2,7 +2,7 @@ import { withRouter } from "next/router";
 
 function Loader({ router }) {
   return (
-    <div className="flex fixed w-screen h-screen justify-center items-center top-0 left-0 bg-white dark:bg-slate-900">
+    <div className="flex fixed w-screen h-screen justify-center items-center top-0 left-0 bg-light dark:bg-dark">
       <div role="status">
         <svg
           className="inline mr-2 w-10 h-10 text-gray-200 animate-spin dark:text-gray-600 fill-blue-600"
