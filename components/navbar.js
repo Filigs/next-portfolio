@@ -6,7 +6,7 @@ import { FiSend } from "react-icons/fi";
 
 export default function NavBar() {
   return (
-    <nav className="bg-slate-100 dark:bg-slate-800 shadow-sm dark:shadow-slate-500 transition-colors duration-300 sticky lg:sticky min-w-full max-w-full inset-x-0 top-0 z-10">
+    <nav className="bg-slate-100 dark:bg-slate-800 shadow-sm dark:shadow-slate-500 transition-all duration-75 lg:duration-500 sticky lg:sticky min-w-full max-w-full inset-x-0 top-0 z-10">
       <div className="flex flex-row flex-wrap justify-between items-center p-4">
         <div className="text-dark dark:text-light inline-flex gap-2">
           <Image
@@ -24,13 +24,13 @@ export default function NavBar() {
         </div>
 
         <div className="text-dark dark:text-light inline-flex items-center border-0">
-          <section className="mx-2 p-2 text-md lg:text-lg xl:text-xl transition-transform duration-300 border-0 rounded-full text-light bg-emerald-600 hover:bg-transparent dark:bg-lime-500 hover:text-emerald-600 dark:hover:text-inherit dark:hover:bg-transparent hover:-translate-y-1 hover:scale-110">
+          <section className="mx-1 p-1 text-xl transition-all duration-75 lg:duration-500 border-0 rounded-full">
             <Link href="/contact-form" passHref>
               <FiSend alt="Contact me" />
             </Link>
           </section>
           <section
-            className="mx-2 text-md lg:text-lg xl:text-xl transition-transform duration-300 border-0 rounded-full text-light bg-indigo-600 hover:bg-transparent dark:bg-sky-500 hover:text-indigo-600 dark:hover:text-inherit dark:hover:bg-transparent hover:-translate-y-1 hover:scale-110"
+            className="mx-1 p-1 text-xl transition-all duration-75 lg:duration-500 border-0 rounded-full"
             alt="Switch color theme between dark and light mode"
           >
             <ThemeSwitch />
