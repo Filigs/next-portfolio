@@ -18,6 +18,8 @@ class myDocument extends Document {
             rel="stylesheet"
           />
           <Script src="..\node_modules\flowbite\dist\flowbite.js" />
+          {/* SEO */}
+          <meta name="robots" content="all" />
           {/* social media url preview */}
           <meta property="og:url" content="https://rebrand.ly/filipemartins" />
           <meta
@@ -66,7 +68,6 @@ class myDocument extends Document {
         </Script>
 
         <body className="text-dark bg-light dark:bg-dark dark:text-light transition-all duration-75 lg:duration-500 antialiased scroll-smooth">
-          <div id="modal-root"></div>
           <Main />
           <NextScript />
         </body>
