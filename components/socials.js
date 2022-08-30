@@ -8,7 +8,7 @@ export default function Socials() {
   return (
     <ul id={"contacts"} className="flex rounded-xl border-0 md:flex-row">
       <span className="sr-only">{"Social Links"}</span>
-      <li className="items-center p-1 lg:p-2 text-dark dark:text-light hover:text-indigo-600 dark:hover:text-sky-400 text-lg lg:text-2xl xl:text-4xl rounded-xl">
+      <li className="items-center p-1 lg:p-2 text-light dark:text-light hover:text-indigo-600 dark:hover:text-sky-400 text-lg lg:text-2xl xl:text-4xl rounded-xl">
         <a
           href={contacts.linkedIn}
           target="_blank"
@@ -20,7 +20,7 @@ export default function Socials() {
         </a>
       </li>
 
-      <li className="items-center p-1 lg:p-2 text-dark dark:text-light hover:text-indigo-600 dark:hover:text-sky-400 text-lg lg:text-2xl xl:text-4xl rounded-xl">
+      <li className="items-center p-1 lg:p-2 text-light dark:text-light hover:text-indigo-600 dark:hover:text-sky-400 text-lg lg:text-2xl xl:text-4xl rounded-xl">
         <a
           href={contacts.github}
           target="_blank"
