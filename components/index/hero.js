@@ -13,40 +13,46 @@ export default function Hero() {
 
   return (
     <div className="border-0">
-      <div className="grid p-8 lg:grid-cols-2 lg:gap-x-8 lg:p-16 items-center leading-normal bg-indigo-50 dark:bg-sky-800 lg:min-w-full transition-all duration-75 lg:duration-500">
+      <div className="items-center block p-8 pb-4 leading-normal transition-all duration-75 lg:pb-8 xl:pb-4 lg:gap-x-8 lg:p-12 xl:p-24 bg-borderLight dark:bg-borderDark lg:min-w-full lg:duration-500">
         {/* hero */}
-        <div className="block rounded text-center lg:text-start space-y-20 xl:-translate-y-4">
+        <div className="grid text-center rounded lg:gap-4 lg:grid-cols-3 lg:text-center lg:items-center">
           {/* text */}
-          <section className="space-y-4">
-            <p className="text-2xl lg:text-4xl font-bold tracking-wide">
-              <span className="text-indigo-700 dark:text-sky-500">
-                {filipe.spec + " "}
-              </span>
-              <span className="text-dark dark:text-light">{filipe.role}</span>
-            </p>
-            <p className="text-lg lg:text-xl font-mono font-bold text-dark dark:text-light tracking-wide">
+          <div>
+            <div className="space-y-4 lg:space-y-8">
+              <p className="mb-8 text-2xl font-bold tracking-wide lg:text-4xl">
+                <span className="text-secondaryLight dark:text-secondaryDark">
+                  {filipe.spec + " "}
+                </span>
+                <span className="text-dark dark:text-light">{filipe.role}</span>
+              </p>
+              <div>
+                <Biography />
+              </div>
+              <div className="text-center">
+                {/* button */}
+                <Link href="/contact-form" passHref>
+                  <p className="cursor-pointer inline-flex items-center justify-center px-4 py-2.5 text-lg font-semibold tracking-widest text-center text-light bg-secondaryLight dark:bg-secondaryDark rounded hover:bg-hoverLight dark:hover:bg-hoverDark focus:ring-4 ring-ringLight dark:ring-ringDark">
+                    Hire me!
+                  </p>
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* ! text */}
+
+          {/* landing pic */}
+
+          <div className="items-center justify-center pt-12 translate-y-10 lg:min-w-full lg:translate-y-20 lg:col-span-2">
+            <p className="font-serif text-xl font-bold tracking-wide lg:text-xl text-dark dark:text-light">
               {filipe.about}
             </p>
-          </section>
-          <section>
-            <Biography />
-            <section className="text-end ">
-              <Link href="/contact-form" passHref>
-                <p className="cursor-pointer inline-flex items-center justify-center px-4 py-2.5 text-lg font-semibold tracking-wider text-center text-light bg-indigo-700 dark:bg-sky-500 rounded hover:bg-indigo-600 dark:hover:bg-sky-400 focus:ring-4 ring-indigo-300 dark:ring-sky-400">
-                  I have an idea!
-                </p>
-              </Link>
-            </section>
-          </section>
-        </div>
-
-        {/* landing pic */}
-        <div className="pt-12 translate-y-10 lg:min-w-full items-center justify-center lg:translate-y-20">
-          <Image
-            src={landingImage}
-            alt="Web development vector"
-            layout="responsive"
-          />
+            <Image
+              src={landingImage}
+              alt="Web development vector"
+              layout="responsive"
+            />
+          </div>
         </div>
       </div>
     </div>

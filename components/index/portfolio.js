@@ -35,7 +35,9 @@ export default function Portfolio() {
         <div className="mx-auto max-w-screen-sm text-center lg:mb-20 mb-10">
           <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-dark dark:text-light">
             Welcome to my{" "}
-            <span className="text-indigo-600 dark:text-sky-500">Portfolio</span>
+            <span className="text-hoverLight dark:text-secondaryDark">
+              Portfolio
+            </span>
           </h2>
           <p className="font-light text-slate-500 sm:text-xl dark:text-slate-400">
             {
@@ -72,7 +74,7 @@ export default function Portfolio() {
                   />
                 </div>
                 <h2
-                  className="mb-4 text-2xl font-bold tracking-tight text-indigo-600 dark:text-sky-500"
+                  className="mb-4 text-2xl font-bold tracking-tight text-hoverLight dark:text-secondaryDark"
                   key={project.url}
                 >
                   <a
@@ -83,7 +85,7 @@ export default function Portfolio() {
                     className="hover:underline inline-flex items-center"
                   >
                     <span key={project.title}> {project.title}</span>
-                    <HiExternalLink className="ml-2 text-dark dark:text-sky-300" />{" "}
+                    <HiExternalLink className="ml-2 text-dark dark:text-ringDark" />{" "}
                   </a>
                 </h2>
                 <p
@@ -101,10 +103,10 @@ export default function Portfolio() {
                     target="_blank"
                     rel="noopener noreferrer"
                     alt="My portfolio website"
-                    className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline text-indigo-600 dark:text-sky-500"
+                    className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline text-hoverLight dark:text-secondaryDark"
                   >
                     <span>Github</span>{" "}
-                    <HiExternalLink className="ml-2 text-black dark:text-sky-300" />
+                    <HiExternalLink className="ml-2 text-black dark:text-ringDark" />
                   </a>
                 </div>
               </div>

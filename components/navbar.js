@@ -6,31 +6,31 @@ import { FiSend } from "react-icons/fi";
 
 export default function NavBar() {
   return (
-    <nav className="bg-slate-100 dark:bg-slate-800 shadow-sm dark:shadow-slate-500 transition-all duration-75 lg:duration-500 sticky lg:sticky min-w-full max-w-full inset-x-0 top-0 z-10">
-      <div className="flex flex-row flex-wrap justify-between items-center p-4">
-        <div className="text-dark dark:text-light inline-flex gap-2">
+    <nav className="sticky inset-x-0 top-0 z-10 max-w-full min-w-full transition-all duration-75 shadow-sm bg-slate-100 dark:bg-slate-800 dark:shadow-slate-500 lg:duration-500 lg:sticky">
+      <div className="flex flex-row flex-wrap items-center justify-between p-4">
+        <div className="inline-flex gap-2 text-dark dark:text-light">
           <Image
             src={avatar}
             alt="Avatar as a logo"
             width={40}
             height={40}
-            className="rounded-full bg-gradient-to-tr from-indigo-600 via-indigo-700 to-indigo-600 dark:from-sky-500 dark:via-sky-600 dark:to-sky-500 scale-95"
+            className="scale-95 rounded-full bg-gradient-to-tr from-hoverLight via-secondaryLight to-hoverLight dark:from-secondaryDark dark:via-borderDark dark:to-secondaryDark"
           />
           <Link href="/" passHref>
-            <a className="self-center text-xl lg:text-2xl font-semibold whitespace-nowrap">
-              Filipe Martins
+            <a className="self-center text-xl font-semibold lg:text-2xl whitespace-nowrap">
+              Nuno Martins
             </a>
           </Link>
         </div>
 
-        <div className="text-dark dark:text-light inline-flex items-center border-0 transition-none">
-          <section className="mx-1 p-1 text-xl border-0 rounded-full cursor-pointer hover:text-indigo-600 dark:hover:text-sky-400">
+        <div className="inline-flex items-center transition-none border-0 text-dark dark:text-light">
+          <section className="p-1 mx-1 text-xl border-0 rounded-full cursor-pointer hover:text-hoverLight dark:hover:text-hoverDark">
             <Link href="/contact-form" passHref>
               <FiSend alt="Contact me" />
             </Link>
           </section>
           <section
-            className="mx-1 p-1 text-xl border-0 rounded-full cursor-pointer hover:text-indigo-600 dark:hover:text-sky-400"
+            className="p-1 mx-1 text-xl border-0 rounded-full cursor-pointer hover:text-hoverLight dark:hover:text-hoverDark"
             alt="Switch color theme between dark and light mode"
           >
             <ThemeSwitch />
