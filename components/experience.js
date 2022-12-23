@@ -5,7 +5,7 @@ export default function Experience() {
       id: 1,
       nome: "Web Developer",
       tipo: "Freelancer",
-      desc: "Javascript, Python, Django, HTML, TailwindCSS, React (NextJS)",
+      desc: "Javascript, Python, Django, HTML, TailwindCSS, React (NextJS), Supabase",
       start: "December 2021",
       end: "Currently",
     },
@@ -18,38 +18,6 @@ export default function Experience() {
       start: "September 2018",
       end: "December 2021",
     },
-    {
-      id: 3,
-      nome: "Cepsa",
-      tipo: "Multipurpose Collaborator",
-      desc: "Maintenance, Cashier, Customer service",
-      start: "April 2018",
-      end: "July 2018",
-    },
-    {
-      id: 4,
-      nome: "Intermarché",
-      tipo: "Multipurpose Collaborator",
-      desc: "Customer Service, Cashier Spreadsheets, Replacement, Cafeteria",
-      start: "August 2017",
-      end: "April 2018",
-    },
-    {
-      id: 5,
-      nome: "Lar dos Usados",
-      tipo: "Self-Employed",
-      desc: "Computer Technician, Product Negotiaton, Home Service",
-      start: "June 2016",
-      end: "July 2017",
-    },
-    {
-      id: 6,
-      nome: "T Informática",
-      tipo: "Internship",
-      desc: "Computer Technician, Customer service",
-      start: "January 2011",
-      end: "July 2011",
-    },
   ];
   // array com trabalhos
 
@@ -57,8 +25,8 @@ export default function Experience() {
     <div className="block bg-light dark:bg-dark rounded-t-xl">
       <div className="mx-auto">
         <div className="flex flex-col gap-4">
-          <section className="p-10 lg:p-14 bg-light dark:bg-dark span rounded-xl border-0">
-            <p className="cursor-default text-center text-4xl lg:text-6xl font-black my-8 max-w-fit mx-auto dark:after:text-light p-4 rounded-xl ">
+          <section className="p-10 border-0 lg:p-14 bg-light dark:bg-dark rounded-xl">
+            <p className="p-4 mx-auto my-8 text-4xl font-black text-center cursor-default lg:text-6xl max-w-fit dark:after:text-light rounded-xl ">
               {" "}
               <span>{"Previous "}</span>
               <span className="text-indigo-700 dark:text-sky-500">
@@ -69,21 +37,21 @@ export default function Experience() {
               return (
                 <div
                   key={job.id}
-                  className="text-center dark:bg-dark items-center my-2 py-8 xl:mx-36 border-x-0 border-t-0 border-b-2 border-slate-200 dark:border-slate-700"
+                  className="items-center py-8 my-2 text-center border-t-0 border-b-2 dark:bg-dark xl:mx-36 border-x-0 border-slate-200 dark:border-slate-700"
                 >
-                  <section className="max-w-fit mx-auto my-4">
+                  <section className="mx-auto my-4 max-w-fit">
                     <div className="grid grid-flow-row leading-relaxed">
                       {" "}
-                      <p className="font-bold p-4 text-2xl lg:text-3xl xl:text-4xl text-indigo-600 dark:text-sky-500">
+                      <p className="p-4 text-2xl font-bold text-indigo-600 lg:text-3xl xl:text-4xl dark:text-sky-500">
                         {" "}
                         {job.nome}
                       </p>
-                      <p className="font-normal text-xl lg:text-2xl xl:text-3xl">
+                      <p className="text-xl font-normal lg:text-2xl xl:text-3xl">
                         {" "}
                         {" (" + job.tipo + ")"}
                       </p>
                     </div>
-                    <div className="grid grid-flow-col grid-rows-2 p-8 my-4 gap-x-4 items-center justify-center font-normal text-lg lg:text-xl">
+                    <div className="grid items-center justify-center grid-flow-col grid-rows-2 p-8 my-4 text-lg font-normal gap-x-4 lg:text-xl">
                       <div className="row-span-2 text-4xl lg:text-5xl text-sky-600 dark:text-sky-300">
                         <span>
                           {" "}
@@ -93,13 +61,13 @@ export default function Experience() {
                       <div className="col-span-2 baseline text-start ">
                         <span> {job.start}</span>
                       </div>
-                      <div className="row-span-1 col-span-2 text-start ">
+                      <div className="col-span-2 row-span-1 text-start ">
                         <span> {job.end}</span>
                       </div>
                     </div>
                   </section>
-                  <section className="px-8 lg:px-10 pt-8 leading-loose">
-                    <p className="font-bold text-lg lg:text-2xl rounded-xl p-4 text-indigo-700  dark:text-sky-400">
+                  <section className="px-8 pt-8 leading-loose lg:px-10">
+                    <p className="p-4 text-lg font-bold text-indigo-700 lg:text-2xl rounded-xl dark:text-sky-400">
                       {job.desc}
                     </p>
                   </section>
