@@ -19,3 +19,12 @@ a {
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* css customization for parent elements */
+@layer base {
+  /* smooth animations */
+  *,
+  html {
+    @apply antialiased lg:transition-transform lg:duration-150;
+  }
+}

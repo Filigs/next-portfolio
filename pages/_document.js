@@ -75,7 +75,7 @@ class myDocument extends Document {
             `}
         </Script>
 
-        <body className="text-dark bg-light dark:bg-dark dark:text-light transition-all duration-75 lg:duration-500 antialiased scroll-smooth">
+        <body className="text-dark bg-light dark:bg-dark dark:text-light">
           <Main />
           <NextScript />
         </body>
