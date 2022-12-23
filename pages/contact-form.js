@@ -38,7 +38,7 @@ export default function ContactForm() {
               type="email"
               name="email"
               placeholder="Email@provider.com"
-              className="shadow-sm bg-slate-50 border border-slate-300 text-dark text-sm lg:text-md xl:text-lg rounded-lg focus:ring-sky-500 focus:border-sky-500 block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-sky-500 dark:focus:border-sky-500 dark:shadow-sm-light "
+              className="shadow-sm bg-slate-50 border border-slate-300 text-dark text-sm lg:text-md xl:text-lg rounded-lg focus:ring-secondaryDark focus:border-secondaryDark block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-secondaryDark dark:focus:border-secondaryDark dark:shadow-sm-light "
               required
             />
             <ValidationError
@@ -57,7 +57,7 @@ export default function ContactForm() {
             <input
               type="text"
               id="subject"
-              className="block p-3 w-full text-sm lg:text-md xl:text-lg text-dark bg-slate-50 rounded-lg border border-slate-300 shadow-sm focus:ring-sky-500 focus:border-sky-500 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-sky-500 dark:focus:border-sky-500 dark:shadow-sm-light "
+              className="block p-3 w-full text-sm lg:text-md xl:text-lg text-dark bg-slate-50 rounded-lg border border-slate-300 shadow-sm focus:ring-secondaryDark focus:border-secondaryDark dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-secondaryDark dark:focus:border-secondaryDark dark:shadow-sm-light "
               placeholder="Startup / E-Commerce / Web app / SaaS ..."
               required
             />
@@ -77,7 +77,7 @@ export default function ContactForm() {
             <textarea
               id="message"
               rows="6"
-              className="block p-2.5 w-full text-sm lg:text-md xl:text-lg text-dark bg-slate-50 rounded-lg shadow-sm border border-slate-300 focus:ring-sky-500 focus:border-sky-500 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-sky-500 dark:focus:border-sky-500 "
+              className="block p-2.5 w-full text-sm lg:text-md xl:text-lg text-dark bg-slate-50 rounded-lg shadow-sm border border-slate-300 focus:ring-secondaryDark focus:border-secondaryDark dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-secondaryDark dark:focus:border-secondaryDark "
               placeholder="Please let me know what's on your mind, feel free to elaborate as much as possible."
             ></textarea>
             <ValidationError
