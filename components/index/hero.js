@@ -13,22 +13,24 @@ export default function Hero() {
 
   return (
     <div className="border-0">
-      <div className="items-center block px-8 pb-4 leading-normal transition-all duration-75 lg:pb-8 xl:pb-4 lg:gap-x-8 lg:px-12 xl:px-24 bg-borderLight dark:bg-borderDark lg:min-w-full lg:duration-500">
+      <div id="hero-banner">
         {/* hero */}
         <div className="grid text-center rounded lg:gap-4 lg:grid-cols-3 lg:text-center lg:items-center">
           {/* text */}
-          <div className="">
-            <div className="space-y-4 lg:space-y-8">
-              <div className="grid mb-8 text-2xl font-bold tracking-wide lg:text-4xl">
-                <span className="text-secondaryLight dark:text-secondaryDark">
-                  {filipe.spec + " "}
-                </span>
-                <span className="text-dark dark:text-light">{filipe.role}</span>
+          <div>
+            <div>
+              <div className="grid mb-10 text-2xl tracking-wide lg:mb-15 lg:text-4xl">
+                <div className="grid gap-2 lg:gap-4 text-dark dark:text-light lg:mb-15">
+                  <span className="font-mono text-4xl font-black text-secondaryLight dark:text-secondaryDark">
+                    {filipe.spec + " "}
+                  </span>
+                  <span>{filipe.role}</span>
+                </div>
               </div>
-              <div>
+              <div className="mb-10 lg:mb-16">
                 <Biography />
               </div>
-              <div className="text-center">
+              <div className="text-center ">
                 {/* button */}
                 <Link href="/contact-form" passHref>
                   <button className="text-light bg-secondaryLight dark:bg-secondaryDark hover:bg-hoverLight dark:hover:bg-hoverDark">
@@ -47,11 +49,7 @@ export default function Hero() {
             <p className="font-serif text-xl font-bold tracking-wide lg:text-xl text-dark dark:text-light lg:-translate-y-14">
               {filipe.about}
             </p>
-            <Image
-              src={landingImage}
-              alt="Web development vector"
-              layout="responsive"
-            />
+            <Image src={landingImage} alt="Web development vector" />
           </div>
         </div>
       </div>

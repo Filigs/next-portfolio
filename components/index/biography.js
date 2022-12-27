@@ -5,7 +5,7 @@ export default function Biography() {
   };
   return (
     <div className="border-0">
-      <p className="text-base tracking-wider text-center lg:text-lg xl:text-xl lg:max-w-xl">
+      <p className="text-lg tracking-wider text-center lg:text-xl xl:text-2xl lg:max-w-xl">
         {biography.body}
       </p>
     </div>
