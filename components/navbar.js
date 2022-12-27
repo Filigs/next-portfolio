@@ -6,9 +6,9 @@ import { FiSend } from "react-icons/fi";
 
 export default function NavBar() {
   return (
-    <nav className="sticky inset-x-0 top-0 z-10 max-w-full min-w-full transition-all duration-75 shadow-sm bg-slate-100 dark:bg-slate-800 dark:shadow-slate-500 lg:duration-500 lg:sticky">
-      <div className="flex flex-row flex-wrap items-center justify-between p-4">
-        <div className="inline-flex gap-2 text-dark dark:text-light">
+    <nav className="sticky inset-x-0 top-0 z-10 max-w-full min-w-full shadow-sm bg-slate-100 dark:bg-slate-800 dark:shadow-slate-500 lg:sticky">
+      <div className="flex flex-wrap items-center justify-between p-4">
+        <div className="inline-flex items-center gap-2 text-dark dark:text-light">
           <Image
             src={avatar}
             alt="Avatar as a logo"
@@ -17,9 +17,9 @@ export default function NavBar() {
             className="scale-95 rounded-full bg-gradient-to-tr from-hoverLight via-secondaryLight to-hoverLight dark:from-secondaryDark dark:via-borderDark dark:to-secondaryDark"
           />
           <Link href="/" passHref>
-            <a className="self-center text-xl font-semibold lg:text-2xl whitespace-nowrap">
+            <div className="text-xl font-semibold align-baseline lg:text-2xl">
               Nuno Martins
-            </a>
+            </div>
           </Link>
         </div>
 

@@ -70,7 +70,6 @@ export default function Portfolio() {
                     alt={project.title + "'s image"}
                     src={project.image}
                     className="rounded-lg "
-                    layout="responsive"
                   />
                 </div>
                 <h2

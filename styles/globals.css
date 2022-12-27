@@ -28,6 +28,10 @@ a {
     @apply antialiased lg:transition-transform lg:duration-150;
   }
   button {
-    @apply px-6 py-3 text-base font-bold tracking-wider text-center rounded-xl lg:text-lg xl:text-xl sm:w-fit focus:ring-4 focus:ring-ringLight dark:focus:ring-ringDark hover:opacity-90;
+    @apply px-6 py-3 text-base font-bold tracking-wider text-center rounded-xl lg:text-lg xl:text-xl sm:w-fit focus:ring-4 focus:ring-ringLight dark:focus:ring-ringDark hover:opacity-90 drop-shadow-lg;
+  }
+
+  div#hero-banner {
+    @apply items-center block px-8 pt-8 pb-4 leading-normal lg:pb-8 xl:pb-5 lg:gap-x-8 lg:px-12 xl:px-24 bg-gradient-to-r from-sky-200 to-sky-300 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-indigo-800 lg:min-w-full;
   }
 }
