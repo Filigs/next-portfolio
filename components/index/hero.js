@@ -13,27 +13,27 @@ export default function Hero() {
 
   return (
     <div className="border-0">
-      <div className="items-center block p-8 pb-4 leading-normal transition-all duration-75 lg:pb-8 xl:pb-4 lg:gap-x-8 lg:p-12 xl:p-24 bg-borderLight dark:bg-borderDark lg:min-w-full lg:duration-500">
+      <div className="items-center block px-8 pb-4 leading-normal transition-all duration-75 lg:pb-8 xl:pb-4 lg:gap-x-8 lg:px-12 xl:px-24 bg-borderLight dark:bg-borderDark lg:min-w-full lg:duration-500">
         {/* hero */}
         <div className="grid text-center rounded lg:gap-4 lg:grid-cols-3 lg:text-center lg:items-center">
           {/* text */}
-          <div>
+          <div className="">
             <div className="space-y-4 lg:space-y-8">
-              <p className="mb-8 text-2xl font-bold tracking-wide lg:text-4xl">
+              <div className="grid mb-8 text-2xl font-bold tracking-wide lg:text-4xl">
                 <span className="text-secondaryLight dark:text-secondaryDark">
                   {filipe.spec + " "}
                 </span>
                 <span className="text-dark dark:text-light">{filipe.role}</span>
-              </p>
+              </div>
               <div>
                 <Biography />
               </div>
               <div className="text-center">
                 {/* button */}
                 <Link href="/contact-form" passHref>
-                  <p className="cursor-pointer inline-flex items-center justify-center px-4 py-2.5 text-lg font-semibold tracking-widest text-center text-light bg-secondaryLight dark:bg-secondaryDark rounded hover:bg-hoverLight dark:hover:bg-hoverDark focus:ring-4 ring-ringLight dark:ring-ringDark">
-                    Hire me!
-                  </p>
+                  <button className="text-light bg-secondaryLight dark:bg-secondaryDark hover:bg-hoverLight dark:hover:bg-hoverDark">
+                    {"Let's talk"}
+                  </button>
                 </Link>
               </div>
             </div>
@@ -44,7 +44,7 @@ export default function Hero() {
           {/* landing pic */}
 
           <div className="items-center justify-center pt-12 translate-y-10 lg:min-w-full lg:translate-y-20 lg:col-span-2">
-            <p className="font-serif text-xl font-bold tracking-wide lg:text-xl text-dark dark:text-light">
+            <p className="font-serif text-xl font-bold tracking-wide lg:text-xl text-dark dark:text-light lg:-translate-y-14">
               {filipe.about}
             </p>
             <Image

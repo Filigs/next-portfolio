@@ -31,17 +31,17 @@ export default function Portfolio() {
 
   return (
     <div className="bg-light dark:bg-dark">
-      <div className="py-8 px-4 lg:py-16 lg:px-6 mx-auto max-w-screen-xl ">
-        <div className="mx-auto max-w-screen-sm text-center lg:mb-20 mb-10">
-          <h2 className="mb-4 text-3xl lg:text-4xl tracking-tight font-extrabold text-dark dark:text-light">
-            Welcome to my{" "}
+      <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6 ">
+        <div className="max-w-screen-sm mx-auto mb-10 text-center lg:mb-20">
+          <h2 className="mb-4 text-3xl font-extrabold tracking-tight lg:text-4xl text-dark dark:text-light">
+            {"Welcome to my "}
             <span className="text-hoverLight dark:text-secondaryDark">
-              Portfolio
+              {"Portfolio"}
             </span>
           </h2>
           <p className="font-light text-slate-500 sm:text-xl dark:text-slate-400">
             {
-              "Keep updated with the current project I'm working at and my best past development experiences!"
+              "Stay updated with the current project I'm working at and my best past development experiences!"
             }
           </p>
         </div>
@@ -52,12 +52,12 @@ export default function Portfolio() {
             return (
               <div
                 key={project.id}
-                className="p-6 bg-slate-50 rounded-lg border border-slate-200 shadow-md dark:bg-slate-800 dark:border-slate-700 max-w-screen-xl"
+                className="max-w-screen-xl p-6 border rounded-lg shadow-md bg-slate-50 border-slate-200 dark:bg-slate-800 dark:border-slate-700"
               >
-                <div className="flex justify-between items-center mb-5 text-slate-500">
+                <div className="flex items-center justify-between mb-5 text-slate-500">
                   <span
                     key={project.type}
-                    className="bg-primary-100 text-primary-800 text-sm font-medium inline-flex items-center rounded dark:bg-primary-200 dark:text-primary-800"
+                    className="inline-flex items-center text-sm font-medium rounded bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800"
                   >
                     {project.type}
                   </span>
@@ -65,7 +65,7 @@ export default function Portfolio() {
                     {project.start}
                   </span>
                 </div>
-                <div className="mx-auto items-center my-8 rounded-lg ">
+                <div className="items-center mx-auto my-8 rounded-lg ">
                   <Image
                     alt={project.title + "'s image"}
                     src={project.image}
@@ -82,7 +82,7 @@ export default function Portfolio() {
                     target="_blank"
                     rel="noopener noreferrer"
                     alt="My portfolio website"
-                    className="hover:underline inline-flex items-center"
+                    className="inline-flex items-center hover:underline"
                   >
                     <span key={project.title}> {project.title}</span>
                     <HiExternalLink className="ml-2 text-dark dark:text-ringDark" />{" "}
@@ -95,7 +95,7 @@ export default function Portfolio() {
                   {project.description}
                 </p>
                 <div
-                  className="flex justify-end items-center"
+                  className="flex items-center justify-end"
                   key={project.github}
                 >
                   <a
