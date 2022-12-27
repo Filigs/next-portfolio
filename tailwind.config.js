@@ -23,6 +23,8 @@ module.exports = {
         hoverDark: "#38bdf8", // sky-400 - button:hover
         ringLight: "#a5b4fc", // indigo-300 - button ring (border)
         ringDark: "#7dd3fc", // sky-300 - button ring (border)
+        success: "#0d9488", // teal-600
+        danger: "#be123c", // rose-700
       },
     },
     plugins: [require("flowbite/plugin"), require("@tailwindcss/forms")],

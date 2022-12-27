@@ -15,12 +15,12 @@ export default function ContactForm() {
     );
   }
   return (
-    <section className="bg-light dark:bg-dark transition-all duration-75 lg:duration-500">
-      <div className="py-8 lg:py-16 px-4 mx-auto max-w-screen-md">
-        <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-center text-dark dark:text-light">
+    <section className="transition-all duration-75 bg-light dark:bg-dark lg:duration-500">
+      <div className="max-w-screen-md px-4 py-8 mx-auto lg:py-16">
+        <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-dark dark:text-light">
           Seems like you have something on your mind!
         </h2>
-        <p className="mb-8 lg:mb-16 font-light text-center text-slate-500 dark:text-slate-400 sm:text-xl">
+        <p className="mb-8 font-light text-center lg:mb-16 text-slate-500 dark:text-slate-400 sm:text-xl">
           {
             "Want to talk about it? Please fill this form and I will instantly receive your submission!"
           }
@@ -29,7 +29,7 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="email"
-              className="block mb-2 text-sm lg:text-md xl:text-lg font-medium text-dark  dark:text-light"
+              className="block mb-2 text-sm font-medium lg:text-md xl:text-lg text-dark dark:text-light"
             >
               Contact Email
             </label>
@@ -50,14 +50,14 @@ export default function ContactForm() {
           <div>
             <label
               htmlFor="subject"
-              className="block mb-2 text-sm lg:text-md xl:text-lg font-medium text-dark  dark:text-light"
+              className="block mb-2 text-sm font-medium lg:text-md xl:text-lg text-dark dark:text-light"
             >
               What type of project is it?
             </label>
             <input
               type="text"
               id="subject"
-              className="block p-3 w-full text-sm lg:text-md xl:text-lg text-dark bg-slate-50 rounded-lg border border-slate-300 shadow-sm focus:ring-secondaryDark focus:border-secondaryDark dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-secondaryDark dark:focus:border-secondaryDark dark:shadow-sm-light "
+              className="block w-full p-3 text-sm border rounded-lg shadow-sm lg:text-md xl:text-lg text-dark bg-slate-50 border-slate-300 focus:ring-secondaryDark focus:border-secondaryDark dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-secondaryDark dark:focus:border-secondaryDark dark:shadow-sm-light "
               placeholder="Startup / E-Commerce / Web app / SaaS ..."
               required
             />
@@ -70,7 +70,7 @@ export default function ContactForm() {
           <div className="sm:col-span-2">
             <label
               htmlFor="message"
-              className="block mb-2 text-sm lg:text-md xl:text-lg font-medium text-dark  dark:text-light"
+              className="block mb-2 text-sm font-medium lg:text-md xl:text-lg text-dark dark:text-light"
             >
               About the project
             </label>
@@ -87,17 +87,16 @@ export default function ContactForm() {
             />
           </div>
           <div className="flex flex-row items-center justify-between">
-            <span
-              className="py-3 px-5 text-sm lg:text-md xl:text-lg font-medium text-center text-red-500 dark:text-rose-500 hover:underline cursor-pointer rounded-lg sm:w-fit inline-flex items-center gap-2"
+            <button
+              className="text-light bg-danger"
               onClick={() => router.back()}
             >
-              <HiArrowNarrowLeft />
-              {"Click here to go back"}
-            </span>
+              {"Back"}
+            </button>
             <button
               type="submit"
               disabled={state.submitting}
-              className="py-3 px-5 text-sm lg:text-md xl:text-lg font-medium text-center text-light rounded-lg bg-emerald-700 sm:w-fit hover:bg-emerald-800 focus:ring-4 focus:outline-none focus:ring-emerald-300 dark:bg-emerald-600 dark:hover:bg-emerald-700 dark:focus:ring-emerald-800 transition-transform duration-300"
+              className="text-light bg-success"
             >
               Submit
             </button>

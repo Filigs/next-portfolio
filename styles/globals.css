@@ -27,4 +27,7 @@ a {
   html {
     @apply antialiased lg:transition-transform lg:duration-150;
   }
+  button {
+    @apply px-6 py-3 text-base font-bold tracking-wider text-center rounded-xl lg:text-lg xl:text-xl sm:w-fit focus:ring-4 focus:ring-ringLight dark:focus:ring-ringDark hover:opacity-90;
+  }
 }
