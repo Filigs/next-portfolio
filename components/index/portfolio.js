@@ -35,7 +35,7 @@ export default function Portfolio() {
         <div className="max-w-screen-sm mx-auto mb-10 text-center lg:mb-20">
           <h2 className="mb-4 text-3xl font-extrabold tracking-tight lg:text-4xl text-dark dark:text-light">
             {"Welcome to my "}
-            <span className="text-hoverLight dark:text-secondaryDark">
+            <span className="text-hoverLight dark:text-buttonDark">
               {"Portfolio"}
             </span>
           </h2>
@@ -73,7 +73,7 @@ export default function Portfolio() {
                   />
                 </div>
                 <h2
-                  className="mb-4 text-2xl font-bold tracking-tight text-hoverLight dark:text-secondaryDark"
+                  className="mb-4 text-2xl font-bold tracking-tight text-hoverLight dark:text-buttonDark"
                   key={project.url}
                 >
                   <a
@@ -102,7 +102,7 @@ export default function Portfolio() {
                     target="_blank"
                     rel="noopener noreferrer"
                     alt="My portfolio website"
-                    className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline text-hoverLight dark:text-secondaryDark"
+                    className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline text-hoverLight dark:text-buttonDark"
                   >
                     <span>Github</span>{" "}
                     <HiExternalLink className="ml-2 text-black dark:text-ringDark" />

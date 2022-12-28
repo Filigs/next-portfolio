@@ -3,7 +3,7 @@ export default function Custom500() {
     <section className="bg-light dark:bg-dark">
       <div className="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
         <div className="mx-auto max-w-screen-sm text-center">
-          <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-borderDark dark:text-secondaryDark">
+          <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-borderDark dark:text-buttonDark">
             500
           </h1>
           <p className="mb-4 text-3xl tracking-tight font-bold text-dark md:text-4xl dark:text-light">

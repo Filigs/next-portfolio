@@ -6,7 +6,7 @@ import { FiSend } from "react-icons/fi";
 
 export default function NavBar() {
   return (
-    <nav className="sticky inset-x-0 top-0 z-10 max-w-full min-w-full shadow-sm bg-slate-100 dark:bg-slate-800 dark:shadow-slate-500 lg:sticky">
+    <nav>
       <div className="flex flex-wrap items-center justify-between p-4">
         <div className="inline-flex items-center gap-2 text-dark dark:text-light">
           <Image
@@ -14,7 +14,7 @@ export default function NavBar() {
             alt="Avatar as a logo"
             width={40}
             height={40}
-            className="scale-95 rounded-full bg-gradient-to-tr from-hoverLight via-secondaryLight to-hoverLight dark:from-secondaryDark dark:via-borderDark dark:to-secondaryDark"
+            className="scale-95 bg-white rounded-full dark:bg-white"
           />
           <Link href="/" passHref>
             <div className="text-xl font-semibold align-baseline lg:text-2xl">
@@ -23,7 +23,7 @@ export default function NavBar() {
           </Link>
         </div>
 
-        <div className="inline-flex items-center transition-none border-0 text-dark dark:text-light">
+        <div className="inline-flex items-center border-0 text-dark dark:text-light">
           <section className="p-1 mx-1 text-xl border-0 rounded-full cursor-pointer hover:text-hoverLight dark:hover:text-hoverDark">
             <Link href="/contact-form" passHref>
               <FiSend alt="Contact me" />
