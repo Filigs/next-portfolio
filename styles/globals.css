@@ -32,6 +32,18 @@ a {
   }
 
   div#hero-banner {
-    @apply items-center block px-8 pt-8 pb-4 leading-normal lg:pb-8 xl:pb-5 lg:gap-x-8 lg:px-12 xl:px-24 bg-gradient-to-r from-sky-200 to-sky-300 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-indigo-800 lg:min-w-full;
+    @apply items-center block px-8 pt-8 pb-4 leading-normal lg:pb-8 xl:pb-5 lg:gap-x-8 lg:px-12 xl:px-24 bg-gradient-to-r from-sky-100 to-sky-200 dark:bg-gradient-to-r dark:from-indigo-700 dark:to-indigo-900 lg:min-w-full;
+  }
+
+  /* forms */
+  textarea {
+    @apply block;
+    @apply p-2.5 w-full text-sm lg:text-base xl:text-lg text-dark bg-slate-50 rounded-lg shadow-sm border border-slate-300 focus:ring-secondaryDark focus:border-secondaryDark dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-secondaryDark dark:focus:border-secondaryDark;
+  }
+  input {
+    @apply shadow-sm bg-slate-50 border border-slate-300 text-dark text-sm lg:text-base xl:text-lg rounded-lg focus:ring-secondaryDark focus:border-secondaryDark block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-secondaryDark dark:focus:border-secondaryDark dark:drop-shadow-sm;
+  }
+  label {
+    @apply block mb-2 text-base font-medium lg:text-lg xl:text-xl text-dark dark:text-light;
   }
 }
