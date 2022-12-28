@@ -27,9 +27,8 @@ export default function Experience() {
         <div className="flex flex-col gap-4">
           <section className="p-10 border-0 lg:p-14 bg-light dark:bg-dark rounded-xl">
             <p className="p-4 mx-auto my-8 text-4xl font-black text-center cursor-default lg:text-6xl max-w-fit dark:after:text-light rounded-xl ">
-              {" "}
               <span>{"Previous "}</span>
-              <span className="text-secondaryLight dark:text-secondaryDark">
+              <span className="text-buttonLight dark:text-buttonDark">
                 {"Jobs"}
               </span>
             </p>
@@ -42,7 +41,7 @@ export default function Experience() {
                   <section className="mx-auto my-4 max-w-fit">
                     <div className="grid grid-flow-row leading-relaxed">
                       {" "}
-                      <p className="p-4 text-2xl font-bold text-hoverLight lg:text-3xl xl:text-4xl dark:text-secondaryDark">
+                      <p className="p-4 text-2xl font-bold text-buttonLight lg:text-3xl xl:text-4xl dark:text-buttonDark">
                         {" "}
                         {job.nome}
                       </p>
@@ -52,7 +51,7 @@ export default function Experience() {
                       </p>
                     </div>
                     <div className="grid items-center justify-center grid-flow-col grid-rows-2 p-8 my-4 text-lg font-normal gap-x-4 lg:text-xl">
-                      <div className="row-span-2 text-4xl lg:text-5xl text-borderDark dark:text-ringDark">
+                      <div className="row-span-2 text-4xl lg:text-5xl text-buttonLight dark:text-ringDark">
                         <span>
                           {" "}
                           <GoCalendar />
@@ -67,7 +66,7 @@ export default function Experience() {
                     </div>
                   </section>
                   <section className="px-8 pt-8 leading-loose lg:px-10">
-                    <p className="p-4 text-lg font-bold text-secondaryLight lg:text-2xl rounded-xl dark:text-hoverDark">
+                    <p className="p-4 text-lg font-bold text-ctaLight lg:text-2xl rounded-xl dark:text-hoverDark">
                       {job.desc}
                     </p>
                   </section>

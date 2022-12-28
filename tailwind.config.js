@@ -13,16 +13,47 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        // // // Palette https://colorhunt.co/palette/7900ff548cff93ffd8cfffdc - light
+
+        // // text
+
         light: "#ffffff", // White
         dark: "#0f172a", // slate-900
-        borderLight: "#eef2ff", // indigo-50 - borders
-        borderDark: "#075985", // Sky-600 - borders
-        secondaryLight: "#4338ca", // indigo-700 - buttons and cta text
-        secondaryDark: "#0ea5e9", // sky-500 - buttons and cta
-        hoverLight: "#4f46e5", // indigo-600 - button:hover
-        hoverDark: "#38bdf8", // sky-400 - button:hover
-        ringLight: "#a5b4fc", // indigo-300 - button ring (border)
-        ringDark: "#7dd3fc", // sky-300 - button ring (border)
+
+        // // layout
+
+        // Backgrounds
+
+        backgroundLight: "#CFFFDC", // mint(lighter)
+        backgroundDark: "",
+
+        // CTA
+
+        ctaLight: "#7900FF", // indigo(medium)
+        ctaDark: "#eab308", // yellow-500
+
+        // Borders
+
+        borderLight: "#93FFD8", // mint(darker)
+        borderDark: "#075985", // Sky-600
+
+        // // Buttons & CTA
+
+        buttonLight: "#548CFF", // sky(darker)
+        buttonDark: "#0ea5e9", // sky-500
+
+        // ::hover
+
+        hoverLight: "#0ea5e9", // sky-300
+        hoverDark: "#38bdf8", // sky-400
+
+        // Button ring
+
+        ringLight: "#7900FF", // indigo(medium)
+        ringDark: "#7dd3fc", // sky-300
+
+        // background colors for booleans
+
         success: "#0d9488", // teal-600
         danger: "#be123c", // rose-700
       },

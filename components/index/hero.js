@@ -3,7 +3,6 @@ import landingImage from "/public/engineering.png";
 import Biography from "./biography";
 import Link from "next/link";
 import React from "react";
-import { Typewriter } from "react-simple-typewriter";
 
 export default function Hero() {
   return (
@@ -13,14 +12,14 @@ export default function Hero() {
         <div className="grid text-center rounded lg:gap-4 lg:grid-cols-3 lg:text-center lg:items-center">
           {/* text */}
 
-          <div className="grid gap-24">
-            <div className="">
+          <div className="grid gap-8 lg:gap-24">
+            <>
               <Biography />
-            </div>
+            </>
             <div className="text-center ">
               {/* button */}
               <Link href="/contact-form" passHref>
-                <button className="text-light bg-secondaryLight dark:bg-secondaryDark hover:bg-hoverLight dark:hover:bg-hoverDark">
+                <button className="text-light bg-buttonLight dark:bg-buttonDark hover:bg-hoverLight dark:hover:bg-hoverDark">
                   {"Let's talk"}
                 </button>
               </Link>

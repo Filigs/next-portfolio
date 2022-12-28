@@ -28,22 +28,39 @@ a {
     @apply antialiased lg:transition-transform lg:duration-150;
   }
   button {
-    @apply px-6 py-3 text-base font-bold tracking-wider text-center rounded-xl lg:text-lg xl:text-xl sm:w-fit focus:ring-4 focus:ring-ringLight dark:focus:ring-ringDark hover:opacity-90 drop-shadow-lg;
+    @apply px-6 py-3 text-xl font-bold tracking-wider text-center rounded-xl lg:text-2xl xl:text-3xl sm:w-fit focus:ring-4 lg:px-9 lg:py-5 xl:px-12 xl:py-6 focus:ring-ringLight dark:focus:ring-ringDark hover:opacity-90 drop-shadow-lg;
   }
 
   div#hero-banner {
-    @apply items-center block px-8 pt-8 pb-4 leading-normal lg:pb-8 xl:pb-5 lg:gap-x-8 lg:px-12 xl:px-24 bg-gradient-to-r from-sky-100 to-sky-200 dark:bg-gradient-to-r dark:from-indigo-700 dark:to-indigo-900 lg:min-w-full;
+    @apply items-center block px-8 pt-8 pb-4 leading-normal lg:pb-8 xl:pb-5 lg:gap-x-8 lg:px-12 xl:px-24 lg:min-w-full lightGradient dark:darkGradient;
+  }
+
+  .lightGradient {
+    @apply bg-gradient-to-r from-backgroundLight to-borderLight;
+  }
+
+  .darkGradient {
+    @apply bg-gradient-to-r from-indigo-700 to-indigo-900;
   }
 
   /* forms */
   textarea {
     @apply block;
-    @apply p-2.5 w-full text-sm lg:text-base xl:text-lg text-dark bg-slate-50 rounded-lg shadow-sm border border-slate-300 focus:ring-secondaryDark focus:border-secondaryDark dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-secondaryDark dark:focus:border-secondaryDark;
+    @apply p-2.5 w-full text-sm lg:text-base xl:text-lg text-dark;
+    @apply border rounded-lg shadow-sm bg-slate-50 border-slate-300;
+    @apply focus:ring-buttonDark focus:border-buttonDark dark:bg-slate-700 dark:border-slate-600;
+    @apply dark:placeholder-slate-400 dark:text-light dark:focus:ring-buttonDark dark:focus:border-buttonDark;
   }
   input {
-    @apply shadow-sm bg-slate-50 border border-slate-300 text-dark text-sm lg:text-base xl:text-lg rounded-lg focus:ring-secondaryDark focus:border-secondaryDark block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-secondaryDark dark:focus:border-secondaryDark dark:drop-shadow-sm;
+    @apply shadow-sm bg-slate-50 border border-slate-300 text-dark text-sm lg:text-base xl:text-lg rounded-lg focus:ring-buttonDark focus:border-buttonDark block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-buttonDark dark:focus:border-buttonDark dark:drop-shadow-sm;
   }
   label {
     @apply block mb-2 text-base font-medium lg:text-lg xl:text-xl text-dark dark:text-light;
+  }
+  nav {
+    @apply sticky inset-x-0 top-0 z-10 max-w-full min-w-full drop-shadow-md lg:drop-shadow-lg;
+  }
+  nav div {
+    @apply bg-light dark:bg-dark;
   }
 }
