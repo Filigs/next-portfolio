@@ -1,6 +1,5 @@
 import { useForm, ValidationError } from "@formspree/react";
 import React from "react";
-import { HiArrowNarrowLeft } from "react-icons/hi";
 import { useRouter } from "next/router";
 
 export default function ContactForm() {
