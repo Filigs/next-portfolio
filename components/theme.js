@@ -14,7 +14,7 @@ const ThemeSwitch = () => {
     return theme === "dark";
   }
   return (
-    <button
+    <div
       id="switch"
       onClick={() => setTheme(isDark() ? "light" : "dark")}
       aria-label="Theme toggle"
@@ -23,7 +23,7 @@ const ThemeSwitch = () => {
       <span className="">
         {isDark() ? <BsFillSunFill /> : <BsFillMoonFill />}
       </span>
-    </button>
+    </div>
   );
 };
 
