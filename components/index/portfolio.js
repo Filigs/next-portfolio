@@ -35,7 +35,7 @@ export default function Portfolio() {
         <div className="max-w-screen-sm mx-auto mb-10 text-center lg:mb-20">
           <h2 className="mb-4 text-3xl font-extrabold tracking-tight lg:text-4xl text-dark dark:text-light">
             {"Welcome to my "}
-            <span className="text-hoverLight dark:text-buttonDark">
+            <span className="text-ctaHover dark:text-darkCta">
               {"Portfolio"}
             </span>
           </h2>
@@ -73,7 +73,7 @@ export default function Portfolio() {
                   />
                 </div>
                 <h2
-                  className="mb-4 text-2xl font-bold tracking-tight text-hoverLight dark:text-buttonDark"
+                  className="mb-4 text-2xl font-bold tracking-tight text-ctaHover dark:text-darkCta"
                   key={project.url}
                 >
                   <a
@@ -84,7 +84,7 @@ export default function Portfolio() {
                     className="inline-flex items-center hover:underline"
                   >
                     <span key={project.title}> {project.title}</span>
-                    <HiExternalLink className="ml-2 text-dark dark:text-ringDark" />{" "}
+                    <HiExternalLink className="ml-2 text-dark dark:text-darkCtaHover" />{" "}
                   </a>
                 </h2>
                 <p
@@ -102,10 +102,10 @@ export default function Portfolio() {
                     target="_blank"
                     rel="noopener noreferrer"
                     alt="My portfolio website"
-                    className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline text-hoverLight dark:text-buttonDark"
+                    className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline text-ctaHover dark:text-darkCta"
                   >
                     <span>Github</span>{" "}
-                    <HiExternalLink className="ml-2 text-black dark:text-ringDark" />
+                    <HiExternalLink className="ml-2 text-black dark:text-darkCtaHover" />
                   </a>
                 </div>
               </div>

@@ -13,49 +13,26 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // // // Palette https://colorhunt.co/palette/7900ff548cff93ffd8cfffdc - light
+        // // //  Light mode https://coolors.co/ffffff-f8f7fa-f3f2f5-4327ce
+        cta: "#4327CE",
+        ctaHover: "#5C43DB",
+        fillerDark: "#F3F2F5",
+        fillerMedium: "#F8F7FA",
+        light: "#FFFFFF",
+        // ! Light Palete
 
-        // // text
-
-        light: "#ffffff", // White
-        dark: "#0f172a", // slate-900
-
-        // // layout
-
-        // Backgrounds
-
-        backgroundLight: "#CFFFDC", // mint(lighter)
-        backgroundDark: "",
-
-        // CTA
-
-        ctaLight: "#7900FF", // indigo(medium)
-        ctaDark: "#eab308", // yellow-500
-
-        // Borders
-
-        borderLight: "#93FFD8", // mint(darker)
-        borderDark: "#075985", // Sky-600
-
-        // // Buttons & CTA
-
-        buttonLight: "#548CFF", // sky(darker)
-        buttonDark: "#0ea5e9", // sky-500
-
-        // ::hover
-
-        hoverLight: "#0ea5e9", // sky-300
-        hoverDark: "#38bdf8", // sky-400
-
-        // Button ring
-
-        ringLight: "#7900FF", // indigo(medium)
-        ringDark: "#7dd3fc", // sky-300
+        // // // Dark mode https://coolors.co/1f1f1f-121212-0a0a0a-4327ce
+        darkCta: "#4327CE",
+        darkCtaHover: "#5C43DB",
+        darkFillerLight: "#1F1F1F",
+        darkFillerMedium: "#121212",
+        dark: "#0A0A0A",
+        // ! Dark Palette
 
         // background colors for booleans
 
-        success: "#0d9488", // teal-600
-        danger: "#be123c", // rose-700
+        success: "#56B389", // green
+        danger: "#EB5E55", // red
       },
     },
     plugins: [require("flowbite/plugin"), require("@tailwindcss/forms")],

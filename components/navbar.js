@@ -24,13 +24,13 @@ export default function NavBar() {
         </div>
 
         <div className="inline-flex items-center border-0 text-dark dark:text-light">
-          <section className="p-1 mx-1 text-xl border-0 rounded-full cursor-pointer hover:text-hoverLight dark:hover:text-hoverDark">
+          <section className="p-1 mx-1 text-xl border-0 rounded-full cursor-pointer hover:text-ctaHover dark:hover:text-darkCtaHover">
             <Link href="/contact-form" passHref>
               <FiSend alt="Contact me" />
             </Link>
           </section>
           <section
-            className="p-1 mx-1 text-xl border-0 rounded-full cursor-pointer hover:text-hoverLight dark:hover:text-hoverDark"
+            className="p-1 mx-1 text-xl border-0 rounded-full cursor-pointer hover:text-ctaHover dark:hover:text-darkCtaHover"
             alt="Switch color theme between dark and light mode"
           >
             <ThemeSwitch />
