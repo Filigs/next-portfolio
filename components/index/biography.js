@@ -13,7 +13,7 @@ export default function Biography() {
     <div className="border-0">
       <div className="text-3xl font-medium text-center lg:text-4xl xl:text-5xl lg:max-w-xl">
         {biography.body}
-        <div className="mt-4 font-serif font-black tracking-wider text-ctaLight dark:text-ctaDark">
+        <div className="mt-4 font-serif font-black tracking-wider text-cta dark:text-darkCta">
           <Typewriter
             cursor="true"
             loop="0"
