@@ -28,7 +28,7 @@ a {
     @apply antialiased lg:transition-transform lg:duration-150;
   }
   button {
-    @apply px-6 py-3 text-xl font-bold tracking-wider text-center rounded-xl lg:text-2xl xl:text-3xl sm:w-fit focus:ring-4 lg:px-9 lg:py-5 xl:px-12 xl:py-6 focus:ring-ctaHover dark:focus:ring-darkCtaHover hover:opacity-90 drop-shadow-lg;
+    @apply px-6 py-3 text-xl font-bold tracking-wider text-center rounded-xl lg:text-2xl xl:text-3xl sm:w-fit focus:ring-4 lg:px-9 lg:py-5 xl:px-12 xl:py-6 focus:ring-ctaHover dark:focus:ring-ctaHover hover:opacity-90 drop-shadow-lg;
   }
 
   div#hero-banner {
@@ -36,11 +36,11 @@ a {
   }
 
   .lightGradient {
-    @apply bg-gradient-to-r from-cta to-fillerMedium;
+    @apply bg-gradient-to-r from-fillerDark to-fillerMedium;
   }
 
   .darkGradient {
-    @apply bg-gradient-to-r from-indigo-700 to-indigo-900;
+    @apply bg-gradient-to-r from-darkFillerMedium to-darkFillerLight;
   }
 
   /* forms */
@@ -48,11 +48,11 @@ a {
     @apply block;
     @apply p-2.5 w-full text-sm lg:text-base xl:text-lg text-dark;
     @apply border rounded-lg shadow-sm bg-slate-50 border-slate-300;
-    @apply focus:ring-darkCta focus:border-darkCta dark:bg-slate-700 dark:border-slate-600;
-    @apply dark:placeholder-slate-400 dark:text-light dark:focus:ring-darkCta dark:focus:border-darkCta;
+    @apply focus:ring-cta focus:border-cta dark:bg-slate-700 dark:border-slate-600;
+    @apply dark:placeholder-slate-400 dark:text-light dark:focus:ring-cta dark:focus:border-cta;
   }
   input {
-    @apply shadow-sm bg-slate-50 border border-slate-300 text-dark text-sm lg:text-base xl:text-lg rounded-lg focus:ring-darkCta focus:border-darkCta block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-darkCta dark:focus:border-darkCta dark:drop-shadow-sm;
+    @apply shadow-sm bg-slate-50 border border-slate-300 text-dark text-sm lg:text-base xl:text-lg rounded-lg focus:ring-cta focus:border-cta block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-cta dark:focus:border-cta dark:drop-shadow-sm;
   }
   label {
     @apply block mb-2 text-base font-medium lg:text-lg xl:text-xl text-dark dark:text-light;

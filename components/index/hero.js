@@ -19,7 +19,7 @@ export default function Hero() {
             <div className="text-center ">
               {/* button */}
               <Link href="/contact-form" passHref>
-                <button className="text-light bg-cta dark:bg-darkCta hover:bg-ctaHover dark:hover:bg-darkCtaHover">
+                <button className="text-light bg-cta dark:bg-cta hover:bg-ctaHover dark:hover:bg-ctaHover">
                   {"Let's talk"}
                 </button>
               </Link>
