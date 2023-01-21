@@ -28,16 +28,16 @@ module.exports = {
       },
       colors: {
         // Color Palettes
-        cta: "#4327CE",
-        ctaHover: "#5C43DB",
-
-        //  Light mode https://coolors.co/ffffff-fafafa-f5f5f5-4327ce
+        primary: "#10B981",
+        primaryHover: "#34d399",
+        cta: "#fde047",
+        //  Light mode https://coolors.co/ffffff-f7f8fa-f3f4f6-10b981
         fillerDark: "#F5F5F5",
         fillerMedium: "#FAFAFA",
         light: "#FFFFFF",
         // ! Light mode
 
-        // Dark mode https://coolors.co/1f1f1f-121212-0a0a0a-4327ce
+        // Dark mode https://coolors.co/1f1f1f-121212-0a0a0a-10b981x
         darkFillerLight: "#334155",
         darkFillerMedium: "#1E293B",
         dark: "#0F172A",

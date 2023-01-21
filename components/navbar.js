@@ -14,23 +14,29 @@ export default function NavBar() {
             alt="Avatar as a logo"
             width={40}
             height={40}
-            className="scale-95 bg-white rounded-full dark:bg-white"
+            className="scale-95 rounded-full bg-cta dark:bg-cta"
           />
           <Link href="/" passHref>
-            <div className="text-xl font-semibold align-baseline lg:text-2xl">
-              Nuno Martins
+            <div className="text-xl font-semibold align-baseline lg:text-2xl text-dark dark:text-light">
+              <span className="text-primary">{"N"}</span>
+              {"uno"}
+              <span className="text-primary">{"M"}</span>
+              {"artins"}
             </div>
           </Link>
         </div>
 
         <div className="inline-flex items-center border-0 text-dark dark:text-light">
-          <section className="p-1 mx-1 text-xl border-0 rounded-full cursor-pointer hover:text-ctaHover dark:hover:text-ctaHover">
+          <section className="p-1 mx-1 text-xl border-0 rounded-full cursor-pointer">
             <Link href="/contact-form" passHref>
-              <FiSend alt="Contact me" />
+              <FiSend
+                alt="Contact me"
+                className="stroke-primary hover:stroke-primaryHover"
+              />
             </Link>
           </section>
           <section
-            className="p-1 mx-1 text-xl border-0 rounded-full cursor-pointer hover:text-ctaHover dark:hover:text-ctaHover"
+            className="p-1 mx-1 text-xl border-0 rounded-full cursor-pointer "
             alt="Switch color theme between dark and light mode"
           >
             <ThemeSwitch />
