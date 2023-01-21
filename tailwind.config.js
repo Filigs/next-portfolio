@@ -9,9 +9,23 @@ module.exports = {
     "./node_modules/flowbite-react/**/*.{js,ts,jsx,tsx}",
     "./node_modules/flowbite/**/*.{js,ts,jsx,tsx}",
     "./public/**/*.html",
+    "./styles/globals.css",
   ],
   theme: {
     extend: {
+      keyframes: {
+        "rotate-gradient": {
+          "0%, 100%": {
+            "background-position": "0% 49%",
+          },
+          "50%": {
+            "background-position": "100% 52%",
+          },
+        },
+      },
+      animation: {
+        "gradient-background": "rotate-gradient 30s ease infinite",
+      },
       colors: {
         // Color Palettes
         cta: "#4327CE",
