@@ -28,15 +28,15 @@ a {
     @apply antialiased lg:transition-transform lg:duration-150;
   }
   button {
-    @apply px-6 py-3 text-xl font-bold tracking-wider text-center rounded-xl lg:text-2xl xl:text-3xl sm:w-fit focus:ring-4 lg:px-9 lg:py-5 xl:px-12 xl:py-6 focus:ring-ctaHover dark:focus:ring-ctaHover hover:opacity-90 drop-shadow-lg;
+    @apply px-6 py-3 text-xl font-bold tracking-wider text-center rounded-xl lg:text-2xl xl:text-3xl sm:w-fit focus:ring-4 lg:px-9 lg:py-5 xl:px-12 xl:py-6 focus:ring-primaryHover dark:focus:ring-primaryHover hover:opacity-90 drop-shadow-lg;
   }
 
   div#hero-banner {
-    @apply items-center block px-8 pt-8 pb-4 leading-normal lg:pb-8 xl:pb-5 lg:gap-x-8 lg:px-12 xl:px-24 lg:min-w-full gradientLightDocument dark:bg-slate-900;
+    @apply items-center justify-center block h-screen px-12 pt-6 mx-auto lg:gap-x-8 lg:min-w-full gradient-hero-banner dark:gradient-hero-banner;
   }
-  .gradientLightDocument {
+  .gradient-hero-banner {
     @apply transition-colors animate-gradient-background;
-    background: linear-gradient(270deg, #ff7676, #7679ff, #ff8585, #9e63ff);
+    background: linear-gradient(270deg, #0ea5e9, #06b6d4, #14b8a6, #22c55e);
     background-size: 800% 800%;
   }
 
@@ -53,11 +53,11 @@ a {
     @apply block;
     @apply p-2.5 w-full text-sm lg:text-base xl:text-lg text-dark;
     @apply border rounded-lg shadow-sm bg-slate-50 border-slate-300;
-    @apply focus:ring-cta focus:border-cta dark:bg-slate-700 dark:border-slate-600;
-    @apply dark:placeholder-slate-400 dark:text-light dark:focus:ring-cta dark:focus:border-cta;
+    @apply focus:ring-primary focus:border-primary dark:bg-slate-700 dark:border-slate-600;
+    @apply dark:placeholder-slate-400 dark:text-light dark:focus:ring-primary dark:focus:border-primary;
   }
   input {
-    @apply shadow-sm bg-slate-50 border border-slate-300 text-dark text-sm lg:text-base xl:text-lg rounded-lg focus:ring-cta focus:border-cta block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-cta dark:focus:border-cta dark:drop-shadow-sm;
+    @apply shadow-sm bg-slate-50 border border-slate-300 text-dark text-sm lg:text-base xl:text-lg rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-primary dark:focus:border-primary dark:drop-shadow-sm;
   }
   label {
     @apply block mb-2 text-base font-medium lg:text-lg xl:text-xl text-dark dark:text-light;

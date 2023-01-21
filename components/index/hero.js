@@ -1,5 +1,5 @@
 import Image from "next/image";
-import landingImage from "/public/engineering.png";
+import banne from "/public/coding.png";
 import Biography from "./biography";
 import Link from "next/link";
 import React from "react";
@@ -7,19 +7,19 @@ import React from "react";
 export default function Hero() {
   return (
     <div className="border-0">
-      <div id="hero-banner">
+      <div id="hero-banner" className="h-screen">
         {/* hero */}
-        <div className="grid text-center rounded lg:gap-4 lg:grid-cols-3 lg:text-center lg:items-center">
+        <div className="grid justify-center mt-20 text-center lg:mt-36 lg:gap-4 lg:grid-cols-2 lg:text-center lg:items-center">
           {/* text */}
 
-          <div className="grid gap-8 lg:gap-24">
+          <div className="grid justify-center gap-12 lg:gap-24">
             <>
               <Biography />
             </>
             <div className="text-center ">
               {/* button */}
               <Link href="/contact-form" passHref>
-                <button className="text-light bg-cta dark:bg-cta hover:bg-ctaHover dark:hover:bg-ctaHover">
+                <button className="text-light bg-primary dark:bg-primary hover:bg-primaryHover dark:hover:bg-primaryHover">
                   {"Let's talk"}
                 </button>
               </Link>
@@ -30,11 +30,12 @@ export default function Hero() {
 
           {/* landing pic */}
 
-          <div className="items-center justify-center pt-12 translate-y-10 lg:min-w-full lg:translate-y-20 lg:col-span-2">
-            {/* <p className="font-serif text-xl font-bold tracking-wide lg:text-xl text-dark dark:text-light lg:-translate-y-14">
-              {filipe.about}
-            </p> */}
-            <Image src={landingImage} alt="Web development vector" />
+          <div className="items-center justify-center mx-auto">
+            <Image
+              src={banne}
+              alt="Web development vector"
+              className="mt-10 scale-110 lg:mt-0"
+            />
           </div>
         </div>
       </div>

@@ -21,7 +21,11 @@ const ThemeSwitch = () => {
       className="p-2"
     >
       <span className="">
-        {isDark() ? <BsFillSunFill /> : <BsFillMoonFill />}
+        {isDark() ? (
+          <BsFillSunFill className="fill-primary hover:fill-primaryHover" />
+        ) : (
+          <BsFillMoonFill className="fill-primary hover:fill-primaryHover" />
+        )}
       </span>
     </div>
   );

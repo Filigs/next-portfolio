@@ -11,9 +11,9 @@ export default function Biography() {
   // </div>
   return (
     <div className="border-0">
-      <div className="text-2xl font-medium text-center text-white lg:text-3xl xl:text-4xl lg:max-w-xl">
+      <div className="text-xl font-medium text-center text-white lg:text-2xl lg:max-w-xl">
         {biography.body}
-        <div className="mt-4 font-mono font-black tracking-wider text-yellow-300 dark:text-yellow-300">
+        <div className="mt-4 font-mono text-3xl font-black tracking-wider text-cta lg:text-5xl dark:text-cta">
           <Typewriter
             cursor="true"
             loop="0"
