@@ -54,7 +54,7 @@ class myDocument extends Document {
           />
           <meta
             name="twitter:image"
-            content="https://i.ibb.co/wWSzVyz/preview.png"
+            content="https://i.ibb.co/V34QtC3/website-Preview.png"
           />
         </Head>
         {/* <!-- Google tag (gtag.js) --> */}
