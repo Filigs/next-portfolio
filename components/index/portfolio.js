@@ -2,6 +2,8 @@ import { HiExternalLink } from "react-icons/hi";
 import Image from "next/image";
 import acepipePic from "/public/acepipe.png";
 import portfolioPic from "/public/portfolio.png";
+import voilacryptoPic from "/public/voilacrypto.png";
+import Link from "next/link";
 
 export default function Portfolio() {
   const projects = [
@@ -12,20 +14,28 @@ export default function Portfolio() {
       title: "Personal CV Website",
       description:
         "My first website using React, it showcases my skills and projects in an interesting way. You can follow up all my progress by clicking the GitHub link.",
-      url: "https://tinyurl.com/227wlcg4",
-      github: "https://github.com/Filigs/next-portfolio",
+      url: "https://nunomartins.dev",
       image: portfolioPic,
     },
     {
       id: 1,
       type: "Website",
       start: "April, 2022",
-      title: "Acepipe, local ice cream shop",
+      title: "en.acepipe.pt - local ice cream shop",
       description:
         "The very first website I made commercially as a Freelancer, made in vanilla JS, HTML5 and CSS3, gathered a lot of information from this project.",
       url: "https://sandbox.acepipe.pt/",
-      github: "https://github.com/Filigs/Acepipe",
       image: acepipePic,
+    },
+    {
+      id: 2,
+      type: "Website",
+      start: "December, 2022",
+      title: "voilacrypto.io - Gambling / Crypto News",
+      description:
+        "This is a challenging project and the very base for a future project. In this one I 🚀",
+      url: "https://voilacrypto.io/",
+      image: voilacryptoPic,
     },
   ];
 
@@ -46,15 +56,16 @@ export default function Portfolio() {
           </p>
         </div>
         {/* + "grid-cols-" + projects.length */}
-        <div className={"grid grid-flow-row lg:grid-flow-col gap-8 "}>
-          {" "}
+        <div
+          className={"grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 "}
+        >
           {projects.map((project) => {
             return (
               <div
                 key={project.id}
-                className="max-w-screen-xl p-6 border rounded-lg shadow-md bg-slate-50 border-slate-200 dark:bg-slate-800 dark:border-slate-700"
+                className="max-w-screen-xl p-6 border shadow-md rounded-xl bg-slate-50 border-slate-200 dark:bg-slate-800 dark:border-slate-700"
               >
-                <div className="flex items-center justify-between mb-5 text-slate-500">
+                <div className="flex items-center justify-between mb-5 text-slate-500 dark:text-slate-400">
                   <span
                     key={project.type}
                     className="inline-flex items-center text-sm font-medium rounded bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800"
@@ -65,18 +76,18 @@ export default function Portfolio() {
                     {project.start}
                   </span>
                 </div>
-                <div className="items-center mx-auto my-8 rounded-lg ">
+                <div className="items-center content-center mx-auto w-fullrounded-lg h-80 lg:h-80">
                   <Image
                     alt={project.title + "'s image"}
                     src={project.image}
-                    className="rounded-lg "
+                    className="rounded-xl "
                   />
                 </div>
                 <h2
                   className="mb-4 text-2xl font-bold tracking-tight text-primaryHover dark:text-primary"
                   key={project.url}
                 >
-                  <a
+                  <Link
                     href={project.url}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -85,7 +96,7 @@ export default function Portfolio() {
                   >
                     <span key={project.title}> {project.title}</span>
                     <HiExternalLink className="ml-2 text-dark dark:text-primaryHover" />{" "}
-                  </a>
+                  </Link>
                 </h2>
                 <p
                   className="mb-5 font-light text-dark dark:text-light "
@@ -93,21 +104,6 @@ export default function Portfolio() {
                 >
                   {project.description}
                 </p>
-                <div
-                  className="flex items-center justify-end"
-                  key={project.github}
-                >
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    alt="My portfolio website"
-                    className="inline-flex items-center font-medium text-primary-600 dark:text-primary-500 hover:underline text-primaryHover dark:text-primary"
-                  >
-                    <span>Github</span>{" "}
-                    <HiExternalLink className="ml-2 text-black dark:text-primaryHover" />
-                  </a>
-                </div>
               </div>
             );
           })}
