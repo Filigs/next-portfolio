@@ -33,7 +33,7 @@ export default function Portfolio() {
       start: "December, 2022",
       title: "voilacrypto.io - Gambling / Crypto News",
       description:
-        "This is a challenging project and the very base for a future project. In this one I 🚀",
+        "This is a challenging project and the very base for a future project. This is a juicy one, lots of animations and morden UI practices 🚀",
       url: "https://voilacrypto.io/",
       image: voilacryptoPic,
     },
