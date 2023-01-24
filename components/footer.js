@@ -8,14 +8,14 @@ export default function Footer() {
         <div className="inline-flex items-center gap-2 text-center transition-all duration-75 lg:text-center lg:duration-500 justify-evenly">
           <p className="font-serif text-sm font-normal tracking-wide transition-transform duration-300 lg:text-lg xl:text-xl text-start lg:text-md text-slate-400 dark:text-slate-400 ">
             {"© 2022 "}
-            <a
-              href="https://crypto-mockup.vercel.app/"
+            <Link
+              href="https://www.nunomartins.dev"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:underline"
             >
               {"Filipe Martins™"}
-            </a>
+            </Link>
           </p>
           <p className="font-serif text-sm italic font-thin tracking-wide transition-transform duration-300 lg:text-lg xl:text-xl text-start lg:text-md text-slate-400 dark:text-slate-400">
             {"  " + "All Rights Reserved"}
