@@ -29,7 +29,7 @@ class myDocument extends Document {
           {/* SEO */}
           <meta name="robots" content="all" />
           {/* social media url preview */}
-          <meta property="og:url" content="https://rebrand.ly/filipemartins" />
+          <meta property="og:url" content="https://www.nunomartins.dev" />
           <meta
             property="og:title"
             content="Web Developer - Nuno Filipe Martins"
@@ -40,17 +40,14 @@ class myDocument extends Document {
           />
           <meta
             property="og:image"
-            content="https://i.ibb.co/wWSzVyz/preview.png"
+            content="https://i.ibb.co/V34QtC3/website-Preview.png"
           />
           <meta
             property="og:site_name"
             content="Nuno Filipe Martins - Freelancer Web Developer"
           />
           <meta name="twitter:card" content="summary_large_image" />
-          <meta
-            name="twitter:site"
-            content="https://rebrand.ly/filipemartins"
-          />
+          <meta name="twitter:site" content="https://www.nunomartins.dev" />
           <meta
             name="twitter:creator"
             content="Nuno Filipe Martins - Freelancer Web Developer"
