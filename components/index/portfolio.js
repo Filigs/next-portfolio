@@ -41,7 +41,7 @@ export default function Portfolio() {
 
   return (
     <div className="bg-light dark:bg-dark">
-      <div className="max-w-screen-xl px-4 py-8 mx-auto lg:py-16 lg:px-6 ">
+      <div className="max-w-screen-xl py-8 mx-auto lg:py-16 ">
         <div className="max-w-screen-sm mx-auto mb-10 text-center lg:mb-20">
           <h2 className="mb-4 text-3xl font-extrabold tracking-tight lg:text-4xl text-dark dark:text-light">
             {"Welcome to my "}
@@ -57,53 +57,59 @@ export default function Portfolio() {
         </div>
         {/* + "grid-cols-" + projects.length */}
         <div
-          className={"grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 "}
+          className={
+            "grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mx-4"
+          }
         >
           {projects.map((project) => {
             return (
               <div
                 key={project.id}
-                className="max-w-screen-xl p-6 border shadow-md rounded-xl bg-slate-50 border-slate-200 dark:bg-slate-800 dark:border-slate-700"
+                className="max-w-screen-xl drop-shadow-lg rounded-xl bg-slate-50 dark:bg-slate-800 "
               >
-                <div className="flex items-center justify-between mb-5 text-slate-500 dark:text-slate-400">
-                  <span
-                    key={project.type}
-                    className="inline-flex items-center text-sm font-medium rounded bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800"
-                  >
-                    {project.type}
-                  </span>
-                  <span key={project.start} className="text-sm">
-                    {project.start}
-                  </span>
-                </div>
-                <div className="items-center content-center mx-auto w-fullrounded-lg h-80 lg:h-80">
+                <div className="bg-cover rounded-lg h-72">
                   <Image
                     alt={project.title + "'s image"}
                     src={project.image}
-                    className="rounded-xl "
+                    className="object-cover w-full h-full rounded-t-xl"
+                    width={800}
+                    height={600}
                   />
                 </div>
-                <h2
-                  className="mb-4 text-2xl font-bold tracking-tight text-primaryHover dark:text-primary"
-                  key={project.url}
-                >
-                  <Link
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    alt="My portfolio website"
-                    className="inline-flex items-center hover:underline"
+                <div className="mx-4 mt-8">
+                  <h2
+                    className="text-3xl font-bold tracking-tight text-primaryHover dark:text-primary"
+                    key={project.url}
                   >
-                    <span key={project.title}> {project.title}</span>
-                    <HiExternalLink className="ml-2 text-dark dark:text-primaryHover" />{" "}
-                  </Link>
-                </h2>
-                <p
-                  className="mb-5 font-light text-dark dark:text-light "
-                  key={project.description}
-                >
-                  {project.description}
-                </p>
+                    <Link
+                      href={project.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      alt="My portfolio website"
+                      className="inline-flex items-center hover:underline"
+                    >
+                      <span key={project.title}> {project.title}</span>
+                    </Link>
+                  </h2>
+                  <p
+                    className="mt-4 text-lg font-light text-dark dark:text-light "
+                    key={project.description}
+                  >
+                    {project.description}
+                  </p>
+
+                  <div className="flex items-center justify-between mt-8 mb-5 text-slate-500 dark:text-slate-400">
+                    <span
+                      key={project.type}
+                      className="inline-flex items-center text-base font-medium rounded bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800"
+                    >
+                      {project.type}
+                    </span>
+                    <span key={project.start} className="text-sm">
+                      {project.start}
+                    </span>
+                  </div>
+                </div>
               </div>
             );
           })}
