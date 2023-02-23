@@ -40,7 +40,7 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="bg-light dark:bg-dark">
+    <div className="mt-30 bg-light dark:bg-dark">
       <div className="max-w-screen-xl py-8 mx-auto lg:py-16 ">
         <div className="max-w-screen-sm mx-auto mb-10 text-center lg:mb-20">
           <h2 className="mb-4 text-3xl font-extrabold tracking-tight lg:text-4xl text-dark dark:text-light">
@@ -49,7 +49,7 @@ export default function Portfolio() {
               {"Portfolio"}
             </span>
           </h2>
-          <p className="font-light text-slate-500 sm:text-xl dark:text-slate-400">
+          <p className="mt-16 text-xl tracking-wide font-base text-dark dark:text-white lg:text-2xl xl:text-3xl">
             {
               "Stay updated with the current project I'm working at and my best past development experiences!"
             }

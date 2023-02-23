@@ -10,6 +10,8 @@ module.exports = {
     "./node_modules/flowbite/**/*.{js,ts,jsx,tsx}",
     "./public/**/*.html",
     "./styles/globals.css",
+    "./utils/*.{js,jsx,ts,tsx}",
+    "./utils/**.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {

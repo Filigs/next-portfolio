@@ -19,7 +19,7 @@ export default function Hero() {
             <div className="text-center ">
               {/* button */}
               <Link href="/contact-form" passHref>
-                <button className="text-light bg-primary dark:bg-primary hover:bg-primaryHover dark:hover:bg-primaryHover">
+                <button className="text-dark bg-cta dark:bg-cta drop-shadow-2xl hover:bg-ctaHover dark:hover:bg-ctaHover">
                   {"Let's talk"}
                 </button>
               </Link>
@@ -30,7 +30,7 @@ export default function Hero() {
 
           {/* landing pic */}
 
-          <div className="items-center justify-center mx-auto">
+          <div className="items-center justify-center h-full mx-auto">
             <Image
               src={banne}
               alt="Web development vector"
