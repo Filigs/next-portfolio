@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Layout from "../components/layout";
 import Router from "next/router";
 import Loader from "../components/loader";
@@ -10,8 +10,8 @@ import "@fontsource/roboto/500.css";
 import "@fontsource/roboto/700.css";
 
 function MyApp({ Component, pageProps }) {
-  const [loading, setLoading] = React.useState(false);
-  React.useEffect(() => {
+  const [loading, setLoading] = useState(false);
+  useEffect(() => {
     const start = () => {
       // console.log("start");
       setLoading(true);

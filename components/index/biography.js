@@ -10,10 +10,12 @@ export default function Biography() {
   //   <Typewriter />
   // </div>
   return (
-    <div className="border-0">
-      <div className="text-xl font-medium text-center text-white lg:text-2xl lg:max-w-xl">
-        {biography.body}
-        <div className="mt-4 font-mono text-3xl font-black tracking-wider text-cta lg:text-5xl dark:text-cta">
+    <div className="h-full border-0">
+      <div className=" lg:max-w-xl">
+        <h1 className="text-2xl font-black text-center text-white lg:text-4xl">
+          {biography.body}
+        </h1>
+        <div className="mt-4 font-mono text-3xl font-thin tracking-widest text-cta lg:text-5xl dark:text-cta">
           <Typewriter
             cursor="true"
             loop="0"
@@ -22,6 +24,7 @@ export default function Biography() {
               "User Friendly",
               "Lightweight",
               "SEO Friendly",
+              "Modern",
             ]}
           />
         </div>

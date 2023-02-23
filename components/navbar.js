@@ -14,7 +14,7 @@ export default function NavBar() {
             alt="Avatar as a logo"
             width={40}
             height={40}
-            className="scale-95 rounded-full bg-cta dark:bg-cta"
+            className="object-cover scale-95 rounded-full bg-cta dark:bg-cta"
           />
           <Link href="/" passHref>
             <div className="text-xl font-semibold align-baseline lg:text-2xl text-dark dark:text-light">

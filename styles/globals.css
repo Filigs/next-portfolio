@@ -28,7 +28,7 @@ a {
     @apply antialiased lg:transition-transform lg:duration-75;
   }
   button {
-    @apply px-6 py-3 text-xl font-bold tracking-wider text-center rounded-xl lg:text-2xl xl:text-3xl sm:w-fit focus:ring-4 lg:px-9 lg:py-5 xl:px-12 xl:py-6 focus:ring-primaryHover dark:focus:ring-primaryHover hover:opacity-90 drop-shadow-lg;
+    @apply px-4 py-2 text-xl font-bold tracking-wider text-center rounded-xl lg:text-2xl xl:text-3xl sm:w-fit focus:ring-4 lg:px-9 lg:py-5 xl:px-12 xl:py-6 focus:ring-primaryHover dark:focus:ring-primaryHover hover:opacity-90 drop-shadow-lg;
   }
 
   div#hero-banner {
