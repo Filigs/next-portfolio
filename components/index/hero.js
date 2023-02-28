@@ -1,5 +1,6 @@
 import Image from "next/image";
-import banne from "/public/coding.png";
+// import banne from "/public/coding.png";
+import banner from "/public/landing.png";
 import Biography from "./biography";
 import Link from "next/link";
 import React from "react";
@@ -27,16 +28,17 @@ export default function Hero() {
           </div>
 
           {/* ! text */}
+        </div>
+        {/* landing pic */}
 
-          {/* landing pic */}
-
-          <div className="items-center justify-center h-full mx-auto">
-            <Image
-              src={banne}
-              alt="Web development vector"
-              className="mt-10 scale-110 lg:mt-0"
-            />
-          </div>
+        <div className="bg-cover h-72">
+          <Image
+            src={banner}
+            alt="Web development vector"
+            className="object-cover mt-10 scale-110 lg:mt-0"
+            width={1920}
+            height={1080}
+          />
         </div>
       </div>
     </div>
