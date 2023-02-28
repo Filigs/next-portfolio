@@ -3,6 +3,7 @@ import banne from "/public/coding.png";
 import Biography from "./biography";
 import Link from "next/link";
 import React from "react";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
@@ -19,9 +20,14 @@ export default function Hero() {
             <div className="text-center ">
               {/* button */}
               <Link href="/contact-form" passHref>
-                <button className="text-dark bg-cta dark:bg-cta drop-shadow-2xl hover:bg-ctaHover dark:hover:bg-ctaHover">
+                <motion.button
+                  className="text-dark bg-cta dark:bg-cta drop-shadow-2xl"
+                  whileHover={{ scale: 1.05, rotate: 5 }}
+                  whileTap={{ scale: 0.95 }}
+                  transition={{ duration: 0.2 }}
+                >
                   {"Let's talk"}
-                </button>
+                </motion.button>
               </Link>
             </div>
           </div>
@@ -29,13 +35,20 @@ export default function Hero() {
           {/* ! text */}
 
           {/* landing pic */}
-
           <div className="items-center justify-center h-full mx-auto">
-            <Image
-              src={banne}
-              alt="Web development vector"
-              className="mt-10 scale-110 lg:mt-0"
-            />
+            <motion.div
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 1 }}
+            >
+              <Image
+                src={banne}
+                alt="Web development vector"
+                className="mt-10 scale-110 lg:mt-0"
+              />
+            </motion.div>
           </div>
         </div>
       </div>
