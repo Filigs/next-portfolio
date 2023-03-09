@@ -12,10 +12,10 @@ export default function Biography() {
   return (
     <div className="h-full border-0">
       <div className=" lg:max-w-xl">
-        <h1 className="text-2xl font-black text-center text-white lg:text-4xl">
+        <h1 className="text-3xl font-black text-center text-white lg:text-4xl">
           {biography.body}
         </h1>
-        <div className="mt-4 font-mono text-3xl font-thin tracking-widest text-cta lg:text-5xl dark:text-cta">
+        <div className="mt-12 font-mono text-3xl font-thin tracking-widest text-cta lg:text-5xl dark:text-cta">
           <Typewriter
             cursor="true"
             loop="0"
