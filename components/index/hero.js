@@ -10,18 +10,18 @@ export default function Hero() {
     <div className="border-0">
       <div id="hero-banner" className="h-screen">
         {/* hero */}
-        <div className="grid justify-center mt-20 text-center lg:mt-36 lg:gap-4 lg:grid-cols-2 lg:text-center lg:items-center">
+        <div className="grid justify-center mt-8 text-center lg:mt-14 lg:gap-4 lg:grid-cols-2 lg:text-center lg:items-center">
           {/* text */}
 
           <div className="grid justify-center gap-12 lg:gap-24">
             <>
               <Biography />
             </>
-            <div className="text-center ">
+            <div className="mt-8 text-center">
               {/* button */}
               <Link href="/contact-form" passHref>
                 <motion.button
-                  className="text-dark bg-cta dark:bg-cta drop-shadow-2xl"
+                  className="px-12 py-8 text-4xl text-dark bg-cta dark:bg-cta drop-shadow-2xl lg:text-6xl"
                   whileHover={{ scale: 1.05, rotate: 5 }}
                   whileTap={{ scale: 0.95 }}
                   transition={{ duration: 0.2 }}
