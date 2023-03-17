@@ -1,6 +1,7 @@
 import Head from "next/head";
 import Experience from "../components/experience";
-import Hero from "../components/index/hero";
+// import Hero from "../components/index/hero";
+import Landing from "../components/index/landing";
 import Portfolio from "../components/index/portfolio";
 const titleName = "Filipe Martins - Web Developer";
 
@@ -21,7 +22,8 @@ export default function Home() {
         {/* <NavBar /> */}
         <div>
           <section>
-            <Hero />
+            {/* <Hero /> */}
+            <Landing />
           </section>
           <section>
             <Experience />
