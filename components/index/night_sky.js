@@ -1,6 +1,5 @@
 import { useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { range } from "lodash";
 
 const NightSky = () => {
   const canvasRef = useRef(null);
@@ -8,43 +7,37 @@ const NightSky = () => {
   useEffect(() => {
     const canvas = canvasRef.current;
     const context = canvas.getContext("2d");
-    let requestId;
 
     const resizeCanvas = () => {
       canvas.width = canvas.parentElement.offsetWidth;
       canvas.height = canvas.parentElement.offsetHeight;
     };
 
-    const generateRandomCoordinates = (maxX, maxY) => {
-      return [
-        Math.floor(Math.random() * maxX),
-        Math.floor(Math.random() * maxY),
-      ];
-    };
-
-    const drawStars = () => {
-      context.clearRect(0, 0, canvas.width, canvas.height);
-      const numStars = Math.round((canvas.width * canvas.height) / 10000);
-      const starCoords = range(numStars).map(() =>
-        generateRandomCoordinates(canvas.width, canvas.height)
+    const drawGradient = () => {
+      const grd = context.createLinearGradient(
+        0,
+        0,
+        canvas.width,
+        canvas.height
       );
-      starCoords.forEach(([x, y]) => {
-        const starSize = Math.random() * 2;
-        const opacity = Math.random() * 0.5 + 0.5;
-        context.beginPath();
-        context.fillStyle = `rgba(255, 255, 204, ${opacity})`; // light yellow color
+      grd.addColorStop(0, "#04004d");
+      grd.addColorStop(0.2, "#0d008e");
+      grd.addColorStop(0.4, "#1c00cc");
+      grd.addColorStop(0.6, "#4500ff");
+      grd.addColorStop(0.8, "#9100ff");
+      grd.addColorStop(1, "#ff00e1");
 
-        context.arc(x, y, starSize, 0, 2 * Math.PI);
-        context.fill();
-      });
-      requestId = requestAnimationFrame(drawStars);
+      context.fillStyle = grd;
+      context.fillRect(0, 0, canvas.width, canvas.height);
     };
 
     resizeCanvas();
-    drawStars();
+    drawGradient();
+
+    window.addEventListener("resize", resizeCanvas);
 
     return () => {
-      cancelAnimationFrame(requestId);
+      window.removeEventListener("resize", resizeCanvas);
     };
   }, []);
 

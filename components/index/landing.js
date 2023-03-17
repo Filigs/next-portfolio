@@ -9,7 +9,7 @@ import NightSky from "./night_sky";
 export default function Landing() {
   return (
     <div className="border-0">
-      <div className="relative w-full h-screen bg-black">
+      <div className="relative w-full h-screen">
         {/* Add NightSky component as a background */}
         <NightSky />
         {/* hero */}
