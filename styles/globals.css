@@ -69,6 +69,10 @@ a {
     @apply bg-light dark:bg-darkDarker;
   }
   .card-content {
-    @apply py-4 px-6 text-base text-gray-700;
+    @apply py-8 px-6 text-lg font-light text-darkDarker dark:text-white;
+  }
+  .card-wrapper {
+    @apply relative rounded-xl overflow-hidden shadow-lg bg-light dark:bg-darkMedium;
+    /* Add any additional properties here */
   }
 }

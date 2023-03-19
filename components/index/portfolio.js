@@ -1,7 +1,4 @@
-import { HiExternalLink } from "react-icons/hi";
 import Image from "next/image";
-
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { projects } from "../../lib/projects";
 export default function Portfolio() {
@@ -46,10 +43,12 @@ export default function Portfolio() {
                   </p>
 
                   <div className="flex flex-wrap items-center justify-between">
-                    <span className="inline-block px-3 py-1 mb-2 mr-2 text-base font-medium rounded-full bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800">
+                    <span className="inline-block px-3 py-1 mb-2 mr-2 text-base font-medium rounded-full bg-primaryHover text-lighter dark:bg-primary dark:text-light">
                       {project.type}
                     </span>
-                    <span className="text-sm">{project.start}</span>
+                    <span className="text-sm text-darkLighter dark:text-lightest">
+                      {project.start}
+                    </span>
                   </div>
                 </div>
               </motion.div>
