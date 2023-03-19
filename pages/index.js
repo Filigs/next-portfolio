@@ -24,10 +24,10 @@ export default function Home() {
             <Hero />
           </section>
           <section>
-            <Experience />
+            <Portfolio />
           </section>
           <section>
-            <Portfolio />
+            <Experience />
           </section>
         </div>
       </main>

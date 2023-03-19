@@ -12,6 +12,8 @@ module.exports = {
     "./styles/globals.css",
     "./utils/*.{js,jsx,ts,tsx}",
     "./utils/**.{js,jsx,ts,tsx}",
+    "./lib/*.{js,jsx,ts,tsx}",
+    "./lib/**.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {

@@ -68,4 +68,7 @@ a {
   nav div {
     @apply bg-light dark:bg-darkDarker;
   }
+  .card-content {
+    @apply py-4 px-6 text-base text-gray-700;
+  }
 }
