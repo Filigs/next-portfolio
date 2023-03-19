@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 export default function Hero() {
   return (
     <div className="border-0">
-      <div id="hero-banner" className="h-screen">
+      <div id="hero-banner" className="h-screen" alt="hero banner">
         {/* hero */}
         <div className="grid justify-center mt-8 text-center lg:mt-14 lg:gap-4 lg:grid-cols-2 lg:text-center lg:items-center">
           {/* text */}
