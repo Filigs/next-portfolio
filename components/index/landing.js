@@ -4,12 +4,16 @@ import Biography from "./biography";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-export default function Hero() {
+import NightSky from "./night_sky";
+
+export default function Landing() {
   return (
     <div className="border-0">
-      <div id="hero-banner" className="h-screen">
+      <div className="relative w-full h-screen">
+        {/* Add NightSky component as a background */}
+        <NightSky />
         {/* hero */}
-        <div className="grid justify-center mt-8 text-center lg:mt-14 lg:gap-4 lg:grid-cols-2 lg:text-center lg:items-center">
+        <div className="z-10 grid justify-center mt-8 text-center lg:mt-14 lg:gap-4 lg:grid-cols-2 lg:text-center lg:items-center">
           {/* text */}
 
           <div className="grid justify-center gap-12 lg:gap-24">
@@ -34,7 +38,7 @@ export default function Hero() {
           {/* ! text */}
 
           {/* landing pic */}
-          <div className="items-center justify-center h-full mx-auto">
+          <div className="relative items-center justify-center h-full mx-auto">
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}

@@ -12,6 +12,8 @@ module.exports = {
     "./styles/globals.css",
     "./utils/*.{js,jsx,ts,tsx}",
     "./utils/**.{js,jsx,ts,tsx}",
+    "./lib/*.{js,jsx,ts,tsx}",
+    "./lib/**.{js,jsx,ts,tsx}",
   ],
   theme: {
     extend: {
@@ -29,26 +31,30 @@ module.exports = {
         "gradient-background": "rotate-gradient 30s ease infinite",
       },
       colors: {
-        // Color Palettes
-        primary: "#10B981",
-        primaryHover: "#34d399",
+        // ? Color Palettes
+        primary: "#3b82f6", // blue-500
+        primaryHover: "#60a5fa", // blue-400
         cta: "#fde047",
-        //  Light mode https://coolors.co/ffffff-f7f8fa-f3f4f6-10b981
-        fillerDark: "#F5F5F5",
-        fillerMedium: "#FAFAFA",
-        light: "#FFFFFF",
+        // ? Light mode https://coolors.co/ffffff-f7f8fa-f3f4f6-10b981
+        lightest: "#FFFFFF",
+        lighter: "#F7F8FA",
+        light: "#F3F4F6",
+        medium: "#E5E7EB",
+        dark: "#374151",
+        darkest: "#1F2937",
+
         // ! Light mode
 
-        // Dark mode https://coolors.co/1f1f1f-121212-0a0a0a-10b981x
-        darkFillerLight: "#334155",
-        darkFillerMedium: "#1E293B",
-        dark: "#0F172A",
+        // ? Dark mode https://coolors.co/1f1f1f-121212-0a0a0a-10b981x
+        darkLighter: "#4B5563",
+        darkMedium: "#1E293B",
+        darkDarker: "#0F172A",
         // ! Dark mode
 
-        // background colors for booleans
+        // ? background colors for booleans
 
-        success: "#56B389", // green
-        danger: "#EB5E55", // red
+        success: "#16A34A", // green
+        danger: "#EF4444", // red
         // ! Color Palettes
       },
     },
