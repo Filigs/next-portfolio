@@ -21,9 +21,9 @@ const jobs = [
 
 export default function Experience() {
   return (
-    <div className="block bg-light dark:bg-dark rounded-t-xl">
+    <div className="block bg-light dark:bg-darkDarker rounded-t-xl">
       <div className="grid grid-flow-row mt-16">
-        <div className="mt-16 bg-light dark:bg-dark rounded-xl">
+        <div className="mt-16 bg-light dark:bg-darkDarker rounded-xl">
           <h1 className="mx-auto mt-8 text-4xl font-black text-center cursor-default lg:text-6xl max-w-fit dark:after:text-light rounded-xl">
             <span>Professional </span>
             <span className="text-primary dark:text-primary">Experience</span>
@@ -33,7 +33,7 @@ export default function Experience() {
           {jobs.map((job) => (
             <div
               key={job.id}
-              className="grid h-auto max-w-xl grid-flow-row pb-12 mx-auto mt-16 text-center border-b rounded-md dark:bg-dark border-slate-200 dark:border-slate-500"
+              className="grid h-auto max-w-xl grid-flow-row pb-12 mx-auto mt-16 text-center border-b rounded-md dark:bg-darkDarker border-slate-200 dark:border-slate-500"
             >
               <div className="grid grid-flow-row leading-relaxed">
                 <h2 className="text-3xl font-bold text-primary lg:text-4xl xl:text-5xl dark:text-primary">

@@ -15,9 +15,9 @@ export default function ContactForm() {
   }
   return (
     <div className="h-screen mx-4">
-      <section className="h-full transition-all duration-75 bg-light dark:bg-dark lg:duration-500">
+      <section className="h-full transition-all duration-75 bg-light dark:bg-darkDarker lg:duration-500">
         <div className="max-w-screen-md px-4 py-8 mx-auto lg:py-16">
-          <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-dark dark:text-light">
+          <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-darkDarker dark:text-light">
             Seems like you have something on your mind!
           </h2>
           <p className="mb-8 font-light text-center lg:mb-16 text-slate-500 dark:text-slate-400 sm:text-xl">
@@ -29,7 +29,7 @@ export default function ContactForm() {
             <div>
               <label
                 htmlFor="email"
-                className="block mt-4 text-xl font-bold tracking-wide xl:text-3xl text-dark dark:text-light"
+                className="block mt-4 text-xl font-bold tracking-wide xl:text-3xl text-darkDarker dark:text-light"
               >
                 Contact Email
               </label>
@@ -50,7 +50,7 @@ export default function ContactForm() {
             <div>
               <label
                 htmlFor="subject"
-                className="block mt-4 text-xl font-bold tracking-wide xl:text-3xl text-dark dark:text-light"
+                className="block mt-4 text-xl font-bold tracking-wide xl:text-3xl text-darkDarker dark:text-light"
               >
                 What type of project is it?
               </label>
@@ -70,7 +70,7 @@ export default function ContactForm() {
             <div className="sm:col-span-2">
               <label
                 htmlFor="message"
-                className="block mt-4 text-xl font-bold tracking-wide xl:text-3xl text-dark dark:text-light"
+                className="block mt-4 text-xl font-bold tracking-wide xl:text-3xl text-darkDarker dark:text-light"
               >
                 About the project
               </label>

@@ -72,7 +72,7 @@ class myDocument extends Document {
             `}
         </Script>
 
-        <body className="text-dark bg-light dark:bg-dark dark:text-light">
+        <body className="text-darkDarker bg-light dark:bg-darkDarker dark:text-light">
           <Main />
           <NextScript />
         </body>

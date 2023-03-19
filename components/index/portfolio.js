@@ -40,45 +40,39 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="mt-30 bg-light dark:bg-dark">
+    <div className="mt-30 bg-light dark:bg-darkDarker">
       <div className="max-w-screen-xl py-8 mx-auto lg:py-16 ">
         <div className="max-w-screen-sm mx-auto mb-10 text-center lg:mb-20">
-          <h2 className="mb-4 text-4xl font-extrabold tracking-tight lg:text-6xl text-dark dark:text-light">
+          <h2 className="mb-4 text-4xl font-extrabold tracking-tight lg:text-6xl text-darkDarker dark:text-light">
             {"Welcome to my "}
             <span className="text-primaryHover dark:text-primary">
               {"Portfolio"}
             </span>
           </h2>
-          <p className="mt-16 text-xl tracking-wide font-base text-dark dark:text-white lg:text-2xl xl:text-3xl">
+          <p className="mt-16 text-xl tracking-wide font-base text-darkDarker dark:text-white lg:text-2xl xl:text-3xl">
             {
               "Stay updated with the current project I'm working at and my best past development experiences!"
             }
           </p>
         </div>
-        {/* + "grid-cols-" + projects.length */}
-        <div
-          className={
-            "grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-8 mx-4"
-          }
-        >
+        <div className="grid grid-cols-1 gap-8 mx-4 lg:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => {
             return (
               <div
                 key={project.id}
-                className="max-w-screen-xl drop-shadow-lg rounded-xl bg-slate-50 dark:bg-slate-800 "
+                className="max-w-screen-xl shadow-lg rounded-xl bg-light dark:bg-darkDarker"
               >
-                <div className="bg-cover rounded-lg h-72">
+                <div className="relative overflow-hidden h-72 rounded-t-xl">
                   <Image
                     alt={project.title + "'s image"}
                     src={project.image}
-                    className="object-cover w-full h-full rounded-t-xl"
-                    width={800}
-                    height={600}
+                    className="object-cover w-full h-full"
+                    layout="fill"
                   />
                 </div>
-                <div className="mx-4 mt-8">
+                <div className="px-6 py-8">
                   <h2
-                    className="text-3xl font-bold tracking-tight text-primaryHover dark:text-primary"
+                    className="mb-4 text-3xl font-bold tracking-tight text-primaryHover dark:text-primary"
                     key={project.url}
                   >
                     <Link
@@ -89,19 +83,20 @@ export default function Portfolio() {
                       className="inline-flex items-center hover:underline"
                     >
                       <span key={project.title}> {project.title}</span>
+                      <HiExternalLink className="ml-2" />
                     </Link>
                   </h2>
                   <p
-                    className="mt-4 text-lg font-light text-dark dark:text-light "
+                    className="mb-4 text-lg font-light text-darkDarker dark:text-white"
                     key={project.description}
                   >
                     {project.description}
                   </p>
 
-                  <div className="flex items-center justify-between mt-8 mb-5 text-slate-500 dark:text-slate-400">
+                  <div className="flex items-center justify-between">
                     <span
                       key={project.type}
-                      className="inline-flex items-center text-base font-medium rounded bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800"
+                      className="inline-block px-3 py-1 text-base font-medium rounded-full bg-primary-100 text-primary-800 dark:bg-primary-200 dark:text-primary-800"
                     >
                       {project.type}
                     </span>
