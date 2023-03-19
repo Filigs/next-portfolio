@@ -32,14 +32,22 @@ a {
   }
 
   div#hero-banner {
-    @apply items-center justify-center block h-screen px-12 pt-6 mx-auto lg:gap-x-8 lg:min-w-full gradient-hero-banner dark:gradient-hero-banner;
+    @apply items-center justify-center block h-screen px-12 pt-6 mx-auto lg:gap-x-8 lg:min-w-full gradient-hero-banner dark:gradient-hero-banner-dark;
   }
   .gradient-hero-banner {
     @apply transition-colors animate-gradient-background;
-    background: linear-gradient(270deg, #0ea5e9, #06b6d4, #14b8a6, #22c55e);
-    background-size: 800% 800%;
+    background: linear-gradient(270deg, #2563eb, #1e40af, #1d4ed8, #2563eb),
+      url("../public/hero/hero-pattern.svg");
+    background-size: 800% 800%, cover;
+    background-blend-mode: lighten;
   }
-
+  .gradient-hero-banner-dark {
+    @apply transition-colors animate-gradient-background;
+    background: linear-gradient(270deg, #0f172a, #111827, #0f172a, #1f2937),
+      url("../public/hero/hero-pattern-dark.svg");
+    background-size: 800% 800%, cover;
+    background-blend-mode: lighten;
+  }
   .lightGradient {
     @apply bg-gradient-to-r from-darkest to-medium;
   }

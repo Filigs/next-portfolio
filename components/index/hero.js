@@ -4,7 +4,6 @@ import Biography from "./biography";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-
 export default function Hero() {
   return (
     <div className="border-0">
