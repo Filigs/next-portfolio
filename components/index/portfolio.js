@@ -31,7 +31,7 @@ export default function Portfolio() {
                     <Image
                       alt={project.title + "'s image"}
                       src={project.image}
-                      className="object-cover w-full h-full"
+                      className="object-cover w-full h-full imageContainer"
                     />
                   </div>
                   <div className="flex flex-col justify-between px-6 py-8 card-content">

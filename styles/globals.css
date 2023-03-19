@@ -37,14 +37,14 @@ a {
   .gradient-hero-banner {
     @apply transition-colors animate-gradient-background;
     background: linear-gradient(270deg, #2563eb, #1e40af, #1d4ed8, #2563eb),
-      url("../public/hero/hero-pattern.svg");
+      url("../public/hero-pattern.svg");
     background-size: 800% 800%, cover;
     background-blend-mode: lighten;
   }
   .gradient-hero-banner-dark {
     @apply transition-colors animate-gradient-background;
     background: linear-gradient(270deg, #0f172a, #111827, #0f172a, #1f2937),
-      url("../public/hero/hero-pattern-dark.svg");
+      url("../public/hero-pattern-dark.svg");
     background-size: 800% 800%, cover;
     background-blend-mode: lighten;
   }
@@ -82,5 +82,8 @@ a {
   .card-wrapper {
     @apply relative rounded-xl overflow-hidden shadow-lg bg-light dark:bg-darkMedium;
     /* Add any additional properties here */
+  }
+  .imageContainer {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
 }
