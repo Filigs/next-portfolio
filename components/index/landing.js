@@ -4,14 +4,11 @@ import Biography from "./biography";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import NightSky from "./night_sky";
 
 export default function Landing() {
   return (
     <div className="border-0">
       <div className="relative w-full h-screen">
-        {/* Add NightSky component as a background */}
-        <NightSky />
         {/* hero */}
         <div className="z-10 grid justify-center mt-8 text-center lg:mt-14 lg:gap-4 lg:grid-cols-2 lg:text-center lg:items-center">
           {/* text */}
