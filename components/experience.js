@@ -21,7 +21,7 @@ const jobs = [
 
 export default function Experience() {
   return (
-    <div className="block my-8 bg-light dark:bg-darkDarker rounded-t-xl">
+    <div className="block mx-4 my-8 bg-light dark:bg-darkDarker rounded-t-xl">
       <div className="grid grid-flow-row mt-16">
         <div className="mt-16 bg-light dark:bg-darkDarker rounded-xl">
           <h1 className="mx-auto mt-8 text-4xl font-black text-center cursor-default lg:text-6xl max-w-fit dark:after:text-light rounded-xl">
