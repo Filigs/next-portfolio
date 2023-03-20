@@ -4,7 +4,7 @@ import { projects } from "../../lib/projects";
 import Link from "next/link";
 export default function Portfolio() {
   return (
-    <div className="mt-30 bg-light dark:bg-transparent">
+    <div className="mx-4 mt-30 bg-light dark:bg-transparent">
       <div className="max-w-screen-xl py-8 mx-auto lg:py-16 ">
         <div className="max-w-screen-sm mx-auto mb-10 text-center lg:mb-20">
           <h2 className="mb-4 text-4xl font-extrabold tracking-wider lg:text-6xl text-darkDarker dark:text-light">
@@ -19,7 +19,7 @@ export default function Portfolio() {
             }
           </p>
         </div>
-        <div className="grid grid-cols-1 gap-8 mx-4 lg:grid-cols-2 xl:grid-cols-3">
+        <div className="grid grid-cols-1 gap-8 lg:grid-cols-2 xl:grid-cols-3">
           {projects.map((project) => {
             return (
               <Link href={project.url} key={project.id}>

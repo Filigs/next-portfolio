@@ -1,18 +1,14 @@
 import Image from "next/image";
-// import banne from "/public/coding.png";
-import arrowCta from "/public/cta_arrow.svg";
+import banne from "/public/coding.png";
 import Biography from "./biography";
 import Link from "next/link";
 import React from "react";
 import { motion } from "framer-motion";
-import NightSky from "./night_sky";
 
 export default function Landing() {
   return (
     <div className="border-0">
       <div className="relative w-full h-screen">
-        {/* Add NightSky component as a background */}
-        <NightSky />
         {/* hero */}
         <div className="z-10 grid justify-center mt-8 text-center lg:mt-14 lg:gap-4 lg:grid-cols-2 lg:text-center lg:items-center">
           {/* text */}
@@ -48,7 +44,7 @@ export default function Landing() {
               transition={{ duration: 1 }}
             >
               <Image
-                src={arrowCta}
+                src={banne}
                 alt="Web development vector"
                 className="mt-10 scale-110 lg:mt-0"
               />
