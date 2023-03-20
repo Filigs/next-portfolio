@@ -1,5 +1,6 @@
 import Image from "next/image";
-import banne from "/public/coding.png";
+// import banne from "/public/coding.png";
+import arrowCta from "/public/cta_arrow.svg";
 import Biography from "./biography";
 import Link from "next/link";
 import React from "react";
@@ -47,7 +48,7 @@ export default function Landing() {
               transition={{ duration: 1 }}
             >
               <Image
-                src={banne}
+                src={arrowCta}
                 alt="Web development vector"
                 className="mt-10 scale-110 lg:mt-0"
               />
