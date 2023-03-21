@@ -1,21 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Exo&display=swap");
 
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: "Exo", sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -24,8 +8,20 @@ a {
 @layer base {
   /* smooth animations */
   *,
-  html {
+  html,
+  body {
     @apply antialiased lg:transition-transform lg:duration-75;
+    padding: 0;
+    margin: 0;
+    font-family: "Exo", sans-serif;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
   }
   button {
     @apply px-4 py-2 text-xl font-bold tracking-wider text-center rounded-xl lg:text-2xl xl:text-3xl sm:w-fit focus:ring-4 lg:px-9 lg:py-5 xl:px-12 xl:py-6 focus:ring-primaryHover dark:focus:ring-primaryHover hover:opacity-90 drop-shadow-lg;
@@ -89,5 +85,8 @@ a {
   }
   .imageContainer {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+  .avatarBackground {
+    background: url("avatar-pattern.svg");
   }
 }
