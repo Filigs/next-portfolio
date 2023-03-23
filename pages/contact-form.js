@@ -38,7 +38,7 @@ export default function ContactForm() {
                 type="email"
                 name="email"
                 placeholder="Email@provider.com"
-                className="mt-4"
+                className="w-full p-2 mt-4 border rounded-md bg-lighter dark:bg-darkMedium focus:outline-none focus:border-primary"
                 required
               />
               <ValidationError
@@ -58,7 +58,7 @@ export default function ContactForm() {
                 type="text"
                 id="subject"
                 placeholder="Startup / E-Commerce / Web app / SaaS ..."
-                className="mt-4"
+                className="w-full p-2 mt-4 border rounded-md bg-lighter dark:bg-darkMedium focus:outline-none focus:border-primary"
                 required
               />
               <ValidationError
@@ -77,7 +77,7 @@ export default function ContactForm() {
               <textarea
                 id="message"
                 rows="6"
-                className="mt-4"
+                className="w-full p-2 mt-4 border rounded-md bg-lighter dark:bg-darkMedium focus:outline-none focus:border-primary"
                 placeholder="Please let me know what's on your mind, feel free to elaborate as much as possible."
               ></textarea>
               <ValidationError
@@ -88,15 +88,15 @@ export default function ContactForm() {
             </div>
             <div className="flex flex-row items-center justify-between mt-24">
               <button
-                className="text-light bg-success"
+                className="px-6 py-2 text-lg font-semibold rounded-md text-light bg-success hover:bg-success-light focus:outline-none focus:ring focus:ring-success-light"
                 onClick={() => router.back()}
               >
-                {"Back"}
+                Back
               </button>
               <button
                 type="submit"
                 disabled={state.submitting}
-                className="text-light bg-danger"
+                className="px-6 py-2 text-lg font-semibold rounded-md text-light bg-danger hover:bg-danger-light focus:outline-none focus:ring focus:ring-danger-light"
               >
                 Submit
               </button>
@@ -107,5 +107,3 @@ export default function ContactForm() {
     </div>
   );
 }
-
-// fazer form de raiz
