@@ -24,7 +24,9 @@ export default function Layout({ children }) {
       initial="hidden"
       animate="visible"
     >
-      <Navbar />
+      <header>
+        <Navbar />
+      </header>
       <motion.main
         className="flex-1"
         initial={{ opacity: 0 }}
@@ -33,7 +35,9 @@ export default function Layout({ children }) {
       >
         {children}
       </motion.main>
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
       <BackToTopButton />
     </motion.div>
   );

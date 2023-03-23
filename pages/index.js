@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Experience from "../components/experience";
+import Experience from "../components/index/experience";
 import Hero from "../components/index/hero";
 import Portfolio from "../components/index/portfolio";
 const titleName = "Filipe Martins - Web Developer";
@@ -17,7 +17,7 @@ export default function Home() {
         {/* */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main>
+      <main className="min-h-screen">
         {/* <NavBar /> */}
         <div>
           <section>

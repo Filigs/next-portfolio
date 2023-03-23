@@ -2,10 +2,11 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { projects } from "../../lib/projects";
 import Link from "next/link";
+
 export default function Portfolio() {
   return (
-    <div className="mx-4 mt-30 bg-light dark:bg-transparent">
-      <div className="max-w-screen-xl py-8 mx-auto lg:py-16 ">
+    <div className="mx-4 bg-transparent mt-30 dark:bg-transparent">
+      <div className="max-w-screen-xl py-8 mx-auto lg:py-16">
         <div className="max-w-screen-sm mx-auto mb-10 text-center lg:mb-20">
           <h2 className="mb-4 text-4xl font-extrabold tracking-wider lg:text-6xl text-darkDarker dark:text-light">
             {"Welcome to my "}
@@ -24,7 +25,7 @@ export default function Portfolio() {
             return (
               <Link href={project.url} key={project.id}>
                 <motion.div
-                  className="max-w-screen-xl shadow-lg rounded-xl bg-light dark:bg-darkMedium"
+                  className="max-w-screen-xl transition-shadow duration-300 bg-transparent shadow-lg rounded-xl dark:bg-transparent hover:shadow-2xl"
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="relative h-64 overflow-hidden sm:h-72 md:h-80 lg:h-96 rounded-t-xl">
@@ -34,11 +35,11 @@ export default function Portfolio() {
                       className="object-cover w-full h-full imageContainer"
                     />
                   </div>
-                  <div className="flex flex-col justify-between px-6 py-8 card-content">
+                  <div className="flex flex-col justify-between p-8 card-content">
                     <h3 className="mb-4 text-3xl font-bold tracking-tight text-primaryHover dark:text-primary">
                       {project.title}
                     </h3>
-                    <p className="mb-4 text-lg font-light text-darkDarker dark:text-white">
+                    <p className="mb-4 text-lg font-light leading-relaxed text-darkDarker dark:text-white">
                       {project.description.slice(0, 100) +
                         (project.description.length > 100 ? "..." : "")}
                     </p>
