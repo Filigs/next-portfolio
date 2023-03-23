@@ -74,7 +74,7 @@
     @apply relative inset-x-0 top-0 z-10 max-w-full min-w-full drop-shadow-md lg:drop-shadow-lg;
   }
   nav div {
-    @apply bg-light dark:bg-darkDarker;
+    @apply bg-lightest dark:bg-darkDarker transition-colors duration-200 ease-in-out;
   }
   .card-content {
     @apply py-8 px-6 text-lg font-light text-darkDarker dark:text-white;
@@ -86,7 +86,14 @@
   .imageContainer {
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   }
-  .avatarBackground {
-    background: url("avatar-pattern.svg");
+  /* Add transitions for hover effects */
+  .hover-transition {
+    @apply transition duration-200 ease-in-out;
+  }
+  footer {
+    @apply relative inset-x-0 bottom-0 max-w-full min-w-full transition-all duration-200 ease-in-out;
+  }
+  footer div {
+    @apply bg-slate-800 dark:bg-slate-800 border-t-2 border-slate-700;
   }
 }

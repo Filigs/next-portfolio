@@ -14,10 +14,10 @@ export default function NavBar() {
             alt="Avatar as a logo"
             width={40}
             height={40}
-            className="object-cover scale-95 rounded-full bg-cta dark:bg-cta"
+            className="object-cover scale-95 rounded-full bg-cta dark:bg-cta hover:bg-primary dark:hover:bg-primaryHover hover-transition"
           />
           <Link href="/" passHref>
-            <div className="text-xl font-semibold align-baseline lg:text-2xl text-dark dark:text-light">
+            <div className="text-xl font-semibold align-baseline lg:text-2xl text-dark dark:text-light hover:text-primary dark:hover:text-primaryHover hover-transition">
               <span className="text-primary">{"N"}</span>
               {"uno"}
               <span className="text-primary">{"M"}</span>
@@ -25,13 +25,12 @@ export default function NavBar() {
             </div>
           </Link>
         </div>
-
         <div className="inline-flex items-center border-0 text-dark dark:text-light">
           <section className="p-1 mx-1 text-xl border-0 rounded-full cursor-pointer">
             <Link href="/contact-form" passHref>
               <FiSend
                 alt="Contact me"
-                className="stroke-primary hover:stroke-primaryHover"
+                className="stroke-primary hover:stroke-primaryHover hover-transition"
               />
             </Link>
           </section>
