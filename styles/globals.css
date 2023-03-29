@@ -35,16 +35,17 @@
     @apply items-center justify-center block h-screen px-12 pt-6 mx-auto lg:gap-x-8 lg:min-w-full gradient-hero-banner dark:gradient-hero-banner-dark;
   }
   .gradient-hero-banner {
-    @apply transition-colors animate-gradient-background;
     background: linear-gradient(270deg, #2563eb, #1e40af, #1d4ed8, #2563eb),
       url("/hero-pattern.svg");
-    background-size: 800% 800%, cover;
-    background-blend-mode: lighten;
   }
   .gradient-hero-banner-dark {
-    @apply transition-colors animate-gradient-background;
     background: linear-gradient(270deg, #0f172a, #111827, #0f172a, #1f2937),
       url("/hero-pattern-dark.svg");
+  }
+
+  .gradient-hero-banner,
+  .gradient-hero-banner-dark {
+    @apply transition-colors animate-gradient-background;
     background-size: 800% 800%, cover;
     background-blend-mode: lighten;
   }
@@ -74,10 +75,10 @@
     @apply relative inset-x-0 top-0 z-10 max-w-full min-w-full drop-shadow-md lg:drop-shadow-lg;
   }
   nav div {
-    @apply bg-lightest dark:bg-darkDarker transition-colors duration-200 ease-in-out;
+    @apply bg-lightest dark:bg-black transition-colors duration-200 ease-in-out;
   }
   .card-content {
-    @apply py-8 px-6 text-lg font-light text-darkDarker dark:text-white;
+    @apply py-8 px-6 text-lg font-light text-darkDarker dark:text-white bg-lightest dark:bg-darkest;
   }
   .card-wrapper {
     @apply relative rounded-xl overflow-hidden shadow-lg bg-light dark:bg-darkMedium;
@@ -94,6 +95,6 @@
     @apply relative inset-x-0 bottom-0 max-w-full min-w-full transition-all duration-200 ease-in-out;
   }
   footer div {
-    @apply bg-slate-800 dark:bg-slate-800 border-t-2 border-slate-700;
+    @apply bg-darkest dark:bg-black border-t-2 border-slate-700;
   }
 }

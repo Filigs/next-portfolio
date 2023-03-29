@@ -1,8 +1,9 @@
 import Image from "next/image";
-import banne from "/public/coding.png";
+// import banne from "/public/coding.png";
 import Biography from "./biography";
 import Link from "next/link";
 import React from "react";
+import isometric from "/public/hi.png";
 import { motion } from "framer-motion";
 
 export default function Landing() {
@@ -44,7 +45,7 @@ export default function Landing() {
               transition={{ duration: 1 }}
             >
               <Image
-                src={banne}
+                src={isometric}
                 alt="Web development vector"
                 className="mt-10 scale-110 lg:mt-0"
               />
