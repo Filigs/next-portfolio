@@ -1,7 +1,7 @@
 import "../styles/globals.css";
 import { ThemeProvider } from "next-themes";
 import React, { useState, useEffect } from "react";
-import Layout from "../components/layout";
+// import Layout from "../components/layout";
 import Router from "next/router";
 import LoadingImage from "../components/loader";
 import "@fontsource/roboto/300.css";
@@ -32,9 +32,9 @@ function MyApp({ Component, pageProps }) {
   const getLayout = Component.getLayout || ((page) => page);
   return getLayout(
     <ThemeProvider forcedTheme={Component.theme || undefined} attribute="class">
-      <Layout>
-        {loading ? <LoadingImage /> : <Component {...pageProps} />}
-      </Layout>
+      {/* <Layout> */}
+      {loading ? <LoadingImage /> : <Component {...pageProps} />}
+      {/* </Layout> */}
     </ThemeProvider>
   );
 }
