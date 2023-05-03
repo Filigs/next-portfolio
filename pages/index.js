@@ -1,7 +1,8 @@
 import Head from "next/head";
 import Experience from "../components/index/experience";
-import Hero from "../components/index/hero";
-import Portfolio from "../components/index/portfolio";
+// import Hero from "../components/index/hero";
+// import Portfolio from "../components/index/portfolio";
+import Resume from "../components/resume/resume";
 const titleName = "Filipe Martins - Web Developer";
 
 export default function Home() {
@@ -17,10 +18,10 @@ export default function Home() {
         {/* */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className="min-h-screen">
+      <main className="">
         {/* <NavBar /> */}
         <div>
-          <section>
+          {/* <section>
             <Hero />
           </section>
           <section>
@@ -28,7 +29,10 @@ export default function Home() {
           </section>
           <section>
             <Experience />
-          </section>
+          </section> */}
+          {/* <section> */}
+          <Resume />
+          {/* </section> */}
         </div>
       </main>
     </div>
