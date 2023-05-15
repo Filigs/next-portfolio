@@ -1,9 +1,10 @@
 import { useForm, ValidationError } from "@formspree/react";
 import React from "react";
 import { useRouter } from "next/router";
+import styles from "../styles/Form.module.css";
 
 export default function ContactForm() {
-  const [state, handleSubmit] = useForm("mvoypdar");
+  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM_SECRET);
   const router = useRouter();
 
   if (state.succeeded) {
@@ -14,9 +15,9 @@ export default function ContactForm() {
     );
   }
   return (
-    <div className="h-screen mx-4">
-      <section className="h-full transition-all duration-75 bg-light dark:bg-darkDarker lg:duration-500">
-        <div className="max-w-screen-md px-4 py-8 mx-auto mt-8 rounded-lg lg:py-16">
+    <div className="h-screen">
+      <div className="h-full transition-all duration-75 bg-transparent dark:bg-darkDarker lg:duration-75">
+        <div className="max-w-screen-md px-4 py-8 mx-auto mt-16 rounded-lg bg-light dark:bg-darkDarker lg:py-16 ">
           <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-darkDarker dark:text-light">
             Seems like you have something on your mind!
           </h2>
@@ -27,10 +28,7 @@ export default function ContactForm() {
           </p>
           <form action="#" className="space-y-8" onSubmit={handleSubmit}>
             <div>
-              <label
-                htmlFor="email"
-                className="block mt-4 text-xl font-bold tracking-wide xl:text-3xl text-darkDarker dark:text-light"
-              >
+              <label htmlFor="email" className={`${styles.label}`}>
                 Contact Email
               </label>
               <input
@@ -38,7 +36,7 @@ export default function ContactForm() {
                 type="email"
                 name="email"
                 placeholder="Email@provider.com"
-                className="w-full p-2 mt-4 border rounded-md bg-lighter dark:bg-darkMedium focus:outline-none focus:border-primary"
+                className={`${styles.input}`}
                 required
               />
               <ValidationError
@@ -48,17 +46,14 @@ export default function ContactForm() {
               />
             </div>
             <div>
-              <label
-                htmlFor="subject"
-                className="block mt-4 text-xl font-bold tracking-wide xl:text-3xl text-darkDarker dark:text-light"
-              >
+              <label htmlFor="subject" className={`${styles.label}`}>
                 What type of project is it?
               </label>
               <input
                 type="text"
                 id="subject"
                 placeholder="Startup / E-Commerce / Web app / SaaS ..."
-                className="w-full p-2 mt-4 border rounded-md bg-lighter dark:bg-darkMedium focus:outline-none focus:border-primary"
+                className={`${styles.input}`}
                 required
               />
               <ValidationError
@@ -68,16 +63,13 @@ export default function ContactForm() {
               />
             </div>
             <div className="sm:col-span-2">
-              <label
-                htmlFor="message"
-                className="block mt-4 text-xl font-bold tracking-wide xl:text-3xl text-darkDarker dark:text-light"
-              >
+              <label htmlFor="message" className={`${styles.label}`}>
                 About the project
               </label>
               <textarea
                 id="message"
                 rows="6"
-                className="w-full p-2 mt-4 border rounded-md bg-lighter dark:bg-darkMedium focus:outline-none focus:border-primary"
+                className={`${styles.input}`}
                 placeholder="Please let me know what's on your mind, feel free to elaborate as much as possible."
               ></textarea>
               <ValidationError
@@ -103,7 +95,7 @@ export default function ContactForm() {
             </div>
           </form>
         </div>
-      </section>
+      </div>
     </div>
   );
 }
