@@ -5,3 +5,96 @@
 @tailwind utilities;
 
 /* css customization for parent elements */
+@layer base {
+  /* smooth animations */
+  *,
+  html,
+  body {
+    @apply antialiased lg:transition-transform lg:duration-75;
+    padding: 0;
+    margin: 0;
+    font-family: "Exo", sans-serif;
+  }
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+  button {
+    @apply px-4 py-2 text-xl font-bold tracking-wider text-center rounded-xl lg:text-2xl xl:text-3xl sm:w-fit focus:ring-4 lg:px-9 lg:py-5 xl:px-12 xl:py-6 focus:ring-primaryHover dark:focus:ring-primaryHover hover:opacity-90 drop-shadow-lg;
+  }
+
+  .papercut-container {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+
+  div#hero-banner {
+    @apply items-center justify-center block h-screen px-12 pt-6 mx-auto lg:gap-x-8 lg:min-w-full gradient-hero-banner dark:gradient-hero-banner-dark;
+  }
+  .gradient-hero-banner {
+    background: linear-gradient(270deg, #2563eb, #1e40af, #1d4ed8, #2563eb),
+      url("/hero-pattern.svg");
+  }
+  .gradient-hero-banner-dark {
+    background: linear-gradient(270deg, #0f172a, #111827, #0f172a, #1f2937),
+      url("/hero-pattern-dark.svg");
+  }
+
+  .gradient-hero-banner,
+  .gradient-hero-banner-dark {
+    @apply transition-colors animate-gradient-background;
+    background-size: 800% 800%, cover;
+    background-blend-mode: lighten;
+  }
+  .lightGradient {
+    @apply bg-gradient-to-r from-darkest to-medium;
+  }
+
+  .darkGradient {
+    @apply bg-gradient-to-r from-darkMedium to-darkLighter;
+  }
+
+  /* forms */
+  textarea {
+    @apply block;
+    @apply p-2.5 w-full text-sm lg:text-base xl:text-lg text-darkDarker;
+    @apply border rounded-lg shadow-sm bg-slate-50 border-slate-300;
+    @apply focus:ring-primary focus:border-primary dark:bg-slate-700 dark:border-slate-600;
+    @apply dark:placeholder-slate-400 dark:text-light dark:focus:ring-primary dark:focus:border-primary;
+  }
+  input {
+    @apply shadow-sm bg-slate-50 border border-slate-300 text-darkDarker text-sm lg:text-base xl:text-lg rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-primary dark:focus:border-primary dark:drop-shadow-sm;
+  }
+  label {
+    @apply block mb-2 text-base font-medium lg:text-lg xl:text-xl text-darkDarker dark:text-light;
+  }
+  nav {
+    @apply relative inset-x-0 top-0 z-10 max-w-full min-w-full drop-shadow-md lg:drop-shadow-lg;
+  }
+  nav div {
+    @apply bg-lightest dark:bg-black transition-colors duration-200 ease-in-out;
+  }
+  .card-content {
+    @apply py-8 px-6 text-lg font-light text-darkDarker dark:text-white bg-lightest dark:bg-darkest;
+  }
+  .card-wrapper {
+    @apply relative rounded-xl overflow-hidden shadow-lg bg-light dark:bg-darkMedium;
+    /* Add any additional properties here */
+  }
+  .imageContainer {
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  }
+  /* Add transitions for hover effects */
+  .hover-transition {
+    @apply transition duration-200 ease-in-out;
+  }
+  footer {
+    @apply relative inset-x-0 bottom-0 max-w-full min-w-full transition-all duration-200 ease-in-out;
+  }
+  footer div {
+    @apply bg-darkest dark:bg-black border-t-2 border-slate-700;
+  }
+}
