@@ -74,10 +74,10 @@
     @apply relative inset-x-0 top-0 z-10 max-w-full min-w-full drop-shadow-md lg:drop-shadow-lg;
   }
   nav div {
-    @apply bg-lightest dark:bg-darkDarker transition-colors duration-200 ease-in-out;
+    @apply bg-lightest dark:bg-black transition-colors duration-200 ease-in-out;
   }
   .card-content {
-    @apply py-8 px-6 text-lg font-light text-darkDarker dark:text-white;
+    @apply py-8 px-6 text-lg font-light text-darkDarker dark:text-white bg-lightest dark:bg-darkest;
   }
   .card-wrapper {
     @apply relative rounded-xl overflow-hidden shadow-lg bg-light dark:bg-darkMedium;
@@ -94,6 +94,6 @@
     @apply relative inset-x-0 bottom-0 max-w-full min-w-full transition-all duration-200 ease-in-out;
   }
   footer div {
-    @apply bg-slate-800 dark:bg-slate-800 border-t-2 border-slate-700;
+    @apply bg-darkest dark:bg-black border-t-2 border-slate-700;
   }
 }
