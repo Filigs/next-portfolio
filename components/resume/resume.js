@@ -1,5 +1,7 @@
 import data from "../../lib/resume.json";
 import React from "react";
+import photo from "../../public/display.jpg";
+import Image from "next/image";
 export default function Resume() {
   const { basics, education, work, skills, projects, awards } = data;
 
@@ -26,32 +28,44 @@ export default function Resume() {
     ));
 
   return (
-    <div className="container px-4 py-8 mx-auto bg-gray-100">
-      <div className="mb-8 text-center">
-        <h1 className="mb-2 text-4xl font-bold text-blue-800">{basics.name}</h1>
-        <p className="mb-2 text-lg text-gray-700">{basics.location.address}</p>
-        <p className="text-lg text-gray-700">
-          {basics.email} | {basics.phone} | {basics.website}
-        </p>
-      </div>
+    <div
+      className="container p-8 mx-auto bg-gray-100"
+      style={{ maxWidth: "794px" }}
+    >
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-2">
-        <div>
-          <h2 className="mb-4 text-2xl font-bold text-blue-800">Education</h2>
+        <div className="lg:col-span-1">
+          <div className="mb-4 text-center">
+            <Image
+              src={photo}
+              alt="Profile"
+              className="w-24 h-24 mx-auto mb-2 rounded-full"
+            />
+            <h1 className="mb-1 text-3xl font-bold text-blue-800">
+              {basics.name}
+            </h1>
+            <p className="mb-1 text-base text-gray-700">
+              {basics.location.address}
+            </p>
+            <p className="text-base text-gray-700">
+              {basics.email} | {basics.phone} | {basics.website}
+            </p>
+          </div>
+          <h2 className="mb-2 text-xl font-bold text-blue-800">Education</h2>
           {education.map((edu, index) => (
-            <div key={index} className="mb-4">
-              <h3 className="text-lg font-semibold">{edu.institution}</h3>
-              <p className="text-sm text-gray-600">
+            <div key={index} className="mb-2">
+              <h3 className="text-base font-semibold">{edu.institution}</h3>
+              <p className="text-xs text-gray-600">
                 {edu.studyType}, {edu.startDate} - {edu.endDate}
               </p>
             </div>
           ))}
-          <h2 className="mb-4 text-2xl font-bold text-blue-800">
+          <h2 className="mb-2 text-xl font-bold text-blue-800">
             Work Experience
           </h2>
           {work.map((job, index) => (
-            <div key={index} className="mb-4">
-              <h3 className="text-lg font-semibold">{job.position}</h3>
-              <p className="text-sm text-gray-600">
+            <div key={index} className="mb-2">
+              <h3 className="text-base font-semibold">{job.position}</h3>
+              <p className="text-xs text-gray-600">
                 {job.company}, {job.startDate} - {job.endDate}
               </p>
               <ul className="list-disc list-inside">
@@ -64,27 +78,29 @@ export default function Resume() {
             </div>
           ))}
         </div>
-        <div>
-          <h2 className="mb-4 text-2xl font-bold text-blue-800">Skills</h2>
+        <div className="lg:col-span-1">
+          <h2 className="mb-2 text-xl font-bold text-blue-800">Skills</h2>
           {skills.map((skill, index) => (
-            <div key={index} className="mb-4">
-              <h3 className="text-lg font-semibold">{skill.name}</h3>
+            <div key={index} className="mb-2">
+              <h3 className="text-base font-semibold">{skill.name}</h3>
               <ul>{renderSkills(skill)}</ul>
             </div>
           ))}
-          <h2 className="mb-4 text-2xl font-bold text-blue-800">Projects</h2>
+          <h2 className="mb-2 text-xl font-bold text-blue-800">Projects</h2>
           {renderProjects(projects)}
-          <h2 className="mb-4 text-2xl font-bold text-blue-800">Awards</h2>
-          {awards.map((award, index) => (
-            <div key={index} className="mb-4">
-              <h3 className="text-lg font-semibold">{award.title}</h3>
-              <p className="text-sm text-gray-600">
-                {award.awarder}, {award.date}
-              </p>
-              <p className="text-xs text-gray-600">{award.summary}</p>
-            </div>
-          ))}
         </div>
+      </div>
+      <div className="mb-4">
+        <h2 className="mb-2 text-xl font-bold text-blue-800">Awards</h2>
+        {awards.map((award, index) => (
+          <div key={index} className="mb-2">
+            <h3 className="text-base font-semibold">{award.title}</h3>
+            <p className="text-xs text-gray-600">
+              {award.awarder}, {award.date}
+            </p>
+            <p className="text-xs text-gray-600">{award.summary}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
