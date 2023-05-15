@@ -14,21 +14,23 @@ export default function ContactForm() {
       </p>
     );
   }
+  // pages\contact-form.js:
+
   return (
-    <div className="h-screen">
-      <div className="h-full transition-all duration-75 bg-transparent dark:bg-darkDarker lg:duration-75">
-        <div className="max-w-screen-md px-4 py-8 mx-auto mt-16 rounded-lg bg-light dark:bg-darkDarker lg:py-16 ">
-          <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-darkDarker dark:text-light">
+    <div className={styles.pageContainer}>
+      <div className={styles.innerContainer}>
+        <div className={styles.formContainer}>
+          <h2 className={styles.formHeader}>
             Seems like you have something on your mind!
           </h2>
-          <p className="mb-8 font-light text-center lg:mb-16 text-slate-500 dark:text-slate-400 sm:text-xl">
+          <p className={styles.formSubheader}>
             {
               "Want to talk about it? Please fill this form and I will instantly receive your submission!"
             }
           </p>
-          <form action="#" className="space-y-8" onSubmit={handleSubmit}>
-            <div>
-              <label htmlFor="email" className={`${styles.label}`}>
+          <form action="#" className={styles.form} onSubmit={handleSubmit}>
+            <div className={styles.inputWrapper}>
+              <label htmlFor="email" className={styles.label}>
                 Contact Email
               </label>
               <input
@@ -36,7 +38,7 @@ export default function ContactForm() {
                 type="email"
                 name="email"
                 placeholder="Email@provider.com"
-                className={`${styles.input}`}
+                className={styles.input}
                 required
               />
               <ValidationError
@@ -45,15 +47,15 @@ export default function ContactForm() {
                 errors={state.errors}
               />
             </div>
-            <div>
-              <label htmlFor="subject" className={`${styles.label}`}>
+            <div className={styles.inputWrapper}>
+              <label htmlFor="subject" className={styles.label}>
                 What type of project is it?
               </label>
               <input
                 type="text"
                 id="subject"
                 placeholder="Startup / E-Commerce / Web app / SaaS ..."
-                className={`${styles.input}`}
+                className={styles.input}
                 required
               />
               <ValidationError
@@ -62,14 +64,14 @@ export default function ContactForm() {
                 errors={state.errors}
               />
             </div>
-            <div className="sm:col-span-2">
-              <label htmlFor="message" className={`${styles.label}`}>
+            <div className={styles.textAreaWrapper}>
+              <label htmlFor="message" className={styles.label}>
                 About the project
               </label>
               <textarea
                 id="message"
                 rows="6"
-                className={`${styles.input}`}
+                className={styles.input}
                 placeholder="Please let me know what's on your mind, feel free to elaborate as much as possible."
               ></textarea>
               <ValidationError
@@ -78,9 +80,9 @@ export default function ContactForm() {
                 errors={state.errors}
               />
             </div>
-            <div className="flex flex-row items-center justify-between mt-24">
+            <div className={styles.buttonContainer}>
               <button
-                className="px-6 py-2 text-lg font-semibold rounded-md text-light bg-success hover:bg-success-light focus:outline-none focus:ring focus:ring-success-light"
+                className={styles.backButton}
                 onClick={() => router.back()}
               >
                 Back
@@ -88,7 +90,7 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={state.submitting}
-                className="px-6 py-2 text-lg font-semibold rounded-md text-light bg-danger hover:bg-danger-light focus:outline-none focus:ring focus:ring-danger-light"
+                className={styles.submitButton}
               >
                 Submit
               </button>
