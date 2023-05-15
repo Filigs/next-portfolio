@@ -34,12 +34,12 @@ export default function NavBar() {
               />
             </Link>
           </section>
-          <section
+          {/* <section
             className="p-1 mx-1 text-xl border-0 rounded-full cursor-pointer "
             alt="Switch color theme between dark and light mode"
           >
             <ThemeSwitch />
-          </section>
+          </section> */}
         </div>
       </div>
     </nav>
