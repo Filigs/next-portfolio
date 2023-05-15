@@ -8,7 +8,7 @@ export default function Portfolio() {
     <div className="mx-4 bg-transparent mt-30 dark:bg-transparent">
       <div className="max-w-screen-xl py-8 mx-auto lg:py-16">
         <div className="max-w-screen-sm mx-auto mb-10 text-center lg:mb-20">
-          <h2 className="mb-4 text-4xl font-extrabold tracking-wider lg:text-6xl text-darkDarker dark:text-light">
+          <h2 className="mb-4 text-4xl font-extrabold tracking-wider lg:text-6xl text-primaryHover dark:text-primary">
             {"Welcome to my "}
             <span className="text-primaryHover dark:text-primary">
               {"Portfolio"}
