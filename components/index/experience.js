@@ -1,6 +1,5 @@
 import { GoCalendar } from "react-icons/go";
 import { jobs } from "../../lib/jobs";
-
 export default function Experience() {
   return (
     <div className="pb-8 mt-8 bg-transparent dark:bg-darkDarker">
