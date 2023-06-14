@@ -56,10 +56,9 @@ module.exports = {
         // ! Color Palettes
       },
     },
-<<<<<<< Updated upstream
-    plugins: [require("@tailwindcss/forms")],
-=======
-    plugins: require("@tailwindcss/forms"),
->>>>>>> Stashed changes
+    plugins: [
+      require("@tailwindcss/typography"),
+      require("@tailwindcss/forms"),
+    ],
   },
 };

@@ -1,9 +1,9 @@
 import NextAuth from "next-auth";
-import { PrismaAdapter } from "@auth/prisma-adapter";
 import Google from "next-auth/providers/google";
-import { prisma } from "../../lib/prisma";
+import { MongoDBAdapter } from "@auth/mongodb-adapter";
+import middleware from "../../lib/dbConnect";
 const options = {
-  adapter: PrismaAdapter(prisma),
+  adapter: MongoDBAdapter(middleware),
   providers: [
     Google({
       clientId: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_ID,
