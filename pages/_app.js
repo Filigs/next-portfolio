@@ -2,6 +2,7 @@ import "../styles/globals.css";
 import React from "react";
 import Layout from "../components/layout";
 import { Analytics } from "@vercel/analytics/react";
+import { SessionProvider } from "next-auth/react";
 
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
@@ -16,8 +17,10 @@ export default function MyApp({
 
   return getLayout(
     <Layout>
-      <Component {...pageProps} />
-      <Analytics />
+      <SessionProvider session={session}>
+        <Component {...pageProps} />
+        <Analytics />
+      </SessionProvider>
     </Layout>
   );
 }
