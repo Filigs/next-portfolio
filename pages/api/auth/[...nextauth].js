@@ -2,7 +2,6 @@
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
 import { MongoDBAdapter } from "@auth/mongodb-adapter";
-import User from "../../../models/User";
 import clientPromise from "../../../lib/mongodb";
 
 async function getOptions() {
@@ -15,42 +14,45 @@ async function getOptions() {
         clientSecret: process.env.NEXT_PUBLIC_GOOGLE_CLIENT_SECRET,
       }),
     ],
-    adapter: MongoDBAdapter(client),
+    adapter: MongoDBAdapter(client, {
+      databaseName: "portfolio",
+      collections: {
+        user: "users",
+      },
+    }),
     callbacks: {
-      async signIn(user, account, profile) {
-        const db = client.db();
-
-        if (user.email === process.env.NEXT_PUBLIC_LOGIN_EMAIL) {
-          const usersCollection = db.collection("users");
-          const existingUser = await usersCollection.findOne({
-            email: user.email,
-          });
-
-          if (existingUser) {
-            await usersCollection.updateOne(
-              { email: user.email },
-              {
-                $set: {
-                  access_token: account.accessToken,
-                  refresh_token: account.refreshToken,
-                  id_token: account.idToken,
-                },
-              }
-            );
-          } else {
-            await usersCollection.insertOne({
-              name: user.name,
-              email: user.email,
-              access_token: account.accessToken,
-              refresh_token: account.refreshToken,
-              id_token: account.idToken,
-            });
-          }
-
-          return true;
-        } else {
+      async signIn({ user, account, profile, credentials }) {
+        if (user.email !== "filipemartins.business@gmail.com") {
           return false;
         }
+
+        const db = client.db("portfolio");
+        const usersCollection = db.collection("users");
+        const existingUser = await usersCollection.findOne({
+          email: user.email,
+        });
+
+        if (existingUser) {
+          await usersCollection.updateOne(
+            { email: user.email },
+            {
+              $set: {
+                access_token: account.accessToken,
+                refresh_token: account.refreshToken,
+                id_token: account.idToken,
+              },
+            }
+          );
+        } else {
+          await usersCollection.insertOne({
+            name: profile.name,
+            email: user.email,
+            access_token: account.accessToken,
+            refresh_token: account.refreshToken,
+            id_token: account.idToken,
+          });
+        }
+        return true;
       },
     },
     debug: true,
