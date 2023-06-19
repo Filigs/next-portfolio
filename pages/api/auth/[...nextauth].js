@@ -5,7 +5,13 @@ import { MongoDBAdapter } from "@auth/mongodb-adapter";
 import clientPromise from "../../../lib/mongodb";
 
 async function getOptions() {
-  const client = await clientPromise;
+  let client;
+  try {
+    client = await clientPromise;
+  } catch (error) {
+    console.error("Failed to connect to MongoDB", error);
+    throw error;
+  }
 
   return {
     providers: [
@@ -21,37 +27,47 @@ async function getOptions() {
       },
     }),
     callbacks: {
-      async signIn({ user, account, profile, credentials }) {
-        if (user.email !== "filipemartins.business@gmail.com") {
-          return false;
-        }
+      async signIn({ user, account, profile }) {
+        // if (user.email !== "filipemartins.business@gmail.com") {
+        //   return false;
+        // }
 
         const db = client.db("portfolio");
         const usersCollection = db.collection("users");
-        const existingUser = await usersCollection.findOne({
-          email: user.email,
-        });
-
-        if (existingUser) {
-          await usersCollection.updateOne(
-            { email: user.email },
-            {
-              $set: {
-                access_token: account.accessToken,
-                refresh_token: account.refreshToken,
-                id_token: account.idToken,
-              },
-            }
-          );
-        } else {
-          await usersCollection.insertOne({
-            name: profile.name,
-            email: user.email,
-            access_token: account.accessToken,
-            refresh_token: account.refreshToken,
-            id_token: account.idToken,
-          });
+        let existingUser;
+        try {
+          existingUser = await usersCollection.findOne({ email: user.email });
+        } catch (error) {
+          console.error("Failed to fetch user", error);
+          throw error;
         }
+
+        try {
+          if (existingUser) {
+            await usersCollection.updateOne(
+              { email: user.email },
+              {
+                $set: {
+                  access_token: account.access_token,
+                  refresh_token: account.refresh_token,
+                  id_token: account.id_token,
+                },
+              }
+            );
+          } else {
+            await usersCollection.insertOne({
+              name: profile.name,
+              email: user.email,
+              access_token: account.access_token,
+              refresh_token: account.refresh_token,
+              id_token: account.id_token,
+            });
+          }
+        } catch (error) {
+          console.error("Failed to update or insert user", error);
+          throw error;
+        }
+
         return true;
       },
     },
@@ -62,6 +78,12 @@ async function getOptions() {
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default async (req, res) => {
-  const options = await getOptions();
+  let options;
+  try {
+    options = await getOptions();
+  } catch (error) {
+    console.error("Failed to get options", error);
+    throw error;
+  }
   return NextAuth(req, res, options);
 };
