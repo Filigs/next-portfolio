@@ -5,11 +5,11 @@
 }
 
 .innerContainer {
-  @apply h-full transition-all duration-75 bg-transparent dark:bg-darkDarker lg:duration-75;
+  @apply h-full transition-all duration-75 bg-lightest dark:bg-darkDarker lg:duration-75;
 }
 
 .formContainer {
-  @apply max-w-screen-md px-4 py-8 mx-auto mt-16 rounded-lg bg-light dark:bg-darkDarker lg:py-16;
+  @apply max-w-screen-md px-4 py-8 mx-auto mt-16 rounded-lg bg-lightest dark:bg-darkDarker lg:py-16;
 }
 
 .formHeader {
@@ -41,11 +41,11 @@
 }
 
 .submitButton {
-  @apply px-6 py-2 text-lg font-semibold rounded-md text-light bg-danger focus:outline-none focus:ring;
+  @apply px-6 py-2 text-lg font-semibold rounded-md text-light bg-primary focus:outline-none focus:ring;
 }
 
 .input {
-  @apply shadow-sm bg-slate-50 border border-slate-300 text-darkDarker text-sm lg:text-base xl:text-lg rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-primary dark:focus:border-primary dark:drop-shadow-sm mt-6 focus:outline-none;
+  @apply shadow-lg bg-lightest border border-slate-300 shadow-lighter text-darkDarker text-sm lg:text-base xl:text-lg rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-primary dark:focus:border-primary dark:drop-shadow-sm mt-6 focus:outline-none;
 }
 
 .label {

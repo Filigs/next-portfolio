@@ -71,7 +71,7 @@ class myDocument extends Document {
             `}
         </Script>
 
-        <body className="h-full antialiased text-white transition-all duration-75 scroll-smooth">
+        <body className="h-full antialiased text-black transition-all duration-75 dark:text-white scroll-smooth">
           <Main />
           <NextScript />
         </body>
