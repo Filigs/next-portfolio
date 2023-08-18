@@ -20,7 +20,7 @@ a {
   box-sizing: border-box;
 }
 button {
-  @apply px-4 py-2 text-xl font-bold tracking-wider text-center rounded-xl lg:text-2xl xl:text-3xl sm:w-fit focus:ring-4 lg:px-9 lg:py-5 xl:px-12 xl:py-6 focus:ring-primaryHover dark:focus:ring-primaryHover hover:opacity-90 drop-shadow-lg;
+  @apply px-4 py-2 text-xl font-bold tracking-wider text-center rounded-xl lg:text-2xl xl:text-3xl sm:w-fit focus:ring-4 lg:px-9 lg:py-5 xl:px-12 xl:py-6 focus:ring-primaryHover dark:focus:ring-primaryHover drop-shadow-sm hover:drop-shadow-xl;
 }
 
 .papercut-container {
@@ -79,4 +79,16 @@ nav div {
 /* Add transitions for hover effects */
 .hover-transition {
   @apply transition duration-200 ease-in-out;
+}
+/* hero background */
+.bg-day {
+  @apply bg-blue-200; /* Adjust as needed */
+}
+
+.bg-evening {
+  @apply bg-orange-300; /* Adjust as needed */
+}
+
+.bg-night {
+  @apply bg-gray-800; /* Adjust as needed */
 }
