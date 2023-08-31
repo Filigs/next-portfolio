@@ -72,7 +72,7 @@ class myDocument extends Document {
             `}
         </Script>
 
-        <body className="documentPatternMobile bg-cover lg:.documentPatternDesktop text-darkDarker bg-lighter dark:bg-darkDarker dark:text-light">
+        <body className="text-darkDarker bg-lighter dark:bg-darkest dark:text-light">
           <Main />
           <NextScript />
         </body>

@@ -25,7 +25,7 @@ export default function Portfolio() {
             return (
               <Link href={project.url} key={project.id}>
                 <motion.div
-                  className="max-w-screen-xl transition-shadow duration-300 shadow-lg bg-lightest rounded-xl dark:bg-darkest hover:shadow-2xl"
+                  className="max-w-screen-xl transition-shadow duration-300 bg-transparent shadow-lg rounded-xl dark:bg-transparent hover:shadow-2xl"
                   whileHover={{ scale: 1.05 }}
                 >
                   <div className="relative h-64 overflow-hidden sm:h-72 md:h-80 lg:h-96 rounded-t-xl">
