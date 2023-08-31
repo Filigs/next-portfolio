@@ -19,7 +19,7 @@ const layoutVariants = {
 export default function Layout({ children }) {
   return (
     <motion.div
-      className="flex flex-col w-full h-full"
+      className="flex flex-col min-h-screen"
       variants={layoutVariants}
       initial="hidden"
       animate="visible"
@@ -28,7 +28,7 @@ export default function Layout({ children }) {
         <Navbar />
       </header>
       <motion.main
-        className="flex-1 min-h-screen"
+        className="flex-1"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.5 }}

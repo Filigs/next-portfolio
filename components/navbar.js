@@ -1,3 +1,4 @@
+import ThemeSwitch from "./theme";
 import Image from "next/image";
 import branding from "/public/branding.png";
 import Link from "next/link";
@@ -8,20 +9,14 @@ export default function NavBar() {
     <nav>
       <div className="flex flex-wrap items-center justify-between p-4">
         <div className="inline-flex items-center gap-2 text-dark dark:text-light">
-          <Image
-            src={branding}
-            alt="Brand logo, Nuno Martins"
-            width={40}
-            height={40}
-            className="object-cover scale-95 rounded-full bg-cta dark:bg-cta hover:bg-primary dark:hover:bg-primaryHover hover-transition"
-          />
           <Link href="/" passHref>
-            <div className="text-xl font-semibold align-baseline lg:text-2xl text-dark dark:text-light hover:text-primary dark:hover:text-primaryHover hover-transition">
-              {/* <span className="text-primary">{"N"}</span>
-              {"uno"}
-              <span className="text-primary">{"M"}</span>
-              {"artins"} */}
-            </div>
+            <Image
+              src={branding}
+              alt={`Branding as a logo, representing the first letter of "Nuno" and "Martins"`}
+              width={80}
+              height={80}
+              className="object-cover scale-95 rounded-full bg-cta dark:bg-cta hover:bg-primary dark:hover:bg-primaryHover hover-transition"
+            />
           </Link>
         </div>
         <div className="inline-flex items-center border-0 text-dark dark:text-light">
@@ -32,6 +27,12 @@ export default function NavBar() {
                 className="stroke-primary hover:stroke-primaryHover hover-transition"
               />
             </Link>
+          </section>
+          <section
+            className="p-1 mx-1 text-xl border-0 rounded-full cursor-pointer "
+            alt="Switch color theme between dark and light mode"
+          >
+            <ThemeSwitch />
           </section>
         </div>
       </div>

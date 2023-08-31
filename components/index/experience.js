@@ -1,5 +1,6 @@
 import { GoCalendar } from "react-icons/go";
 import { jobs } from "../../lib/jobs";
+
 export default function Experience() {
   return (
     <div className="mx-4 my-8 bg-lighter dark:bg-gray-800 rounded-t-xl">
@@ -38,7 +39,7 @@ export default function Experience() {
                 </div>
               </div>
               <section className="mt-6">
-                <p className="text-xl font-bold text-center text-primary lg:text-2xl dark:text-primaryHover">
+                <p className="text-xl font-bold text-center text-primaryHover lg:text-2xl dark:text-primary">
                   {job.desc}
                 </p>
               </section>

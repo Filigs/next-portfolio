@@ -30,8 +30,8 @@ module.exports = {
       },
       colors: {
         // ? Color Palettes
-        primary: "#3b82f6", // blue-500
-        primaryHover: "#60a5fa", // blue-400
+        primary: "#31dcff",
+        primaryHover: "#4eb1ff",
         cta: "#fde047",
         // ? Light mode https://coolors.co/ffffff-f7f8fa-f3f4f6-10b981
         lightest: "#FFFFFF",

@@ -1,10 +1,9 @@
 import { useForm, ValidationError } from "@formspree/react";
 import React from "react";
 import { useRouter } from "next/router";
-import styles from "../styles/Form.module.css";
 
 export default function ContactForm() {
-  const [state, handleSubmit] = useForm(process.env.NEXT_PUBLIC_FORM_SECRET);
+  const [state, handleSubmit] = useForm("mvoypdar");
   const router = useRouter();
 
   if (state.succeeded) {
@@ -14,23 +13,24 @@ export default function ContactForm() {
       </p>
     );
   }
-  // pages\contact-form.js:
-
   return (
-    <div className={styles.pageContainer}>
-      <div className={styles.innerContainer}>
-        <div className={styles.formContainer}>
-          <h2 className={styles.formHeader}>
+    <div className="h-screen mx-4">
+      <section className="h-full transition-all duration-75 bg-light dark:bg-darkDarker lg:duration-500">
+        <div className="max-w-screen-md px-4 py-8 mx-auto mt-8 rounded-lg lg:py-16">
+          <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-darkDarker dark:text-light">
             Seems like you have something on your mind!
           </h2>
-          <p className={styles.formSubheader}>
+          <p className="mb-8 font-light text-center lg:mb-16 text-slate-500 dark:text-slate-400 sm:text-xl">
             {
               "Want to talk about it? Please fill this form and I will instantly receive your submission!"
             }
           </p>
-          <form action="#" className={styles.form} onSubmit={handleSubmit}>
-            <div className={styles.inputWrapper}>
-              <label htmlFor="email" className={styles.label}>
+          <form action="#" className="space-y-8" onSubmit={handleSubmit}>
+            <div>
+              <label
+                htmlFor="email"
+                className="block mt-4 text-xl font-bold tracking-wide xl:text-3xl text-darkDarker dark:text-light"
+              >
                 Contact Email
               </label>
               <input
@@ -38,7 +38,7 @@ export default function ContactForm() {
                 type="email"
                 name="email"
                 placeholder="Email@provider.com"
-                className={styles.input}
+                className="w-full p-2 mt-4 border rounded-md bg-lighter dark:bg-darkMedium focus:outline-none focus:border-primary"
                 required
               />
               <ValidationError
@@ -47,15 +47,18 @@ export default function ContactForm() {
                 errors={state.errors}
               />
             </div>
-            <div className={styles.inputWrapper}>
-              <label htmlFor="subject" className={styles.label}>
+            <div>
+              <label
+                htmlFor="subject"
+                className="block mt-4 text-xl font-bold tracking-wide xl:text-3xl text-darkDarker dark:text-light"
+              >
                 What type of project is it?
               </label>
               <input
                 type="text"
                 id="subject"
                 placeholder="Startup / E-Commerce / Web app / SaaS ..."
-                className={styles.input}
+                className="w-full p-2 mt-4 border rounded-md bg-lighter dark:bg-darkMedium focus:outline-none focus:border-primary"
                 required
               />
               <ValidationError
@@ -64,14 +67,17 @@ export default function ContactForm() {
                 errors={state.errors}
               />
             </div>
-            <div className={styles.textAreaWrapper}>
-              <label htmlFor="message" className={styles.label}>
+            <div className="sm:col-span-2">
+              <label
+                htmlFor="message"
+                className="block mt-4 text-xl font-bold tracking-wide xl:text-3xl text-darkDarker dark:text-light"
+              >
                 About the project
               </label>
               <textarea
                 id="message"
                 rows="6"
-                className={styles.input}
+                className="w-full p-2 mt-4 border rounded-md bg-lighter dark:bg-darkMedium focus:outline-none focus:border-primary"
                 placeholder="Please let me know what's on your mind, feel free to elaborate as much as possible."
               ></textarea>
               <ValidationError
@@ -80,9 +86,9 @@ export default function ContactForm() {
                 errors={state.errors}
               />
             </div>
-            <div className={styles.buttonContainer}>
+            <div className="flex flex-row items-center justify-between mt-24">
               <button
-                className={styles.backButton}
+                className="px-6 py-2 text-lg font-semibold rounded-md text-light bg-success hover:bg-success-light focus:outline-none focus:ring focus:ring-success-light"
                 onClick={() => router.back()}
               >
                 Back
@@ -90,14 +96,14 @@ export default function ContactForm() {
               <button
                 type="submit"
                 disabled={state.submitting}
-                className={styles.submitButton}
+                className="px-6 py-2 text-lg font-semibold rounded-md text-light bg-danger hover:bg-danger-light focus:outline-none focus:ring focus:ring-danger-light"
               >
                 Submit
               </button>
             </div>
           </form>
         </div>
-      </div>
+      </section>
     </div>
   );
 }

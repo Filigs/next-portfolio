@@ -30,7 +30,7 @@ button {
 @layer components {
   .gradient-hero-banner {
     @apply transition-colors animate-gradient-background;
-    background: linear-gradient(270deg, #2563eb, #1e40af, #1d4ed8, #2563eb),
+    background: linear-gradient(270deg, #31dcff, #4eb1ff),
       url("/hero-pattern.svg");
     background-size: 800% 800%, cover;
     background-blend-mode: lighten;
