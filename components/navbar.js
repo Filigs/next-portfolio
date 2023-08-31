@@ -1,5 +1,5 @@
 import Image from "next/image";
-import avatar from "/public/avatar.png";
+import branding from "/public/branding.png";
 import Link from "next/link";
 import { FiSend } from "react-icons/fi";
 
@@ -9,18 +9,18 @@ export default function NavBar() {
       <div className="flex flex-wrap items-center justify-between p-4">
         <div className="inline-flex items-center gap-2 text-dark dark:text-light">
           <Image
-            src={avatar}
-            alt="Avatar as a logo"
+            src={branding}
+            alt="Brand logo, Nuno Martins"
             width={40}
             height={40}
             className="object-cover scale-95 rounded-full bg-cta dark:bg-cta hover:bg-primary dark:hover:bg-primaryHover hover-transition"
           />
           <Link href="/" passHref>
             <div className="text-xl font-semibold align-baseline lg:text-2xl text-dark dark:text-light hover:text-primary dark:hover:text-primaryHover hover-transition">
-              <span className="text-primary">{"N"}</span>
+              {/* <span className="text-primary">{"N"}</span>
               {"uno"}
               <span className="text-primary">{"M"}</span>
-              {"artins"}
+              {"artins"} */}
             </div>
           </Link>
         </div>
