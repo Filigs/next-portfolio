@@ -61,10 +61,10 @@ div#hero-banner {
 }
 
 nav {
-  @apply relative inset-x-0 top-0 z-10 max-w-full min-w-full drop-shadow-md lg:drop-shadow-lg;
+  @apply relative inset-x-0 top-0 z-10 max-w-full min-w-full;
 }
 nav div {
-  @apply bg-lightest dark:bg-black transition-colors duration-200 ease-in-out;
+  @apply transition-colors duration-200 ease-in-out;
 }
 .card-content {
   @apply py-8 px-6 text-lg font-light text-darkDarker dark:text-white bg-lightest dark:bg-darkest;

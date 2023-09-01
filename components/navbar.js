@@ -7,7 +7,7 @@ import { FiSend } from "react-icons/fi";
 export default function NavBar() {
   return (
     <nav>
-      <div className="flex flex-wrap items-center justify-between p-4">
+      <div className="flex flex-wrap items-center justify-between p-4 ">
         <div className="inline-flex items-center gap-2 text-dark dark:text-light">
           <Link href="/" passHref>
             <Image
@@ -15,7 +15,7 @@ export default function NavBar() {
               alt={`Branding as a logo, representing the first letter of "Nuno" and "Martins"`}
               width={80}
               height={80}
-              className="object-cover scale-95 rounded-full bg-cta dark:bg-cta hover:bg-primary dark:hover:bg-primaryHover hover-transition"
+              className="scale-95 rounded-full"
             />
           </Link>
         </div>

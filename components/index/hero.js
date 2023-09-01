@@ -9,7 +9,7 @@ export default function Hero() {
     <div className="border-0">
       <div id="hero-banner" className="h-screen" alt="hero banner">
         {/* hero */}
-        <div className="grid justify-center mt-8 text-center lg:mb-0 lg:mt-14 lg:gap-4 lg:grid-cols-2 lg:text-center lg:items-center">
+        <div className="grid justify-center mt-8 text-center lg:mb-0 lg:mt-14 lg:gap-4 lg:text-center lg:items-center">
           {/* text */}
 
           <div className="grid justify-center gap-12 lg:gap-24">
@@ -34,7 +34,7 @@ export default function Hero() {
           {/* ! text */}
 
           {/* landing pic */}
-          <div className="items-center justify-center h-full mx-auto">
+          {/* <div className="items-center justify-center h-full mx-auto">
             <motion.div
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -48,7 +48,7 @@ export default function Hero() {
                 className="mt-10 lg:mt-0 "
               />
             </motion.div>
-          </div>
+          </div> */}
         </div>
       </div>
     </div>
