@@ -67,7 +67,7 @@ nav div {
   @apply transition-colors duration-200 ease-in-out;
 }
 .card-content {
-  @apply py-8 px-6 text-lg font-light text-darkDarker dark:text-white bg-lightest dark:bg-darkest;
+  @apply py-8 px-6 text-lg font-light text-darkDarker dark:text-white bg-lightest dark:bg-darkDarker;
 }
 .card-wrapper {
   @apply relative rounded-xl overflow-hidden shadow-lg bg-light dark:bg-darkMedium;
