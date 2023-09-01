@@ -37,7 +37,7 @@
 }
 
 .backButton {
-  @apply px-6 py-2 text-lg font-semibold rounded-md text-light bg-success focus:outline-none focus:ring;
+  @apply px-6 py-2 text-lg font-semibold rounded-md text-light bg-danger focus:outline-none focus:ring;
 }
 
 .submitButton {
