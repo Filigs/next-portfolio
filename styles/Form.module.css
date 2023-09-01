@@ -1,0 +1,53 @@
+/* styles\Form.module.css: */
+
+.pageContainer {
+  @apply h-screen;
+}
+
+.innerContainer {
+  @apply h-full transition-all duration-75 bg-lightest dark:bg-darkDarker lg:duration-75;
+}
+
+.formContainer {
+  @apply max-w-screen-md px-4 py-8 mx-auto mt-16 rounded-lg bg-lightest dark:bg-darkDarker lg:py-16;
+}
+
+.formHeader {
+  @apply mb-4 text-4xl font-extrabold tracking-tight text-center text-darkDarker dark:text-light;
+}
+
+.formSubheader {
+  @apply mb-8 font-light text-center lg:mb-16 text-slate-500 dark:text-slate-400 sm:text-xl;
+}
+
+.form {
+  @apply space-y-8;
+}
+
+.inputWrapper {
+  @apply p-4;
+}
+
+.textAreaWrapper {
+  @apply sm:col-span-2;
+}
+
+.buttonContainer {
+  @apply flex flex-row items-center justify-between mt-24;
+}
+
+.backButton {
+  @apply px-6 py-2 text-lg font-semibold rounded-md text-light bg-danger focus:outline-none focus:ring;
+}
+
+.submitButton {
+  @apply px-6 py-2 text-lg font-semibold rounded-md text-light bg-primary focus:outline-none focus:ring;
+}
+
+.input {
+  @apply shadow-lg bg-lightest border border-slate-300 shadow-lighter text-darkDarker text-sm lg:text-base xl:text-lg rounded-lg focus:ring-primary focus:border-primary block w-full p-2.5 dark:bg-slate-700 dark:border-slate-600 dark:placeholder-slate-400 dark:text-light dark:focus:ring-primary dark:focus:border-primary dark:drop-shadow-sm mt-6 focus:outline-none;
+}
+
+.label {
+  @apply block mb-2 lg:text-lg xl:text-xl text-darkDarker dark:text-light mt-4 text-xl font-bold tracking-wide;
+}

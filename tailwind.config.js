@@ -6,8 +6,6 @@ module.exports = {
     "./pages/**.{js,ts,jsx,tsx}",
     "./components/**.{js,ts,jsx,tsx}",
     "./components/**/**.{js,ts,jsx,tsx}",
-    "./node_modules/flowbite-react/**/*.{js,ts,jsx,tsx}",
-    "./node_modules/flowbite/**/*.{js,ts,jsx,tsx}",
     "./public/**/*.html",
     "./styles/globals.css",
     "./utils/*.{js,jsx,ts,tsx}",
@@ -32,8 +30,8 @@ module.exports = {
       },
       colors: {
         // ? Color Palettes
-        primary: "#3b82f6", // blue-500
-        primaryHover: "#60a5fa", // blue-400
+        primary: "#4eb1ff",
+        primaryHover: "#31dcff",
         cta: "#fde047",
         // ? Light mode https://coolors.co/ffffff-f7f8fa-f3f4f6-10b981
         lightest: "#FFFFFF",
@@ -58,6 +56,9 @@ module.exports = {
         // ! Color Palettes
       },
     },
-    plugins: [require("flowbite/plugin"), require("@tailwindcss/forms")],
+    plugins: [
+      require("@tailwindcss/typography"),
+      require("@tailwindcss/forms"),
+    ],
   },
 };

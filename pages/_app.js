@@ -4,6 +4,7 @@ import React, { useState, useEffect } from "react";
 import Layout from "../components/layout";
 import Router from "next/router";
 import LoadingImage from "../components/loader";
+import { Analytics } from "@vercel/analytics/react";
 import "@fontsource/roboto/300.css";
 import "@fontsource/roboto/400.css";
 import "@fontsource/roboto/500.css";
@@ -34,6 +35,7 @@ function MyApp({ Component, pageProps }) {
     <ThemeProvider forcedTheme={Component.theme || undefined} attribute="class">
       <Layout>
         {loading ? <LoadingImage /> : <Component {...pageProps} />}
+        <Analytics />
       </Layout>
     </ThemeProvider>
   );
