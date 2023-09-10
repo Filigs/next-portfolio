@@ -25,6 +25,7 @@ class myDocument extends Document {
             rel="stylesheet"
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
           />
+          <Script src="..\node_modules\flowbite\dist\flowbite.js" />
           {/* SEO */}
           <meta name="robots" content="all" />
           {/* social media url preview */}
@@ -71,7 +72,7 @@ class myDocument extends Document {
             `}
         </Script>
 
-        <body className="h-full antialiased text-black transition-all duration-75 dark:text-white scroll-smooth">
+        <body className="text-darkDarker bg-lighter dark:bg-darkest dark:text-light">
           <Main />
           <NextScript />
         </body>
