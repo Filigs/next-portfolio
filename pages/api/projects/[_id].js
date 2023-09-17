@@ -1,7 +1,7 @@
 import nextConnect from "next-connect";
 import middleware from "../../../lib/dbConnect";
 
-import Project from "../../models/Project";
+import Project from "../../../models/Project";
 
 const handler = nextConnect();
 
