@@ -18,7 +18,7 @@ const ThemeSwitch = () => {
       id="switch"
       onClick={() => setTheme(isDark() ? "light" : "dark")}
       aria-label="Theme toggle"
-      className="p-2"
+      className=""
     >
       <span className="">
         {isDark() ? (

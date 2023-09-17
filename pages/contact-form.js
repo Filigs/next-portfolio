@@ -14,8 +14,8 @@ export default function ContactForm() {
     );
   }
   return (
-    <div className="h-screen mx-4">
-      <section className="h-full transition-all duration-75 bg-light dark:bg-darkDarker lg:duration-500">
+    <div className="min-h-screen">
+      <section className="h-full transition-all duration-75 bg-transparent dark:bg-darkDarker lg:duration-500">
         <div className="max-w-screen-md px-4 py-8 mx-auto mt-8 rounded-lg lg:py-16">
           <h2 className="mb-4 text-4xl font-extrabold tracking-tight text-center text-darkDarker dark:text-light">
             Seems like you have something on your mind!
