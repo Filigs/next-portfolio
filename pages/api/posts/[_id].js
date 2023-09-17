@@ -1,5 +1,5 @@
 import nextConnect from "next-connect";
-import middleware from "../../lib/dbConnect";
+import middleware from "../../../lib/dbConnect";
 import Post from "../../models/Post";
 
 const handler = nextConnect();
