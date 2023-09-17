@@ -1,6 +1,6 @@
 import nextConnect from "next-connect";
 import middleware from "../../lib/dbConnect";
-import Testimonial from "../../models/Testimonial";
+import Testemonial from "../../models/Testemonial";
 
 const handler = nextConnect();
 
@@ -8,7 +8,7 @@ handler.use(middleware);
 
 handler.get(async (req, res) => {
   try {
-    const testimonials = await Testimonial.find();
+    const testimonials = await Testemonial.find();
     res.status(200).json(testimonials);
   } catch (error) {
     res
@@ -20,7 +20,7 @@ handler.get(async (req, res) => {
 handler.post(async (req, res) => {
   try {
     const testimonialData = req.body;
-    const newTestimonial = new Testimonial(testimonialData);
+    const newTestimonial = new Testemonial(testimonialData);
     await newTestimonial.save();
     res.status(201).json(newTestimonial);
   } catch (error) {

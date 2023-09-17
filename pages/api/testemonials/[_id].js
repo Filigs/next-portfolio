@@ -1,7 +1,7 @@
 import nextConnect from "next-connect";
 import middleware from "../../../lib/dbConnect";
 
-import Testimonial from "../../../models/Testimonial";
+import Testemonial from "../../../models/Testemonial";
 
 const handler = nextConnect();
 
@@ -9,7 +9,7 @@ handler.use(middleware);
 
 handler.put(async (req, res) => {
   try {
-    const updatedTestimonial = await Testimonial.findByIdAndUpdate(
+    const updatedTestimonial = await Testemonial.findByIdAndUpdate(
       req.query._id,
       req.body,
       {
@@ -18,7 +18,7 @@ handler.put(async (req, res) => {
       }
     );
     if (!updatedTestimonial) {
-      return res.status(404).json({ error: "Testimonial not found" });
+      return res.status(404).json({ error: "Testemonial not found" });
     }
     res.status(200).json(updatedTestimonial);
   } catch (error) {
@@ -30,11 +30,11 @@ handler.put(async (req, res) => {
 
 handler.delete(async (req, res) => {
   try {
-    const deletedTestimonial = await Testimonial.findByIdAndDelete(
+    const deletedTestimonial = await Testemonial.findByIdAndDelete(
       req.query._id
     );
     if (!deletedTestimonial) {
-      return res.status(404).json({ error: "Testimonial not found" });
+      return res.status(404).json({ error: "Testemonial not found" });
     }
     res.status(200).json(deletedTestimonial);
   } catch (error) {

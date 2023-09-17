@@ -6,5 +6,5 @@ const TestimonialSchema = new mongoose.Schema({
   author: { type: mongoose.Types.ObjectId, ref: "User" },
 });
 
-export default mongoose.models.Testimonial ||
-  mongoose.model("Testimonial", TestimonialSchema);
+export default mongoose.models.Testemonial ||
+  mongoose.model("Testemonial", TestimonialSchema);
