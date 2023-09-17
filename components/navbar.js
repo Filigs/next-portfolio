@@ -8,7 +8,7 @@ export default function NavBar() {
   return (
     <nav>
       <div className="flex flex-wrap items-center justify-between lg:justify-around">
-        <div className="inline-flex items-center mx-4 text-dark dark:text-light">
+        <div className="inline-flex items-center text-dark dark:text-light">
           <Link href="/" passHref>
             <Image
               src={branding}
@@ -19,7 +19,7 @@ export default function NavBar() {
             />
           </Link>
         </div>
-        <div className="inline-flex items-center gap-4 mx-4 border-0 text-dark dark:text-light">
+        <div className="inline-flex items-center gap-4 mr-4 border-0 text-dark dark:text-light">
           <section className="text-2xl border-0 rounded-full cursor-pointer lg:text-3xl ">
             <Link href="/contact-form" passHref>
               <IoChatboxEllipses
